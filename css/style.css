@@ -1,0 +1,36 @@
+body{
+    background:  #343a40;
+    font-family: Poppins, Helvetica, sans-serif;
+}
+
+.oscurecer {
+    background-color: rgba(0,0,0,0.8);
+    filter:brightness(0.4);
+  }
+
+
+
+.carousel .slide{
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    background: aliceblue;
+}
+
+.green{
+    background: #0abf53;
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.card{
+    border-radius: 43px 43px 43px 43px;
+    -moz-border-radius: 43px 43px 43px 43px;
+    -webkit-border-radius: 43px 43px 43px 43px;
+    border: 0px solid #000000;
+}
