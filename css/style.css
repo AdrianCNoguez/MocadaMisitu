@@ -1,10 +1,10 @@
 body{
-    background:  #343a40;
+    background: #27362A ;
     font-family: Poppins, Helvetica, sans-serif;
 }
 
 .oscurecer {
-    background-color: rgba(0,0,0,0.8);
+    background-color: #27362A;
     filter:brightness(0.4);
   }
 
@@ -20,7 +20,7 @@ hr{
 }
 
 .green{
-    background: #0abf53;
+    background: #08AF3F;
 }
 
 ul{
