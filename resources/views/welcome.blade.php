@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide mt-1" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -59,7 +59,7 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A2.jpg" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
@@ -70,7 +70,7 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A3.png" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A3.png') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
@@ -81,7 +81,7 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A1.png" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A1.png') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
@@ -92,7 +92,7 @@
                 <div class="item">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A2.jpg" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
@@ -103,7 +103,7 @@
                 <div class="item">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A2.jpg" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
@@ -114,7 +114,7 @@
                 <div class="item">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A2.jpg" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
@@ -273,7 +273,7 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A1.png" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A1.png') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
@@ -284,7 +284,7 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A2.jpg" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
@@ -295,7 +295,7 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A3.png" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A3.png') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
@@ -306,7 +306,7 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A1.png" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A1.png') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
@@ -317,7 +317,7 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A2.jpg" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
@@ -328,7 +328,7 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A2.jpg" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
@@ -339,7 +339,7 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="images/A2.jpg" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/A2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>

@@ -26,8 +26,10 @@
         <div class="row">
           <div class="col-12 p-0 m-0">
             <nav class="navbar navbar-expand-lg navbar-dark">
-              <img src="{{ asset('img/logo/logo.png') }}" width="150px" alt="" class="ml-5 d-none d-md-block">
-              <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="{{ asset('img/logo/fondo.png') }}" width="60px" alt="" class="d-none d-lg-block fondo my-2">
+                <img src="{{ asset('img/logo/aro-verde.png') }}" width="70px" alt="" class="d-none d-lg-block aros my-2" id="aroG">
+                <img src="{{ asset('img/logo/aro-azul.png') }}" width="70px" alt="" class="d-none d-lg-block aros my2" id="aroB">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars" id="menu"></i>
               </button>
 
@@ -98,11 +100,17 @@
         </div>
     </div>
 
-    <div class="jumbotron mb-1 p-0 bg-jm d-block d-md-none">
-        <div class="container my-4">
-          <img src="{{ asset('img/logo/logo.png') }}" class="img-fluid" alt="">
+
+
+    <div class="jumbotron mb-1 p-0 bg-jm d-block d-lg-none">
+        <div class="container m-0 p-0">
+          <img src="{{ asset('img/logo/fondo.png') }}" width="200px" class=" fondo" alt="">
+          <img src="{{ asset('img/logo/aro-verde.png') }}" width="200px" class="img-fluid aros" alt="" id="arosmobilG">
+          <img src="{{ asset('img/logo/aro-azul.png') }}" width="200px" class="img-fluid aros" alt="" id="arosmobilB">
         </div>
     </div>
+
+    <div class="space d-block d-lg-none"></div>
 
     @yield('content')
 
@@ -148,6 +156,7 @@
     <script src="js/carousel.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="{{ asset('js/jquery-rotate.js') }}"></script>
 
 
 
