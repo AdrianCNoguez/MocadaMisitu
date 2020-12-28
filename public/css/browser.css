@@ -1,0 +1,24 @@
+.buscador{
+    margin-top: -16px;
+}
+
+.buscador input{
+    width: 500px;
+    border-radius: 25px 0px 0px 25px;
+    -moz-border-radius: 25px 0px 0px 25px;
+    -webkit-border-radius: 25px 0px 0px 25px;
+    border: 0px solid #000000;
+}
+
+.buscador button{
+    border-radius: 0px 25px 25px 0px;
+-moz-border-radius: 0px 25px 25px 0px;
+-webkit-border-radius: 0px 25px 25px 0px;
+border: 0px solid #000000;
+}
+
+@media  screen and (max-width: 768px){
+    .buscador input{
+        width: 250px;
+    }
+}
