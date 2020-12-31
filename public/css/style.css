@@ -1,3 +1,4 @@
+
 body{
     background:  #202020;
     font-family: 'Poppins', sans-serif;
@@ -123,10 +124,18 @@ ul{
     font-weight: bold;
 }
 
-.mega-area h5{
+
+.mega-area h4{
     text-align: left;
     color: #0abf53;
 }
+
+.mega-area h5{
+    color: #3498db;
+    text-indent: 1.5em;
+
+}
+
 
 
 
@@ -174,7 +183,9 @@ ul{
     font-size: 15px;
 }
 
+
 @media only screen and (max-width: 998px){
+
     .navbar{
         margin-bottom: 30px;
     }
@@ -288,19 +299,19 @@ ul{
 
 
 /* SLIDER PRODUCTS */
-.card{
+/* .card{
     position: relative;
    -webkit-box-shadow: 5px 5px 21px 5px rgba(0,0,0,0.93);
    box-shadow: 5px 5px 21px 5px rgba(0,0,0,0.93);
     transition: margin 1s;
 
-}
+} */
 
-.card:hover{
+/* .card:hover{
    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.81);
    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.81);
    margin: 8px;
-}
+} */
 
 .card > h5{
    font-size: 12px;

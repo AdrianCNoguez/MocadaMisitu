@@ -44,46 +44,53 @@
                     </a>
                     <div class="dropdown-menu mega-area" aria-labelledby="mega-one">
                       <div class="row">
+                        <div class="col-sm-5 col-lg-auto bdr">
+                          <h4>Iluminación</h4>
+                            <h5>Iluminación interior</h5>
+                            <a href="#" class="dropdown-item ml-2">Focos</a>
+                            <a href="#" class="dropdown-item ml-2">Lamparas de escritorio</a>
+                            <a href="#" class="dropdown-item ml-2">Lamparas de techo</a>
+                            <a href="#" class="dropdown-item ml-2">Mangueras</a>
+                            <a href="#" class="dropdown-item ml-2">Regletas</a>
+                            <a href="#" class="dropdown-item ml-2">Series</a>
+                            <a href="#" class="dropdown-item ml-2">Selfie light</a>
+                            <a href="#" class="dropdown-item ml-2">Tiras Led</a>
+                            <a href="#" class="dropdown-item ml-2">Vintage</a>
+                            <h5>Iluminación exterior</h5>
+                            <a href="#" class="dropdown-item ml-2">Reflectores</a>
+                            <a href="#" class="dropdown-item ml-2">Lamparas</a>
+                            <a href="#" class="dropdown-item ml-2">Faroles</a>
+                            <a href="#" class="dropdown-item ml-2">Tiras led</a>
+                            <a href="#" class="dropdown-item ml-2">Jardin</a>
+                        </div>
+
+                        <div class="col-sm-5 col-lg-auto bdr">
+                            <h4>Electronica</h4>
+                            <a href="#" class="dropdown-item ml-2">Ventiladores</a>
+                            <a href="#" class="dropdown-item ml-2">Timbres</a>
+                            <a href="#" class="dropdown-item ml-2">Bocina</a>
+                            <h4>Componentes Electricos</h4>
+                            <a href="" class="dropdown-item ml-2">Extenciones</a>
+                            <a href="#" class="dropdown-item ml-2">Contactos</a>
+                            <a href="#" class="dropdown-item ml-2">Soquets</a>
+                            <a href="#" class="dropdown-item ml-2">Cable</a>
+                            <h4>Entretnimiento</h4>
+                            <a href="#" class="dropdown-item ml-2">Consolas</a>
+                            <a href="#" class="dropdown-item ml-2">Juguetes</a>
+                        </div>
                         <div class="col-sm-5 col-lg-auto">
-                          <h5>Iluminación</h5>
-                          <a href="" class="dropdown-item ml-2">Focos</a>
-                          <a href="#" class="dropdown-item ml-2">Reflectores</a>
-                          <a href="#" class="dropdown-item ml-2">Lamparas</a>
+                          <h4>Decoracion para el hogar</h4>
                           <a href="#" class="dropdown-item ml-2">Herrajes</a>
-                          <a href="#" class="dropdown-item ml-2">Tiras Led</a>
-                          <a href="#" class="dropdown-item ml-2">Mangueras</a>
-                          <a href="#" class="dropdown-item ml-2">Regletas</a>
-                          <a href="#" class="dropdown-item ml-2">Faroles</a>
-                          <a href="#" class="dropdown-item ml-2">Series</a>
-                          <a href="#" class="dropdown-item ml-2">Fotografia</a>
-                          <a href="#" class="dropdown-item ml-2">Paneles</a>
-                          <a href="#" class="dropdown-item ml-2">Jardin</a>
+                          <a href="#" class="dropdown-item ml-2">Proyectores</a>
+                          <a href="#" class="dropdown-item ml-2">Espejos</a>
+                          <a href="#" class="dropdown-item ml-2">Macetas</a>
+                          <h4>Difusores</h4>
+                          <a href="#" class="dropdown-item ml-2">Humificador</a>
+                          <h4>Cocina</h4>
+                          <a href="#" class="dropdown-item ml-2">Dispensadores</a>
                         </div>
                         <div class="col-sm-5 col-lg-auto">
-                        <h5>Componentes Electricos</h5>
-                          <a href="" class="dropdown-item ml-2">Extenciones</a>
-                          <a href="#" class="dropdown-item ml-2">Contactos</a>
-                          <a href="#" class="dropdown-item ml-2">Soquets</a>
-                          <a href="#" class="dropdown-item ml-2">Cable</a>
-                        </div>
-                        <div class="col-sm-5 col-lg-auto">
-                          <h5>Entretnimiento</h5>
-                          <a href="#" class="dropdown-item ml-2">Consolas</a>
-                          <a href="#" class="dropdown-item ml-2">Juguetes</a>
-                          <h5>Decoracion para el hogar</h5>
-                          <a href="#" class="dropdown-item">Proyectores</a>
-                          <a href="#" class="dropdown-item">Espejos</a>
-                          <a href="#" class="dropdown-item">Macetas</a>
-                        </div>
-                        <div class="col-sm-5 col-lg-auto">
-                            <h5>Electronica</h5>
-                            <a href="#" class="dropdown-item">Ventiladores</a>
-                            <a href="#" class="dropdown-item">Timbres</a>
-                            <a href="#" class="dropdown-item">Bocina</a>
-                            <h5>Difusores</h5>
-                            <a href="#" class="dropdown-item">Humificador</a>
-                            <h5>Cocina</h5>
-                            <a href="#" class="dropdown-item">Dispensadores</a>
+
                           </div>
                       </div>
                     </div>
@@ -116,7 +123,7 @@
 
 
     <!--Footer-->
-    <footer class="footer mt-5 py-3 green">
+    <footer class="footer mt-5 py-3 green ">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-sm-5 col-lg-4 text-white">
