@@ -53,7 +53,7 @@
                             <img src="{{ asset('img/'.$item->first()['ruta'] ) }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
-                            <p class="card-title font-weight-bold">{{ $item[0]['nombre'] }}</p>
+                            <p class="card-title font-weight-bold">{{ $item->first()['nombre'] }}</p>
                         </div>
                     </div>
                 </div>
