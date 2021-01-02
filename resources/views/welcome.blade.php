@@ -5,8 +5,6 @@
 @endsection
 
 @section('content')
-<h1 class="text-white">asdasd</h1>
-
 
     <div id="carouselExampleIndicators" class="carousel slide mt-1" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -48,14 +46,14 @@
 
         <div class="row justify-content-center">
             <div class="owl-carousel owl-theme col-11 col-lg-12 mb-0">
-                @foreach ($productos as $item)
+               @foreach ($productos as $item)
                 <div class="item">
                     <div class="card border-0 rounded-lg">
                         <a href="">
-                            <img src="{{ asset('img/'.$item->ruta ) }}" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/'.$item->first()['ruta'] ) }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
-                            <p class="card-title font-weight-bold">{{ $item->nombre }}</p>
+                            <p class="card-title font-weight-bold">{{ $item[0]['nombre'] }}</p>
                         </div>
                     </div>
                 </div>
