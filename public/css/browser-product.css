@@ -12,35 +12,75 @@
 
 .buscador button{
     border-radius: 0px 25px 25px 0px;
--moz-border-radius: 0px 25px 25px 0px;
--webkit-border-radius: 0px 25px 25px 0px;
-border: 0px solid #000000;
+    -moz-border-radius: 0px 25px 25px 0px;
+    -webkit-border-radius: 0px 25px 25px 0px;
+    border: 0px solid #000000;
 }
+
+.nav-browser input{
+    border-radius: 25px 0px 0px 25px;
+    -moz-border-radius: 25px 0px 0px 25px;
+    -webkit-border-radius: 25px 0px 0px 25px;
+    border: 0px solid #000000;
+}
+
+.nav-browser button{
+    border-radius: 0px 25px 25px 0px;
+    -moz-border-radius: 0px 25px 25px 0px;
+    -webkit-border-radius: 0px 25px 25px 0px;
+    border: 0px solid #000000;
+}
+
 
 @media  screen and (max-width: 768px){
     .buscador input{
+        width: 250px;
+    }
+    .nav-browser{
+        margin-top: 5px ;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .nav-browser input{
         width: 250px;
     }
 }
 
 .breadcrumb{
     background-color: transparent;
+    text-align: center;
 }
+
+
 
 .breadcrumb-item{
     font-family: Poppins;
-    font-size: 20px;
     font-weight: bold;
 }
-
+.breadcrumb-item a{
+    color: white;
+}
 .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
     padding-right: 0.5rem;
-    color: #0abf53;
+    color: white;
     content: "/";
 }
 
 .breadcrumb-item.active {
-    color: #0abf53;
     opacity: 0.5;
+}
+
+
+.fa-eye{
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+
+.breadcrumbs{
+    text-align:center;
+    line-height:50px;
 }

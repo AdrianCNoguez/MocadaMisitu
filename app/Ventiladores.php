@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ventiladores extends Model
 {
-    //
+    protected $table = 'ventiladores';
 }

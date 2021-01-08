@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="logo/Logo MisituMocada2.png" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="icon" type="image/png" href="{{ asset('logo/Logo MisituMocada2.png') }}" />
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
     @yield('browser')
-    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('fontawesome-free-5.15.1-web/css/all.min.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,200&display=swap" rel="stylesheet">
-    <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
-    <script src="OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js"></script>
+    <script src="{{ asset('OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js') }}"></script>
+    <script src="{{ asset('OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js') }}"></script>
     <title>Distribuidora Moncada - Misitu</title>
 
 </head>
-<body class="sc">
+<body class="sc d-flex flex-column h-100" >
 
     <a href="https://api.whatsapp.com/send?phone=+525526506601&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
@@ -36,7 +36,7 @@
               <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="{{url('/')}}">Inicio</a>
                   </li>
                   <li class="nav-item dropdown menu-area">
                     <a class="nav-link dropdown-toggle" href="#" id="mega-one" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -66,8 +66,8 @@
 
                         <div class="col-sm-5 col-lg-auto bdr">
                             <h4>Electronica</h4>
-                            <a href="#" class="dropdown-item ml-2">Ventiladores</a>
-                            <a href="#" class="dropdown-item ml-2">Timbres</a>
+                            <a href="{{route('ventiladores')}}" class="dropdown-item ml-2">Ventiladores</a>
+                            <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
                             <a href="#" class="dropdown-item ml-2">Bocina</a>
                             <h4>Componentes Electricos</h4>
                             <a href="" class="dropdown-item ml-2">Extenciones</a>
@@ -123,7 +123,7 @@
 
 
     <!--Footer-->
-    <footer class="footer mt-5 py-3 green ">
+    <footer class="footer mt-auto py-3 green">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-sm-5 col-lg-4 text-white">
@@ -159,11 +159,12 @@
         </div>
     </footer>
 
-    <script src="js/efects.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="{{ asset('js/efects.js') }}"></script>
+    <script src="{{ asset('js/carousel.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="{{ asset('js/jquery-rotate.js') }}"></script>
+
 
 
 
