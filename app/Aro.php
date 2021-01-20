@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Macetas extends Model
+class Aro extends Model
 {
-    //
+    protected $table ='aro';
 }

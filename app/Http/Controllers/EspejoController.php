@@ -2,17 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Focos;
-
-class FocosController extends Controller
+use App\Espejo;
+class EspejoController extends Controller
 {
+    //Espejo 
     public function getProducts(){
-        $productos = focos::
+        $productos = Espejo::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','Focos.idProducto_fk')
+            ->join('producto','producto.idProducto','=','Espejo.idProductoEspejo_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/iluminacionInterior.focos')->with('productos',$productos);
+            return view('/decoracion_Hogar.espejo')->with('productos',$productos);
     }
 }

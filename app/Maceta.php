@@ -4,7 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Espejos extends Model
+class Maceta extends Model
 {
     //
+    protected $table = 'maceta';
+
 }

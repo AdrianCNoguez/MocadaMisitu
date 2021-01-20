@@ -7,4 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Humificadores extends Model
 {
     //
+    protected $table ='humidificadores';
+
 }

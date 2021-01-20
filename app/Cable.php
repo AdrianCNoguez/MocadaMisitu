@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class MangueraLeds extends Model
+class Cable extends Model
 {
     //
-    protected $table = 'mangueraled';
+    protected $table ='cable';
 }
