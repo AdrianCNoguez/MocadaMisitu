@@ -1,5 +1,4 @@
-
-$(".navbar-toggler").click(function () {
+$(".navbar-toggler").click(function() {
     if ($("#menu").hasClass('fa-bars')) {
         $("#menu").removeClass("fa-bars")
         $("#menu").addClass("fa-times")
@@ -9,34 +8,44 @@ $(".navbar-toggler").click(function () {
     }
 });
 
-$(function () {
+$(function() {
     var angulo = 0;
-    setInterval(function () {
+    setInterval(function() {
         angulo += 3;
         $("#aroG").rotate(angulo);
     }, 30);
 });
 
-$(function () {
+$(function() {
     var angulo = 0;
-    setInterval(function () {
+    setInterval(function() {
         angulo += 3;
         $("#aroB").rotate(angulo);
     }, 25);
 });
 
-$(function () {
+$(function() {
     var angulo = 0;
-    setInterval(function () {
+    setInterval(function() {
         angulo += 3;
         $("#arosmobilG").rotate(angulo);
     }, 30);
 });
 
-$(function () {
+$(function() {
     var angulo = 0;
-    setInterval(function () {
+    setInterval(function() {
         angulo += 3;
         $("#arosmobilB").rotate(angulo);
     }, 25);
+});
+
+/* function myFunction(smallImg) {
+    var fullImg = document.getElementById("imageBox");
+    fullImg.src = smallImg.src;
+} */
+
+$('#img-mini img').click(function() {
+    var changeSrc = $(this).attr('src');
+    $('#imageBox').attr('src', changeSrc);
 });

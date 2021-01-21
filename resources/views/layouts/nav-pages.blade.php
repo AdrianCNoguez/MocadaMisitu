@@ -4,7 +4,7 @@
                 <div class="col-12 col-md-4 order-2 order-md-1 text-center">
                     <div class="breadcrumbs">
                         <ol class="breadcrumb justify-content-center p-0 m-0">
-                            <li class="breadcrumb-item text-white"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item text-white"><a href="{{url('/')}}">Inicio</a></li>
                             @yield('breadcrumbs')
                           </ol>
                     </div>

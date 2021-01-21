@@ -50,7 +50,7 @@
                 <div class="item">
                     <div class="card border-0 rounded-lg">
                         <a href="">
-                            <img src="{{ asset('img/'.$item->first()['ruta'] ) }}" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/'.$item->first()['ruta'] ) }}" alt="img" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
                             <p class="card-title font-weight-bold">{{ $item->first()['nombre'] }}</p>

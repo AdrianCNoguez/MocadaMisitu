@@ -9,8 +9,10 @@ class Timbres extends Model
     protected $table = 'timbres';
     protected $primaryKey='idTimbre';
 
-    public function productos()
+    public static function imagenes($id)
     {
-        return $this->belongsTo('App\Productos', 'idProdutoTimbre_fk');
+        $imagenes = Imagenes::select('ruta')->where('idProductoImagen_fk', '=', $id)->get();
+
+        return $imagenes;
     }
 }

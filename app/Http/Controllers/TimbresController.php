@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Productos;
 use Illuminate\Http\Request;
 use App\Timbres;
 
@@ -12,6 +13,7 @@ class TimbresController extends Controller
         ->join('producto','producto.idProducto','=','timbres.idProdutoTimbre_fk')
         ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
         ->get()->groupBy('idProducto');
+
         return view('timbres')->with('productos',$productos);
     }
 
@@ -19,20 +21,14 @@ class TimbresController extends Controller
 
         $position =  strpos($id, '-s');
         $id = substr($id, $position + 2);
-        $product = Timbres::select('producto.idProducto','producto.nombre','producto.descripcion')
-        ->join('producto','producto.idProducto','=','timbres.idProdutoTimbre_fk')
-        ->where('producto.idProducto','=', $id)->get();
 
+        $product = Timbres::
+        join('producto','producto.idProducto','=','timbres.idProdutoTimbre_fk')
+        ->where('producto.idProducto','=', $id)->first();
 
-        //$ib = Timbres::find(1)->productos->imagenes;
+        $imagenes = Timbres::imagenes($id);
 
-        // $imagenes = Bicicletas::find(3)->imagenesbicicletas;
-
-        return view('prueba')->with('product',$product);
-
-
-        /* return view('prueba')->with('product',$product); */
-
+        return view('timbre')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
 
     }
 }
