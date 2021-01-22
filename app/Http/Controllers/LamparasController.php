@@ -31,12 +31,6 @@ class LamparasController extends Controller
     */
 
     
-
-use App\Lamparas;
-use DB;
-class LamparasController extends Controller
-{
-    
 /*---------------------Lamparas_techo-------------------------------------- */
        /* public function getProducts(){
             $productos = Lamparas::
