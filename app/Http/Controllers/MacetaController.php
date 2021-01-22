@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Focos;
-
-class FocosController extends Controller
+use App\Maceta;
+class MacetaController extends Controller
 {
+    //
     public function getProducts(){
-        $productos = focos::
+        $productos = Maceta::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','Focos.idProducto_fk')
+            ->join('producto','producto.idProducto','=','Maceta.idProductoMaceta_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/iluminacionInterior.focos')->with('productos',$productos);
+            return view('/decoracion_Hogar.maceta')->with('productos',$productos);
     }
 }

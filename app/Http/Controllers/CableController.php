@@ -2,17 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Focos;
-
-class FocosController extends Controller
+use App\Cable;
+class CableController extends Controller
 {
+    //
     public function getProducts(){
-        $productos = focos::
+        $productos = Cable::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','Focos.idProducto_fk')
+            ->join('producto','producto.idProducto','=','Cable.idProductoCable_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/iluminacionInterior.focos')->with('productos',$productos);
+            return view('/componentesElectricos.cable')->with('productos',$productos);
     }
 }
