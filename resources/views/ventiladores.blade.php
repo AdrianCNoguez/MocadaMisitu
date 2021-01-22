@@ -13,10 +13,12 @@
 
     <div class="container">
         @section('breadcrumbs')
-            <li class="breadcrumb-item text-white ctive" aria-current="page">Electronica</li>
+            <li class="breadcrumb-item text-white active" aria-current="page">Electronica</li>
             <li class="breadcrumb-item text-white active" aria-current="page">Ventiladores</li>
         @endsection
         @include('layouts.nav-pages')
+
+        
 
         <div class="row justify-content-center justify-content-lg-start mb-2">
             @foreach ($productos as $item)
