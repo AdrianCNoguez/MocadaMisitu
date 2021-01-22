@@ -49,10 +49,3 @@ Route::get('maceta','MacetaController@getProducts');
 Route::get('humificadores','HumificadoresController@getProducts');
 /*--------Cocina-----------------*/
 Route::get('disoensadores','DisoensadoresController@getProducts');
-
-
-/*-------
-Espejos
-Macetas
-Humificador
-Dispesador-*/
