@@ -24,8 +24,10 @@ Route::get('/exterior/reflectores','ReflectoresController@getProducts')->name('r
 Route::get('/exterior/lamparas','LamparasController@getProducts');
 Route::get('/exterior/faroles','FarolesController@getProducts');
 Route::get('/exterior/tirasLed','TiraLedController@getProducts');
+
 /*-----Iluminacion_Interior-----*/
 Route::get('focos','FocosController@getProducts');
+Route::get('foco{id}', 'FocosController@viewProduct');
 /*---------------Lamapras_techo-------------------*/
 Route::get('lamparas','LamparasController@getProducts');
 /*------------------------------------------*/
