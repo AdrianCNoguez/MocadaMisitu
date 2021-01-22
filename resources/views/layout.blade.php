@@ -127,8 +127,9 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-sm-5 col-lg-4 text-white">
+                
                     <ul >
-                        <li >Cras justo odio</li>
+                        <li > </li>
                         <li >Dapibus ac facilisis in</li>
                         <li >Morbi leo risus</li>
                         <li >Porta ac consectetur ac</li>
