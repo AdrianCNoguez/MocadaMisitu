@@ -19,12 +19,10 @@ Route::get('/','LomasVendidoController@getProducts');
 Route::get('/electronica/ventiladores','VentiladoresController@getProducts')->name('ventiladores');
 Route::get('/electronica/timbres','TimbresController@getProducts')->name('timbres');
 Route::get('/electronica/timbres/{id}', 'TimbresController@viewProduct');
-<<<<<<< HEAD
 Route::get('/exterior/reflectores','ReflectoresController@getProducts')->name('reflectores');
 Route::get('/exterior/lamparas','LamparasController@getProducts');
 Route::get('/exterior/faroles','FarolesController@getProducts');
 Route::get('/exterior/tirasLed','TiraLedController@getProducts');
-=======
 /*-----Iluminacion_Interior-----*/
 Route::get('focos','FocosController@getProducts');
 Route::get('lamparasescritorio','LamparaEscritoriosController@getProducts');
@@ -50,4 +48,3 @@ Route::get('maceta','MacetaController@getProducts');
 Route::get('humificadores','HumificadoresController@getProducts');
 /*--------Cocina-----------------*/
 Route::get('disoensadores','DisoensadoresController@getProducts');
->>>>>>> chuty
