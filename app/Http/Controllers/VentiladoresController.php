@@ -14,4 +14,19 @@ class VentiladoresController extends Controller
         ->get()->groupBy('idProducto');
         return view('ventiladores')->with('productos',$productos);;
     }
+
+    public function viewProduct($id)
+    {
+        $position =  strpos($id, '-s');
+        $id = substr($id, $position + 2);
+
+        $product = Ventiladores::
+        join('producto','producto.idProducto','=','ventiladores.idProductoVentilador_fk')
+        ->where('producto.idProducto','=', $id)->first();
+        
+
+        $imagenes = Ventiladores::imagenes($id);
+
+        return view('ventilador')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+    }
 }
