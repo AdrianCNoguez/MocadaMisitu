@@ -16,4 +16,19 @@ class MangueraLedsController extends Controller
             ->get()->groupBy('idProducto');
             return view('/iluminacionInterior.mangueraled')->with('productos',$productos);
     }
+
+    public function viewProduct($id){
+
+        $position =  strpos($id, '-s');
+        $id = substr($id, $position + 2);
+
+        $product = Mangueraleds::
+        join('producto','producto.idProducto','=','mangueraled.idProductoMangue_fk')
+        ->where('producto.idProducto','=', $id)->first();
+
+        $imagenes = Mangueraleds::imagenes($id);
+
+        return view('/iluminacionInterior/mangueraled')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+
+    }
 }

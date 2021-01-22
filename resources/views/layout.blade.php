@@ -47,7 +47,7 @@
                         <div class="col-sm-5 col-lg-auto bdr">
                           <h4>Iluminación</h4>
                             <h5>Iluminación interior</h5>
-                            <a href="#" class="dropdown-item ml-2">Focos</a>
+                            <a href="{{ url('/iluminacionInterior/focos') }}" class="dropdown-item ml-2">Focos</a>
                             <a href="#" class="dropdown-item ml-2">Lamparas de escritorio</a>
                             <a href="#" class="dropdown-item ml-2">Lamparas de techo</a>
                             <a href="#" class="dropdown-item ml-2">Mangueras</a>

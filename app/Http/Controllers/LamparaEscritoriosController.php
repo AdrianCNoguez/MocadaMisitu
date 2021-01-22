@@ -16,4 +16,19 @@ class LamparaEscritoriosController extends Controller
             ->get()->groupBy('idProducto');
             return view('/iluminacionInterior.lamparasescritorio')->with('productos',$productos);
     }
+
+    public function viewProduct($id){
+
+        $position =  strpos($id, '-s');
+        $id = substr($id, $position + 2);
+
+        $product = LamparaEscritorios::
+        join('producto','producto.idProducto','=','lamparasescritorio.idProductoEscri_fk')
+        ->where('producto.idProducto','=', $id)->first();
+
+        $imagenes = LamparaEscritorios::imagenes($id);
+
+        return view('/iluminacionInterior/lamparaescritorio')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+
+    }
 }
