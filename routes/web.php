@@ -19,3 +19,7 @@ Route::get('/','LomasVendidoController@getProducts');
 Route::get('/electronica/ventiladores','VentiladoresController@getProducts')->name('ventiladores');
 Route::get('/electronica/timbres','TimbresController@getProducts')->name('timbres');
 Route::get('/electronica/timbres/{id}', 'TimbresController@viewProduct');
+Route::get('/exterior/reflectores','ReflectoresController@getProducts')->name('reflectores');
+Route::get('/exterior/lamparas','LamparasController@getProducts');
+Route::get('/exterior/faroles','FarolesController@getProducts');
+Route::get('/exterior/tirasLed','TiraLedController@getProducts');
