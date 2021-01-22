@@ -16,16 +16,21 @@ Route::get('/', function () {
 });
 
 Route::get('/','LomasVendidoController@getProducts');
-Route::get('/electronica/ventiladores','VentiladoresController@getProducts')->name('ventiladores');
+/*--Checar---*/
+Route::get('ventiladores','VentiladoresController@getProducts')->name('ventiladores');
 Route::get('/electronica/timbres','TimbresController@getProducts')->name('timbres');
 Route::get('/electronica/timbres/{id}', 'TimbresController@viewProduct');
 /*-----Iluminacion_Interior-----*/
 Route::get('focos','FocosController@getProducts');
+/*---------------Lamapras_techo-------------------*/
+Route::get('lamparas','LamparasController@getProducts');
+/*------------------------------------------*/
 Route::get('lamparasescritorio','LamparaEscritoriosController@getProducts');
 Route::get('mangueraled','MangueraLedsController@getProducts');
 Route::get('regletas','RegletasController@getProducts');
 Route::get('series','SeriesController@getProducts');
 Route::get('tiraled','TiraLedsController@getProducts');
+/*-----Selfie_ligth-----*/
 Route::get('aro','AroController@getProducts');
 /*----Componentes_Electricos-------*/
 Route::get('extenciones','ExtencionesController@getProducts');
@@ -44,3 +49,10 @@ Route::get('maceta','MacetaController@getProducts');
 Route::get('humificadores','HumificadoresController@getProducts');
 /*--------Cocina-----------------*/
 Route::get('disoensadores','DisoensadoresController@getProducts');
+
+
+/*-------
+Espejos
+Macetas
+Humificador
+Dispesador-*/
