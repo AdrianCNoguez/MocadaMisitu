@@ -123,39 +123,47 @@
 
 
     <!--Footer-->
-    <footer class="footer mt-auto py-3 green">
+    <footer class="footer mt-5 py-3 green ">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-sm-5 col-lg-4 text-white">
+                    <ul >
+                        <h2>¿Dónde nos ubicamos?</h2>
+                        <li >Av. José del Pilar León 27, Juárez Pantitlan,</li>
+                        <li> 57460 Nezahualcóyotl, Méx.</li>
+                        <li>
+                      </ul>
+                </div>
                 
-                    <ul >
-                        <li > </li>
-                        <li >Dapibus ac facilisis in</li>
-                        <li >Morbi leo risus</li>
-                        <li >Porta ac consectetur ac</li>
-                        <li >Vestibulum at eros</li>
-                      </ul>
-                </div>
+                <div>
+                      </ul><img src="{{ asset('img/logo/logoFooterRedon.png') }}" alt="Misitu" width="270" ></li>
+                  </div> 
 
                 <div class="col-12 col-sm-5 col-lg-4 text-white">
                     <ul >
-                        <li >Cras justo odio</li>
-                        <li >Dapibus ac facilisis in</li>
-                        <li >Morbi leo risus</li>
-                        <li >Porta ac consectetur ac</li>
-                        <li >Vestibulum at eros</li>
-                      </ul>
+                       <h1>Web MoMi</h1>
+                        <li >DISTRIBUIDORA MONCADA & MISITU</li>
+                        <li >Copyright © 2020 Web Momi</li>
+                        <li >Todos los derechos reservados.</li>     
+
+                      </ul> 
+                </div>
+                   
                 </div>
 
-                <div class="col-12 col-sm-5 col-lg-4 text-white">
+             
+                  <div class="row text-white">
                     <ul >
-                        <li >Cras justo odio</li>
-                        <li >Dapibus ac facilisis in</li>
-                        <li >Morbi leo risus</li>
-                        <li >Porta ac consectetur ac</li>
-                        <li >Vestibulum at eros</li>
+                        <li >Contáctanos</li>
+                        <li >+52 1 55 5072 4953</li>
+                        <li>+52 55 6896 2105</li>
+                        <li >E-mail</li>
                       </ul>
-                </div>
+                      
+                    </div>
+                  
+                  
+              
             </div>
         </div>
     </footer>
