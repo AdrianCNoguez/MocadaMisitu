@@ -166,6 +166,87 @@
               
             </div>
         </div>
+        <!--Inicio-->
+    <div class="container">
+      <div class="d-flex justify-content-around bg-success mb-3">
+         <!--ModalContacto-->
+         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Contact">
+          Contacto
+        </button>
+        <div class="modal fade" id="Contact" tabindex="-1" role="dialog" aria-labelledby="Contact" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="Contact">Contacto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!--Fin_ModalContacto-->
+        <!--Inicio_ModalAbout-->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#About">
+          Acerca de Nosotros
+        </button>
+        <div class="modal fade" id="About" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="About">MoncadaMisitu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim animi quis, odit quos illum praesentium aliquam deleniti voluptatum unde rem nihil rerum et consequuntur eius itaque ea. Eveniet, omnis.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+         <!--Fin_ModalAbout-->
+        <!--Inicio_ModalFaqs-->
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Faq">
+          FAQ´s
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="Faq" tabindex="-1" role="dialog" aria-labelledby="Faq" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="Faq">FAQ´S</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                1.-Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                R=
+                2.-
+                R=
+                3.-
+                R=
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </footer>
 
     <script src="{{ asset('js/efects.js') }}"></script>
