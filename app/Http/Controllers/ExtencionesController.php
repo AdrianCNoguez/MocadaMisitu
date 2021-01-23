@@ -13,6 +13,21 @@ class ExtencionesController extends Controller
             ->join('producto','producto.idProducto','=','Extenciones.idProductoExt')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/componentesElectricos.extenciones')->with('productos',$productos);
+            return view('/componentesElectricos/extenciones')->with('productos',$productos);
+    }
+
+    public function viewProduct($id){
+
+        $position =  strpos($id, '-s');
+        $id = substr($id, $position + 2);
+
+        $product = Extenciones::
+        join('producto','producto.idProducto','=','Extenciones.idProductoExt')
+        ->where('producto.idProducto','=', $id)->first();
+
+        $imagenes = Extenciones::imagenes($id);
+
+        return view('extencion')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+
     }
 }

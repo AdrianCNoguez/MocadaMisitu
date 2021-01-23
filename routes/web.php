@@ -28,16 +28,12 @@ Route::get('/exterior/faroles','FarolesController@getProducts');
 Route::get('/exterior/tirasLed','TiraLedController@getProducts');
 
 
-/*-----Iluminacion_Interior-----*/
+/*-------------------------Iluminacion_Interior-------------------------------------*/
 Route::get('/iluminacionInterior/focos','FocosController@getProducts')->name('focos');
 Route::get('/iluminacionInterior/foco/{id}', 'FocosController@viewProduct');
-/*---------------Lamapras_pared-------------------*/
-Route::get('/iluminacionInterior/lamparaspared','LamparasController@getProductsIntpared')->name('lamparaspared');
-
-/*--------------------Lampara_techo----------------------------*/
+/*-----lampara_techo----*/
 Route::get('/iluminacionInterior/lamparas','LamparasController@getLampTech')->name('lamparas');
-
-/*----------------------------------------*/
+/*----------------------*/
 Route::get('/iluminacionInterior/lamparasescritorio','LamparaEscritoriosController@getProducts')->name('lamparasescritorio');
 Route::get('/iluminacionInterior/lamparaescritorio/{id}','viewProduct@getProducts');
 Route::get('/iluminacionInterior/manguerasled','MangueraLedsController@getProducts')->name('mangueraled');
@@ -47,16 +43,19 @@ Route::get('/iluminacionInterior/regleta/{id}','RegletasController@viewProduct')
 Route::get('/iluminacionInterior/series','SeriesController@getProducts')->name('series');
 Route::get('/iluminacionInterior/serie/{id}','SeriesController@viewProduct');
 Route::get('/iluminacionInterior/tirasLed','TiraLedController@getProducts')->name('tirasLed');
-
-
+Route::get('/iluminacionInterior/tiraLed/{id}','TiraLedController@viewProduct');
 /*-----Selfie_ligth-----*/
 Route::get('/iluminacionInterior/aros','AroController@getProducts')->name('aros');
 Route::get('/iluminacionInterior/aro/{id}','viewProduct@getProducts');
 /*----Componentes_Electricos-------*/
-Route::get('extenciones','ExtencionesController@getProducts');
-Route::get('contactos','ContactosController@getProducts');
-Route::get('soquets','SoquetsController@getProducts');
-Route::get('cable','CableController@getProducts');
+Route::get('/componentesElectricos/extenciones','ExtencionesController@getProducts')->name("extenciones");
+Route::get('/componentesElectricos/extencion/{id}','ExtencionesController@viewProduct');
+Route::get('/componentesElectricos/contactos','ContactosController@getProducts')->name("contactos");
+Route::get('/componentesElectricos/contacto/{id}','ContactosController@viewProduct');
+Route::get('/componentesElectricos/soquets','SoquetsController@getProducts')->name("soquets");
+Route::get('/componentesElectricos/soquet/{id}','SoquetsController@viewProduct');
+Route::get('/componentesElectricos/cables','CableController@getProducts');
+Route::get('/componentesElectricos/cable/{id}','CableController@viewProduct');
 /*-----Entretenimiento-----------*/
 Route::get('consolas','ConsolasController@getProducts');
 //Route::get('juguetes','ConsolasController@getProducts');
@@ -69,3 +68,6 @@ Route::get('maceta','MacetaController@getProducts');
 Route::get('humificadores','HumificadoresController@getProducts');
 /*--------Cocina-----------------*/
 Route::get('disoensadores','DisoensadoresController@getProducts');
+
+/*---------------Lamapras_pared-------------------*/
+//Route::get('/iluminacionInterior/lamparaspared','LamparasController@getProductsIntpared')->name('lamparaspared');
