@@ -13,7 +13,21 @@ class HumificadoresController extends Controller
             ->join('producto','producto.idProducto','=','Humidificadores.idProductoHumi_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/difusores.humificadores')->with('productos',$productos);
+            return view('/difusores/humificadores')->with('productos',$productos);
     }
 
+    public function viewProduct($id){
+
+        $position =  strpos($id, '-s');
+        $id = substr($id, $position + 2);
+
+        $product = Humificadores::
+        join('producto','producto.idProducto','=','Humidificadores.idProductoHumi_fk')
+        ->where('producto.idProducto','=', $id)->first();
+
+        $imagenes = Humificadores::imagenes($id);
+
+        return view('humificador')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+
+    }
 }
