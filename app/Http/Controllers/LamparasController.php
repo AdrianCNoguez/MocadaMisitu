@@ -9,7 +9,7 @@ use DB;
 class LamparasController extends Controller
 {
 
-    /*
+    
     public function getProducts(){
         $productos = lamparas::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
@@ -28,22 +28,12 @@ class LamparasController extends Controller
         ->get();
         return view('iluminacionExterior.lamparasExt')->with('productos',$productos);
     }
-    */
+    
 
     
-/*---------------------Lamparas_techo-------------------------------------- */
-       /* public function getProducts(){
-            $productos = Lamparas::
-                select('producto.idProducto','producto.nombre','imagenes.ruta')
-                ->join('producto','producto.idProducto','=','Lamparas.idProductoLamp_fk')
-                ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
-                ->where('TipoMontaje', '=', 'Techo')
-                ->get()->groupBy('idProducto');
-               return view('/iluminacionInterior.lamparas')->with('productos',$productos);
-        }*/
 /*--------------------------Lampara_techo_or_bannio------------------------------- */
-/*
-public function getProducts(){
+
+public function getLampTech(){
             $productos = Lamparas::
                 select('producto.idProducto','producto.nombre','imagenes.ruta')
                 ->join('producto','producto.idProducto','=','Lamparas.idProductoLamp_fk')
@@ -51,13 +41,13 @@ public function getProducts(){
                 ->where('TipoMontaje', '=', 'Techo')
                 ->orWhere('TipoMontaje', '=', 'Techo/baño' )
                 ->get()->groupBy('idProducto');
-               return view('/iluminacionInterior.lamparas')->with('productos',$productos);
+               return view('/iluminacionInterior/lamparas')->with('productos',$productos);
         }
 
-*/
 
 /*-------------------------'pared','Pared','N/A'------------------------------- */
-public function getProducts(){
+/*
+public function getProductsIntpared(){
     $productos = Lamparas::
         select('producto.idProducto','producto.nombre','imagenes.ruta')
         ->join('producto','producto.idProducto','=','Lamparas.idProductoLamp_fk')
@@ -66,9 +56,9 @@ public function getProducts(){
         ->orWhere('TipoMontaje', '=', 'Pared' )
         ->orWhere('TipoMontaje', '=', 'N/A')
         ->get()->groupBy('idProducto');
-       return view('/iluminacionInterior.lamparas')->with('productos',$productos);
+       return view('/iluminacionInterior/lamparaspared')->with('productos',$productos);
 }
-
+*/
 public function viewProduct($id){
 
     $position =  strpos($id, '-s');
@@ -80,7 +70,7 @@ public function viewProduct($id){
 
     $imagenes = Lamparas::imagenes($id);
 
-    return view('lamparas')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+    return view('lampara')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
 
 }
 

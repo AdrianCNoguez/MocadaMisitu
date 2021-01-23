@@ -14,7 +14,7 @@
     <div class="container">
         @section('breadcrumbs')
             <li class="breadcrumb-item text-white ctive" aria-current="page">Iluminacion Interior</li>
-            <li class="breadcrumb-item text-white active" aria-current="page">Tira Led</li>
+            <li class="breadcrumb-item text-white active" aria-current="page">Regletas</li>
         @endsection
         @include('layouts.nav-pages')
 

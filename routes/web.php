@@ -18,8 +18,10 @@ Route::get('/', function () {
 Route::get('/','LomasVendidoController@getProducts');
 /*--Checar---*/
 Route::get('ventiladores','VentiladoresController@getProducts')->name('ventiladores');
+
 Route::get('/electronica/timbres','TimbresController@getProducts')->name('timbres');
 Route::get('/electronica/timbres/{id}', 'TimbresController@viewProduct');
+
 Route::get('/exterior/reflectores','ReflectoresController@getProducts')->name('reflectores');
 Route::get('/exterior/lamparas','LamparasController@getProducts');
 Route::get('/exterior/faroles','FarolesController@getProducts');
@@ -27,21 +29,29 @@ Route::get('/exterior/tirasLed','TiraLedController@getProducts');
 
 
 /*-----Iluminacion_Interior-----*/
-Route::get('/iluminacionInterior/focos','FocosController@getProducts')->name('/iluminacionInterior/focos');
-Route::get('/iluminacionInterior/foco{id}', 'FocosController@viewProduct')->name('/iluminacionInterior/foco');
-/*---------------Lamapras_techo-------------------*/
-Route::get('lamparas','LamparasController@getProducts');
+Route::get('/iluminacionInterior/focos','FocosController@getProducts')->name('focos');
+Route::get('/iluminacionInterior/foco/{id}', 'FocosController@viewProduct');
+/*---------------Lamapras_pared-------------------*/
+Route::get('/iluminacionInterior/lamparaspared','LamparasController@getProductsIntpared')->name('lamparaspared');
+
+/*--------------------Lampara_techo----------------------------*/
+Route::get('/iluminacionInterior/lamparas','LamparasController@getLampTech')->name('lamparas');
+
 /*----------------------------------------*/
-Route::get('lamparasescritorio','LamparaEscritoriosController@getProducts');
-Route::get('mangueraled','MangueraLedsController@getProducts');
-Route::get('regletas','RegletasController@getProducts');
-Route::get('series','SeriesController@getProducts');
-Route::get('tiraled','TiraLedsController@getProducts');
+Route::get('/iluminacionInterior/lamparasescritorio','LamparaEscritoriosController@getProducts')->name('lamparasescritorio');
+Route::get('/iluminacionInterior/lamparaescritorio/{id}','viewProduct@getProducts');
+Route::get('/iluminacionInterior/manguerasled','MangueraLedsController@getProducts')->name('mangueraled');
+Route::get('/iluminacionInterior/mangueraled/{id}','viewProduct@viewProduct');
+Route::get('/iluminacionInterior/regletas','RegletasController@getProducts')->name('regletas');
+Route::get('/iluminacionInterior/regleta/{id}','RegletasController@viewProduct');
+Route::get('/iluminacionInterior/series','SeriesController@getProducts')->name('series');
+Route::get('/iluminacionInterior/serie/{id}','SeriesController@viewProduct');
+Route::get('/iluminacionInterior/tirasLed','TiraLedController@getProducts')->name('tirasLed');
 
 
 /*-----Selfie_ligth-----*/
-Route::get('/iluminacionInterior/aros','AroController@getProducts')->name('aros');;
-
+Route::get('/iluminacionInterior/aros','AroController@getProducts')->name('aros');
+Route::get('/iluminacionInterior/aro/{id}','viewProduct@getProducts');
 /*----Componentes_Electricos-------*/
 Route::get('extenciones','ExtencionesController@getProducts');
 Route::get('contactos','ContactosController@getProducts');

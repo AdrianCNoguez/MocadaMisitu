@@ -14,7 +14,7 @@ class MangueraLedsController extends Controller
             ->join('producto','producto.idProducto','=','mangueraled.idProductoMangue_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/iluminacionInterior.mangueraled')->with('productos',$productos);
+            return view('/iluminacionInterior/manguerasled')->with('productos',$productos);
     }
 
     public function viewProduct($id){

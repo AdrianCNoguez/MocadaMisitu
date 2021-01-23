@@ -48,19 +48,20 @@
                           <h4>Iluminación</h4>
                             <h5>Iluminación interior</h5>
                             <a href="{{ url('/iluminacionInterior/focos') }}" class="dropdown-item ml-2">Focos</a>
-                            <a href="#" class="dropdown-item ml-2">Lamparas de escritorio</a>
-                            <a href="#" class="dropdown-item ml-2">Lamparas de techo</a>
-                            <a href="#" class="dropdown-item ml-2">Mangueras</a>
-                            <a href="#" class="dropdown-item ml-2">Regletas</a>
-                            <a href="#" class="dropdown-item ml-2">Series</a>
+                            <a href="{{ url('/iluminacionInterior/lamparasescritorio') }}" class="dropdown-item ml-2">Lamparas de escritorio</a>
+                            <a href="{{ url('/iluminacionInterior/lamparas') }}" class="dropdown-item ml-2">Lamparas de techo</a>
+                            <!--<a href="{{ url('/iluminacionInterior/lamparaspared') }}" class="dropdown-item ml-2">Lamparas de pared</a>-->
+                            <a href="{{ url('/iluminacionInterior/manguerasled') }}" class="dropdown-item ml-2">Mangueras</a>
+                            <a href="{{ url('/iluminacionInterior/regletas') }}" class="dropdown-item ml-2">Regletas</a>
+                            <a href="{{ url('/iluminacionInterior/series') }}" class="dropdown-item ml-2">Series</a>
                             <a href="#" class="dropdown-item ml-2">Selfie light</a>
-                            <a href="#" class="dropdown-item ml-2">Tiras Led</a>
+                            <a href="{{ url('iluminacionInterior/tirasLed') }}" class="dropdown-item ml-2">Tiras Led</a>
                             <a href="#" class="dropdown-item ml-2">Vintage</a>
                             <h5>Iluminación exterior</h5>
                             <a href="{{ url('exterior/reflectores') }}" class="dropdown-item ml-2">Reflectores</a>
                             <a href="{{ url('exterior/lamparas') }}" class="dropdown-item ml-2">Lamparas</a>
                             <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Faroles</a>
-                            <a href="{{ url('exterior/tirasLed') }}" class="dropdown-item ml-2">Tiras led</a>
+                           <!-- <a href="{{ url('exterior/tirasLed') }}" class="dropdown-item ml-2">Tiras led</a> -->
                             <a href="#" class="dropdown-item ml-2">Jardin</a>
                         </div>
 

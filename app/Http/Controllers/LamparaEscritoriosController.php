@@ -14,7 +14,7 @@ class LamparaEscritoriosController extends Controller
             ->join('producto','producto.idProducto','=','lamparasescritorio.idProductoEscri_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/iluminacionInterior.lamparasescritorio')->with('productos',$productos);
+            return view('/iluminacionInterior/lamparasescritorio')->with('productos',$productos);
     }
 
     public function viewProduct($id){
