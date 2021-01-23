@@ -198,7 +198,7 @@
         <!--Inicio_ModalAbout-->
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#About">
-          Acerca de Nosotros
+        Sobre nosotros
         </button>
         <div class="modal fade" id="About" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
