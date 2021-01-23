@@ -73,7 +73,7 @@ Route::get('/decoracion_Hogar/maceta/{id}','MacetaController@viewProduct');
 Route::get('/difusores/humificadores','HumificadoresController@getProducts')->name("humificadores");
 Route::get('/difusores/humificador/{id}','HumificadoresController@viewProduct');
 /*--------Cocina-----------------*/
-Route::get('disoensadores','DisoensadoresController@getProducts');
+Route::get('/cocina/disoensadores','DisoensadoresController@getProducts')->name("disoensadores");
 
 /*---------------Lamapras_pared-------------------*/
 //Route::get('/iluminacionInterior/lamparaspared','LamparasController@getProductsIntpared')->name('lamparaspared');

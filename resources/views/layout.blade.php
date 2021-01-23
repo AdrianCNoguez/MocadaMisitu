@@ -87,8 +87,8 @@
                           <a href="{{ url('/decoracion_Hogar/macetas')}}" class="dropdown-item ml-2">Macetas</a>
                           <h4>Difusores</h4>                          
                           <a href="{{ url('/difusores/humificadores')}}" class="dropdown-item ml-2">Humificador</a>
-                          <h4>Cocina</h4>
-                          <a href="#" class="dropdown-item ml-2">Dispensadores</a>
+                          <h4>Cocina</h4>                         
+                          <a href="{{ url('/cocina/disoensadores')}}" class="dropdown-item ml-2">Dispensadores</a>
                         </div>
                         <div class="col-sm-5 col-lg-auto">
 
