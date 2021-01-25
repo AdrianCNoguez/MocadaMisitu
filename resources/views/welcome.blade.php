@@ -65,7 +65,7 @@
 
     <!-- CATEGORIAS -->
     <div class="container-fluid mt-5 categorias">
-        <div class="row bg-primary justify-content-center justify-content-lg-around categories">
+        <div class="row bg-blue justify-content-center justify-content-lg-around categories">
             <div class="col-12 text-center text-white p-3">
                 <h3>Nuestras categorías</h3>
             </div>

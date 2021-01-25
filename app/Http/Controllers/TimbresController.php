@@ -14,13 +14,13 @@ class TimbresController extends Controller
         ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
         ->get()->groupBy('idProducto');
 
-        return view('timbres')->with('productos',$productos);
+        return view('timbres.timbres')->with('productos',$productos);
     }
 
     public function viewProduct($id){
 
-        $position =  strpos($id, '-s');
-        $id = substr($id, $position + 2);
+        $position =  strpos($id, '-xs');
+        $id = substr($id, $position + 3);
 
         $product = Timbres::
         join('producto','producto.idProducto','=','timbres.idProdutoTimbre_fk')
@@ -28,7 +28,7 @@ class TimbresController extends Controller
 
         $imagenes = Timbres::imagenes($id);
 
-        return view('timbre')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+        return view('timbres.timbre')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
 
     }
 }

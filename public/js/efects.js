@@ -49,3 +49,4 @@ $('#img-mini img').click(function() {
     var changeSrc = $(this).attr('src');
     $('#imageBox').attr('src', changeSrc);
 });
+

@@ -1,5 +1,5 @@
 body {
-    background: #202020;
+    background: #424242;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -7,6 +7,14 @@ footer {
     position: block;
     bottom: 0px;
     width: 100%;
+}
+
+.bg-blue {
+    background: #2E9AFE;
+}
+
+.browser {
+    border-radius: 10px;
 }
 
 .carousel .slide {
@@ -365,7 +373,7 @@ footer {
 }
 
 .mini-img {
-    border: 2px solid #333;
+    border: 1px solid #333;
     border-radius: 2px;
     cursor: pointer;
     width: 100%;
@@ -375,6 +383,7 @@ footer {
     max-width: 70px;
     min-height: 100px;
     max-height: 100px;
+    margin-bottom: 10px;
 }
 
 .first-img {

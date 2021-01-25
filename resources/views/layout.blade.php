@@ -68,7 +68,7 @@
                             <h4>Electronica</h4>
                             <a href="{{route('ventiladores')}}" class="dropdown-item ml-2">Ventiladores</a>
                             <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
-                            <a href="#" class="dropdown-item ml-2">Bocina</a>
+                            <a href="{{route('bocinas')}}" class="dropdown-item ml-2">Bocina</a>
                             <h4>Componentes Electricos</h4>
                             <a href="" class="dropdown-item ml-2">Extenciones</a>
                             <a href="#" class="dropdown-item ml-2">Contactos</a>
