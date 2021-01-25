@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/','LomasVendidoController@getProducts');
+<<<<<<< HEAD
 /*--Checar---*/
 Route::get('ventiladores','VentiladoresController@getProducts')->name('ventiladores');
 Route::get('/electronica/timbres','TimbresController@getProducts')->name('timbres');
@@ -53,3 +54,12 @@ Route::get('maceta','MacetaController@getProducts');
 Route::get('humificadores','HumificadoresController@getProducts');
 /*--------Cocina-----------------*/
 Route::get('disoensadores','DisoensadoresController@getProducts');
+=======
+Route::get('/electronica/ventiladores','VentiladoresController@getProducts')->name('ventiladores');
+Route::get('/electronica/ventiladores/{id}', 'VentiladoresController@viewProduct');
+Route::get('/electronica/timbres','TimbresController@getProducts')->name('timbres');
+Route::get('/electronica/timbres/{id}', 'TimbresController@viewProduct');
+Route::get('/electronica/bocinas','BocinasController@getProducts')->name('bocinas');
+Route::get('/electronica/bocinas/{id}', 'BocinasController@viewProduct');
+
+>>>>>>> Laravel

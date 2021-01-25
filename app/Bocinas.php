@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Ventiladores extends Model
+class Bocinas extends Model
 {
-    protected $table = 'ventiladores';
+    protected $table = 'bocina';
 
     public static function imagenes($id)
     {
