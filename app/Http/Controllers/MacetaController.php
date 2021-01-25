@@ -13,6 +13,21 @@ class MacetaController extends Controller
             ->join('producto','producto.idProducto','=','Maceta.idProductoMaceta_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/decoracion_Hogar.maceta')->with('productos',$productos);
+            return view('/decoracion_Hogar/macetas')->with('productos',$productos);
+    }
+
+    public function viewProduct($id){
+
+        $position =  strpos($id, '-s');
+        $id = substr($id, $position + 2);
+
+        $product = Maceta::
+        join('producto','producto.idProducto','=','Maceta.idProductoMaceta_fk')
+        ->where('producto.idProducto','=', $id)->first();
+
+        $imagenes = Maceta::imagenes($id);
+
+        return view('maceta')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+
     }
 }

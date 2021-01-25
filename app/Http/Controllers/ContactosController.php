@@ -14,6 +14,21 @@ class ContactosController extends Controller
             ->join('producto','producto.idProducto','=','Contactos.idProductoContac_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/componentesElectricos.contactos')->with('productos',$productos);
+            return view('/componentesElectricos/contactos')->with('productos',$productos);
+    }
+
+    public function viewProduct($id){
+
+        $position =  strpos($id, '-s');
+        $id = substr($id, $position + 2);
+
+        $product = Contactos::
+        join('producto','producto.idProducto','=','Contactos.idProductoContac_fk')
+        ->where('producto.idProducto','=', $id)->first();
+
+        $imagenes = Contactos::imagenes($id);
+
+        return view('contacto')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+
     }
 }

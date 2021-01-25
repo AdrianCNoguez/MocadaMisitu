@@ -47,20 +47,21 @@
                         <div class="col-sm-5 col-lg-auto bdr">
                           <h4>Iluminación</h4>
                             <h5>Iluminación interior</h5>
-                            <a href="#" class="dropdown-item ml-2">Focos</a>
-                            <a href="#" class="dropdown-item ml-2">Lamparas de escritorio</a>
-                            <a href="#" class="dropdown-item ml-2">Lamparas de techo</a>
-                            <a href="#" class="dropdown-item ml-2">Mangueras</a>
-                            <a href="#" class="dropdown-item ml-2">Regletas</a>
-                            <a href="#" class="dropdown-item ml-2">Series</a>
-                            <a href="#" class="dropdown-item ml-2">Selfie light</a>
-                            <a href="#" class="dropdown-item ml-2">Tiras Led</a>
+                            <a href="{{ url('/iluminacionInterior/focos') }}" class="dropdown-item ml-2">Focos</a>
+                            <a href="{{ url('/iluminacionInterior/lamparasescritorio') }}" class="dropdown-item ml-2">Lamparas de escritorio</a>
+                            <a href="{{ url('/iluminacionInterior/lamparas') }}" class="dropdown-item ml-2">Lamparas de techo</a>
+                            <!--<a href="{{ url('/iluminacionInterior/lamparaspared') }}" class="dropdown-item ml-2">Lamparas de pared</a>-->
+                            <a href="{{ url('/iluminacionInterior/manguerasled') }}" class="dropdown-item ml-2">Mangueras</a>
+                            <a href="{{ url('/iluminacionInterior/regletas') }}" class="dropdown-item ml-2">Regletas</a>
+                            <a href="{{ url('/iluminacionInterior/series') }}" class="dropdown-item ml-2">Series</a>
+                            <a href="{{ url('/iluminacionInterior/aros') }}" class="dropdown-item ml-2">Selfie light</a>
+                            <a href="{{ url('/iluminacionInterior/tirasLed') }}" class="dropdown-item ml-2">Tiras Led</a>
                             <a href="#" class="dropdown-item ml-2">Vintage</a>
                             <h5>Iluminación exterior</h5>
                             <a href="{{ url('exterior/reflectores') }}" class="dropdown-item ml-2">Reflectores</a>
                             <a href="{{ url('exterior/lamparas') }}" class="dropdown-item ml-2">Lamparas</a>
                             <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Faroles</a>
-                            <a href="{{ url('exterior/tirasLed') }}" class="dropdown-item ml-2">Tiras led</a>
+                           <!-- <a href="{{ url('exterior/tirasLed') }}" class="dropdown-item ml-2">Tiras led</a> -->
                             <a href="#" class="dropdown-item ml-2">Jardin</a>
                         </div>
 
@@ -68,6 +69,7 @@
                             <h4>Electronica</h4>
                             <a href="{{route('ventiladores')}}" class="dropdown-item ml-2">Ventiladores</a>
                             <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
+<<<<<<< HEAD
                             <a href="{{route('bocinas')}}" class="dropdown-item ml-2">Bocina</a>
                             <h4>Componentes Electricos</h4>
                             <a href="" class="dropdown-item ml-2">Extenciones</a>
@@ -77,17 +79,28 @@
                             <h4>Entretnimiento</h4>
                             <a href="#" class="dropdown-item ml-2">Consolas</a>
                             <a href="#" class="dropdown-item ml-2">Juguetes</a>
+=======
+                            <a href="#" class="dropdown-item ml-2">Bocina</a>
+                            <h4>Componentes Electricos</h4>                            
+                            <a href="{{ url('/componentesElectricos/extenciones') }}" class="dropdown-item ml-2">Extenciones</a>
+                            <a href="{{ url('/componentesElectricos/contactos') }}" class="dropdown-item ml-2">Contactos</a>             
+                            <a href="{{ url('/componentesElectricos/soquets') }}" class="dropdown-item ml-2">Soquets</a>                            
+                            <a href="{{ url('/componentesElectricos/cables') }}" class="dropdown-item ml-2">Cable</a>
+                            <h4>Entretnimiento</h4>                            
+                            <a href="{{ url('/entretenimiento/consolas') }}" class="dropdown-item ml-2">Consolas</a>
+                           <!--<a href="#" class="dropdown-item ml-2">Juguetes</a>-->
+>>>>>>> 2f01888811b72a282f1f95b8bedd765cb94ee204
                         </div>
                         <div class="col-sm-5 col-lg-auto">
                           <h4>Decoracion para el hogar</h4>
-                          <a href="#" class="dropdown-item ml-2">Herrajes</a>
-                          <a href="#" class="dropdown-item ml-2">Proyectores</a>
-                          <a href="#" class="dropdown-item ml-2">Espejos</a>
-                          <a href="#" class="dropdown-item ml-2">Macetas</a>
-                          <h4>Difusores</h4>
-                          <a href="#" class="dropdown-item ml-2">Humificador</a>
-                          <h4>Cocina</h4>
-                          <a href="#" class="dropdown-item ml-2">Dispensadores</a>
+                          <a href="{{ url('/decoracion_Hogar/herrajes') }}" class="dropdown-item ml-2">Herrajes</a>                         
+                          <a href="{{ url('/decoracion_Hogar/proyectores')}}" class="dropdown-item ml-2">Proyectores</a>
+                          <a href="{{ url('/decoracion_Hogar/espejos')}}" class="dropdown-item ml-2">Espejos</a>
+                          <a href="{{ url('/decoracion_Hogar/macetas')}}" class="dropdown-item ml-2">Macetas</a>
+                          <h4>Difusores</h4>                          
+                          <a href="{{ url('/difusores/humificadores')}}" class="dropdown-item ml-2">Humificador</a>
+                          <h4>Cocina</h4>                         
+                          <a href="{{ url('/cocina/disoensadores')}}" class="dropdown-item ml-2">Dispensadores</a>
                         </div>
                         <div class="col-sm-5 col-lg-auto">
 
@@ -197,7 +210,7 @@
         <!--Inicio_ModalAbout-->
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#About">
-          Acerca de Nosotros
+        Sobre nosotros
         </button>
         <div class="modal fade" id="About" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">

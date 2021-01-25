@@ -14,6 +14,23 @@ class CableController extends Controller
             ->join('producto','producto.idProducto','=','Cable.idProductoCable_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/componentesElectricos.cable')->with('productos',$productos);
+            return view('/componentesElectricos/cables')->with('productos',$productos);
     }
+
+    public function viewProduct($id){
+
+        $position =  strpos($id, '-s');
+        $id = substr($id, $position + 2);
+
+        $product = Cable::
+        join('producto','producto.idProducto','=','Cable.idProductoCable_fk')
+        ->where('producto.idProducto','=', $id)->first();
+
+        $imagenes = Cable::imagenes($id);
+
+        return view('cable')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+
+    }
+
+
 }

@@ -7,6 +7,7 @@ use App\TiraLeds;
 class TiraLedsController extends Controller
 {
     //
+    /*
     public function getProducts(){
         $productos = TiraLeds::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
@@ -14,5 +15,5 @@ class TiraLedsController extends Controller
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('/iluminacionInterior.tiraled')->with('productos',$productos);
-    }
+    }*/
 }

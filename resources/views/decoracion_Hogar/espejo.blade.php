@@ -13,29 +13,49 @@
 
     <div class="container">
         @section('breadcrumbs')
-            <li class="breadcrumb-item text-white ctive" aria-current="page">Iluminación Interiror</li>
-            <li class="breadcrumb-item text-white active" aria-current="page">Espejos</li>
+            <li class="breadcrumb-item text-white ctive" aria-current="page">Decoración para el Hogar</li>
+            <li class="breadcrumb-item text-white active" aria-current="page">Espejo</li>
         @endsection
         @include('layouts.nav-pages')
 
-        <div class="row justify-content-center justify-content-lg-start mb-2">
-            @foreach ($productos as $item)
-            <div class="col-10 col-md-3 mb-3 no-gutters">
-                <div class="card border-0 rounded-lg">
-                    <div class="img-container p-0">
-                        <a href="">
-                            <img src="{{ asset('img/'.$item->first()['ruta'] ) }}" alt="img"s class="obj-img">
-                        </a>
-                    </div>
+    
 
-                    <div class="card-body pl-2 pr-2 pb-0 text-center">
-                        <p class="card-title font-weight-bold">{{ $item->first()['nombre'] }}</p>
-                        <a href="#" class="btn btn-success mb-3"><i class="fas fa-eye"></i>Ver detalles</a>
-                    </div>
+    <div class="card mb-3">
+        <div class="row no-gutters align-items-center">
+            <div class="col-12 col-md-5">
+                <img id="imageBox" src="{{ asset('img/'.$imagenes->first()['ruta'] ) }}" alt="{{ $imagenes->first() }}" class="img-fluid first-img">
+                <div class="row p-2 justify-content-center">
+                    @foreach ($imagenes as $img)
+                        <div class="col-3" id="img-mini">
+                            <img src="{{ asset('img/'.$img->ruta) }}" alt="" class="img-fluid mini-img">
+                        </div>
+                    @endforeach
                 </div>
             </div>
-            @endforeach
 
+            <div class="col-md-7">
+                <div class="card-body">
+                      <h3 class="title-product">{{ $product->nombre }}</h3>
+                      <p class="card-text text-justify">{{ $product->descripcion }}</p>
+                      <h5 class="card-title">Características</h5>
+                      <ul>
+                          <li>Marca: {{ $product->marca }}</li>
+                          <li>Modelo: {{ $product->modelo }}</li>
+                          <li>Numero de melodias: {{ $product->numMelodias }}</li>
+                          <li>Cobertura: {{ $product->Cobertura }}</li>
+                          <li>Alimentación: {{ $product->alimentacion }}</li>
+                          <li>Ambiente: {{ $product->ambiente }} </li>
+                      </ul>
+                      <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
+                      <button type="button" class="btn btn-outline-dark btnlg">Comprar</button>
+                </div>
+            </div>
         </div>
     </div>
+
+    </div>
+
+    <script>
+        
+    </script>
 @endsection
