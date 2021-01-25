@@ -16,18 +16,11 @@ Route::get('/', function () {
 });
 Route::get('/','LomasVendidoController@getProducts');
 /*--Checar---*/
-<<<<<<< HEAD
 Route::get('/electronica/ventiladores','VentiladoresController@getProducts')->name('ventiladores');
 Route::get('/electronica/timbres','TimbresController@getProducts')->name('timbres');
 Route::get('/electronica/timbres/{id}', 'TimbresController@viewProduct');
 Route::get('/electronica/bocinas','bocinasController@getProducts')->name('bocinas');
 Route::get('/electronica/bocinas/{id}','bocinasController@viewProduct');
-=======
-Route::get('ventiladores','VentiladoresController@getProducts')->name('ventiladores');
-
-Route::get('/electronica/timbres','TimbresController@getProducts')->name('timbres');
-Route::get('/electronica/timbres/{id}', 'TimbresController@viewProduct');
->>>>>>> 2f01888811b72a282f1f95b8bedd765cb94ee204
 
 Route::get('/exterior/reflectores','ReflectoresController@getProducts')->name('reflectores');
 Route::get('/exterior/lamparas','LamparasController@getProducts');
