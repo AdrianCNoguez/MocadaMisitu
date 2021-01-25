@@ -14,7 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
 Route::get('/','LomasVendidoController@getProducts');
 /*--Checar---*/
 Route::get('ventiladores','VentiladoresController@getProducts')->name('ventiladores');
