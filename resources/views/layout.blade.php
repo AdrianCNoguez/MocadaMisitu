@@ -48,7 +48,7 @@
                           <h4>Iluminación</h4>
                             <h5>Iluminación interior</h5>
                             <a href="{{ url('/iluminacionInterior/focos') }}" class="dropdown-item ml-2">Focos</a>
-                            <a href="{{ url('/iluminacionInterior/lamparasescritorio') }}" class="dropdown-item ml-2">Lamparas de escritorio</a>
+                            <a href="{{ url('/iluminacionInterior/lamparasescritorios') }}" class="dropdown-item ml-2">Lamparas de escritorio</a>
                             <a href="{{ url('/iluminacionInterior/lamparas') }}" class="dropdown-item ml-2">Lamparas de techo</a>
                             <!--<a href="{{ url('/iluminacionInterior/lamparaspared') }}" class="dropdown-item ml-2">Lamparas de pared</a>-->
                             <a href="{{ url('/iluminacionInterior/manguerasled') }}" class="dropdown-item ml-2">Mangueras</a>
@@ -63,7 +63,7 @@
                             <a href="{{ url('exterior/lamparas') }}" class="dropdown-item ml-2">Lamparas</a>
                             <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Faroles</a>
                            <!-- <a href="{{ url('exterior/tirasLed') }}" class="dropdown-item ml-2">Tiras led</a> -->
-                            <a href="#" class="dropdown-item ml-2">Jardin</a>
+                            <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Jardin</a>
                         </div>
 
                         <div class="col-sm-5 col-lg-auto bdr">
@@ -80,8 +80,9 @@
                           
                             <h4>Entretenimiento</h4> 
                             <a href="{{ url('/entretenimiento/consolas') }}" class="dropdown-item ml-2">Consolas</a>
-                            <a href="#" class="dropdown-item ml-2">Juguetes</a>
-                            <a href="#" class="dropdown-item ml-2">Bocina</a>
+                            <!--<a href="#" class="dropdown-item ml-2">Juguetes</a>-->
+                            /electronica/bocinas
+                            <a href="" class="dropdown-item ml-2">Bocina</a>
 
                             <h4>Componentes Electricos</h4>                            
                             <a href="{{ url('/componentesElectricos/extenciones') }}" class="dropdown-item ml-2">Extenciones</a>

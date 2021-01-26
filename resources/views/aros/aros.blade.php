@@ -23,14 +23,14 @@
             <div class="col-10 col-md-3 mb-3 no-gutters">
                 <div class="card border-0 rounded-lg">
                     <div class="img-container p-0">
-                        <a href="{{url('/iluminacionInterior/aros/'.Str::slug($item->first()['nombre'].' s'.$item->first()['idProducto']))}}">
+                        <a href="{{url('/iluminacionInterior/aros'.Str::slug($item->first()['nombre'].' s'.$item->first()['idProducto']))}}">
                             <img src="{{ asset('img/'.$item->first()['ruta'] ) }}" alt="img"s class="obj-img">
                         </a>
                     </div>
 
                     <div class="card-body pl-2 pr-2 pb-0 text-center">
                         <p class="card-title font-weight-bold">{{ $item->first()['nombre'] }}</p>
-                        <a href="{{url('/iluminacionInterior/aros',Str::slug($item->first()['nombre'].'-s'.$item->first()['idProducto'])) }}" class="btn btn-success mb-3"><i class="fas fa-eye"></i>Ver detalles</a>
+                        <a href="{{url('/iluminacionInterior/aro',Str::slug($item->first()['nombre'].'-s'.$item->first()['idProducto'])) }}" class="btn btn-success mb-3"><i class="fas fa-eye"></i>Ver detalles</a>
                     </div>
                 </div>
             </div>

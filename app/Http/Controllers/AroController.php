@@ -14,7 +14,7 @@ class AroController extends Controller
             ->join('producto','producto.idProducto','=','aro.idProductoAro_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('aros')->with('productos',$productos);
+            return view('aros.aros')->with('productos',$productos);
     }
 
     public function viewProduct($id){
@@ -28,7 +28,9 @@ class AroController extends Controller
 
         $imagenes = Aro::imagenes($id);
 
-        return view('aro')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+        return view('aros.aro')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
 
     }
+    
+
 }

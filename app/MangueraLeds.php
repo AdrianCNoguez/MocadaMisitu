@@ -8,4 +8,12 @@ class MangueraLeds extends Model
 {
     //
     protected $table = 'mangueraled';
+    protected $primaryKey='idManguera';
+
+    public static function imagenes($id)
+    {
+        $imagenes = Imagenes::select('ruta')->where('idProductoImagen_fk', '=', $id)->get();
+
+        return $imagenes;
+    }
 }

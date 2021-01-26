@@ -14,7 +14,7 @@
     <div class="container">
         @section('breadcrumbs')
             <li class="breadcrumb-item text-white ctive" aria-current="page">Iluminacion Interior</li>
-            <li class="breadcrumb-item text-white active" aria-current="page">Focos</li>
+            <li class="breadcrumb-item text-white active" aria-current="page">Series</li>
         @endsection
         @include('layouts.nav-pages')
 
@@ -41,10 +41,10 @@
                       <ul>
                           <li>Marca: {{ $product->marca }}</li>
                           <li>Modelo: {{ $product->modelo }}</li>
-                          <li>Numero de melodias: {{ $product->numMelodias }}</li>
-                          <li>Cobertura: {{ $product->Cobertura }}</li>
-                          <li>Alimentación: {{ $product->alimentacion }}</li>
-                          <li>Ambiente: {{ $product->ambiente }} </li>
+                          
+                          <li>Alimentacion: {{ $product->Alimentacion }}</li>
+                          <li>Medida: {{ $product->medida }}</li>
+                          <li>Tipo: {{ $product->Tipo }}</li>
                       </ul>
                       <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
                       <button type="button" class="btn btn-outline-dark btnlg">Comprar</button>
