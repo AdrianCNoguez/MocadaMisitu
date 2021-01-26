@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Disoensadores extends Model
+class Dispensadores extends Model
 {
     //
     protected $table ='disoensadores';

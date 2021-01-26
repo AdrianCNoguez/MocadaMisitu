@@ -15,13 +15,13 @@ class ProyectorController extends Controller
             ->join('producto','producto.idProducto','=','Proyector.idProductoProyector_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/decoracion_Hogar/proyectores')->with('productos',$productos);
+            return view('proyectores.proyectores')->with('productos',$productos);
     }
 
     public function viewProduct($id){
 
-        $position =  strpos($id, '-s');
-        $id = substr($id, $position + 2);
+        $position =  strpos($id, '-xs');
+        $id = substr($id, $position + 3);
 
         $product = Proyector::
         join('producto','producto.idProducto','=','Proyector.idProductoProyector_fk')
@@ -29,7 +29,7 @@ class ProyectorController extends Controller
 
         $imagenes = Proyector::imagenes($id);
 
-        return view('proyector')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+        return view('proyectores.proyector')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
 
     }
 }

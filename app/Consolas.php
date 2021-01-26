@@ -6,9 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Consolas extends Model
 {
-    //consolas
     protected $table ='consolas';
-    protected $primaryKey='idConsola';
 
     public static function imagenes($id)
     {

@@ -14,21 +14,23 @@ class ConsolasController extends Controller
             ->join('producto','producto.idProducto','=','Consolas.idProductoConsola_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/entretenimiento/consolas')->with('productos',$productos);
+            return view('consolas.consolas')->with('productos',$productos);
     }
 
     public function viewProduct($id){
 
-        $position =  strpos($id, '-s');
-        $id = substr($id, $position + 2);
+        $position =  strpos($id, '-xs');
+        $id = substr($id, $position + 3);
 
         $product = Consolas::
         join('producto','producto.idProducto','=','Consolas.idProductoConsola_fk')
         ->where('producto.idProducto','=', $id)->first();
 
+        
+
         $imagenes = Consolas::imagenes($id);
 
-        return view('consola')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+        return view('consolas.consola')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
 
     }
 }

@@ -4,32 +4,33 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Disoensadores;
-class DisoensadoresController extends Controller
+use App\Dispensadores;
+
+class DispensadoresController extends Controller
 {
     //
     public function getProducts(){
-        $productos = Disoensadores::
+        $productos = Dispensadores::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
             ->join('producto','producto.idProducto','=','disoensadores.idProdutoDispen_fk')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/cocina/disoensadores')->with('productos',$productos);
+            return view('dispensadores.dispensadores')->with('productos',$productos);
     }
 
 
     public function viewProduct($id){
 
-        $position =  strpos($id, '-s');
-        $id = substr($id, $position + 2);
+        $position =  strpos($id, '-xs');
+        $id = substr($id, $position + 3);
 
-        $product = Disoensadores::
+        $product = Dispensadores::
         join('producto','producto.idProducto','=','disoensadores.idProdutoDispen_fk')
         ->where('producto.idProducto','=', $id)->first();
 
-        $imagenes = Disoensadores::imagenes($id);
+        $imagenes = Dispensadores::imagenes($id);
 
-        return view('disoensador')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+        return view('dispensadores.dispensador')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
 
     }
 }

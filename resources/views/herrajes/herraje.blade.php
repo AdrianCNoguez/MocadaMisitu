@@ -13,8 +13,8 @@
 
     <div class="container">
         @section('breadcrumbs')
-            <li class="breadcrumb-item text-white ctive" aria-current="page">Componentes Electricos</li>
-            <li class="breadcrumb-item text-white active" aria-current="page">Contacto</li>
+            <li class="breadcrumb-item text-white ctive" aria-current="page">Decoración para el hogar</li>
+            <li class="breadcrumb-item text-white active" aria-current="page">Herrajes</li>
         @endsection
         @include('layouts.nav-pages')
 
@@ -23,11 +23,11 @@
     <div class="card mb-3">
         <div class="row no-gutters align-items-center">
             <div class="col-12 col-md-5">
-                <img id="imageBox" src="{{ asset('img/'.$imagenes->first()['ruta'] ) }}" alt="{{ $imagenes->first() }}" class="img-fluid first-img">
+                <img id="imageBox" src="{{ asset('img/'.$imagenes->first()['ruta'] ) }}" alt="{{ $imagenes->first() }}" class="img-fluid first-img mt-2">
                 <div class="row p-2 justify-content-center">
                     @foreach ($imagenes as $img)
-                        <div class="col-3" id="img-mini">
-                            <img src="{{ asset('img/'.$img->ruta) }}" alt="" class="img-fluid mini-img">
+                        <div class="col-auto" id="img-mini">
+                            <img src="{{ asset('img/'.$img->ruta) }}" alt="" class="mini-img">
                         </div>
                     @endforeach
                 </div>
@@ -41,10 +41,12 @@
                       <ul>
                           <li>Marca: {{ $product->marca }}</li>
                           <li>Modelo: {{ $product->modelo }}</li>
-                          <li>Numero de melodias: {{ $product->numMelodias }}</li>
-                          <li>Cobertura: {{ $product->Cobertura }}</li>
-                          <li>Alimentación: {{ $product->alimentacion }}</li>
-                          <li>Ambiente: {{ $product->ambiente }} </li>
+                          <li>Forma: {{ $product->Forma }} </li>
+                          <li>Tipo de rosca: {{ $product->tipoRosca }}</li>
+                          <li>Medida de cable: {{ $product->medidaCable }}</li>
+                          <li>Material: {{ $product->Material }}</li>
+                          <li>Medidas: {{ $product->medidas }}</li>
+                          <li>Color: {{ $product->colorHerraje }} </li>
                       </ul>
                       <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
                       <button type="button" class="btn btn-outline-dark btnlg">Comprar</button>

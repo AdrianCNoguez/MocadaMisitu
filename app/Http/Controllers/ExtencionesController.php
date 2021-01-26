@@ -6,20 +6,19 @@ use Illuminate\Http\Request;
 use App\Extenciones;
 class ExtencionesController extends Controller
 {
-    //
     public function getProducts(){
         $productos = Extenciones::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
             ->join('producto','producto.idProducto','=','Extenciones.idProductoExt')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('/componentesElectricos/extenciones')->with('productos',$productos);
+            return view('extenciones.extenciones')->with('productos',$productos);
     }
 
     public function viewProduct($id){
 
-        $position =  strpos($id, '-s');
-        $id = substr($id, $position + 2);
+        $position =  strpos($id, '-xs');
+        $id = substr($id, $position + 3);
 
         $product = Extenciones::
         join('producto','producto.idProducto','=','Extenciones.idProductoExt')
@@ -27,7 +26,7 @@ class ExtencionesController extends Controller
 
         $imagenes = Extenciones::imagenes($id);
 
-        return view('extencion')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+        return view('extenciones.extencion')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
 
     }
 }

@@ -13,10 +13,12 @@
 
     <div class="container">
         @section('breadcrumbs')
-            <li class="breadcrumb-item text-white ctive" aria-current="page">Componetes Electricos</li>
-            <li class="breadcrumb-item text-white active" aria-current="page">Cables</li>
+        <li class="breadcrumb-item text-white ctive" aria-current="page">Decoración para el hogar</li>
+        <li class="breadcrumb-item text-white active" aria-current="page">Herrajes</li>
         @endsection
         @include('layouts.nav-pages')
+
+        
 
         <div class="row justify-content-center justify-content-lg-start mb-2">
             @foreach ($productos as $item)
@@ -30,7 +32,7 @@
 
                     <div class="card-body pl-2 pr-2 pb-0 text-center">
                         <p class="card-title font-weight-bold">{{ $item->first()['nombre'] }}</p>
-                        <a href="#" class="btn btn-success mb-3"><i class="fas fa-eye"></i>Ver detalles</a>
+                        <a href="{{url('/decoracion/herrajes/'.Str::slug($item->first()['nombre'].'-xs'.$item->first()['idProducto']))}}" class="btn green mb-3 text-white"><i class="fas fa-eye"></i>Ver detalles</a>
                     </div>
                 </div>
             </div>
