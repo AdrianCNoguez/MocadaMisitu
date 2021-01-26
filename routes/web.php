@@ -34,6 +34,7 @@ Route::get('/componentes/cables/{id}','CableController@viewProduct');
 Route::get('/entretenimiento/consolas','ConsolasController@getProducts')->name('consolas');
 Route::get('/entretenimiento/consolas/{id}','ConsolasController@viewProduct');
 
+
 Route::get('/decoracion/herrajes','HerrajesController@getProducts')->name('herrajes');
 Route::get('/decoracion/herrajes/{id}','HerrajesController@viewProduct');
 Route::get('/decoracion/proyectores','ProyectorController@getProducts')->name('proyectores');
