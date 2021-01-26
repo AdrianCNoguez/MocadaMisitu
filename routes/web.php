@@ -60,6 +60,7 @@ Route::get('/iluminacionInterior/focos','FocosController@getProducts')->name('fo
 Route::get('/iluminacionInterior/focos/{id}', 'FocosController@viewProduct');
 /*-----lampara_techo----*/
 Route::get('/iluminacionInterior/lamparas','LamparasController@getLampTech')->name('lamparas');
+Route::get('/iluminacionInterior/lampara/{id}','LamparasController@viewProduct');
 /*----------------------*/
 Route::get('/iluminacionInterior/lamparasescritorios','LamparaEscritoriosController@getProducts')->name('lamparasescritorio');
 Route::get('/iluminacionInterior/lamparaescritorio/{id}','LamparaEscritoriosController@viewProduct');
@@ -74,8 +75,6 @@ Route::get('/iluminacionInterior/tiraLed/{id}','TiraLedController@viewProduct');
 /*-----Selfie_ligth-----*/
 Route::get('/iluminacionInterior/aros','AroController@getProducts')->name('aros');
 Route::get('/iluminacionInterior/aro/{id}','AroController@viewProduct');
-
-
 
 /*---------------Lamapras_pared-------------------*/
 //Route::get('/iluminacionInterior/lamparaspared','LamparasController@getProductsIntpared')->name('lamparaspared');

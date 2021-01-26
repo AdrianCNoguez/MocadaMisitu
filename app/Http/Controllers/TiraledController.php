@@ -26,7 +26,7 @@ class TiraLedController extends Controller
         $id = substr($id, $position + 3);
 
         $product = TiraLed::
-        join('producto','producto.idProducto','=','series.idProductoSerie_fk')
+        join('producto','producto.idProducto','=','tiraled.idProdTira_fk')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = TiraLed::imagenes($id);
