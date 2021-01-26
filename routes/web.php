@@ -74,9 +74,6 @@ Route::get('/iluminacionInterior/tiraLed/{id}','TiraLedController@viewProduct');
 /*-----Selfie_ligth-----*/
 Route::get('/iluminacionInterior/aros','AroController@getProducts')->name('aros');
 Route::get('/iluminacionInterior/aro/{id}','viewProduct@getProducts');
-/*-----Entretenimiento-----------*/
-Route::get('/entretenimiento/consolas','ConsolasController@getProducts')->name("consolas");
-Route::get('consola','ConsolasController@viewProduct');
 
 
 
