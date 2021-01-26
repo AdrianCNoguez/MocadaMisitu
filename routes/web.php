@@ -79,5 +79,6 @@ Route::get('/entretenimiento/consolas','ConsolasController@getProducts')->name("
 Route::get('consola','ConsolasController@viewProduct');
 
 
+
 /*---------------Lamapras_pared-------------------*/
 //Route::get('/iluminacionInterior/lamparaspared','LamparasController@getProductsIntpared')->name('lamparaspared');
