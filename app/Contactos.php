@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Contactos extends Model
 {
     protected $table ='contactos';
-    protected $primaryKey='idContactos';
 
     public static function imagenes($id)
     {

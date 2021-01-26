@@ -71,6 +71,16 @@
                             <a href="{{route('ventiladores')}}" class="dropdown-item ml-2">Ventiladores</a>
                             <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
                             <a href="{{route('bocinas')}}" class="dropdown-item ml-2">Bocina</a>
+<<<<<<< HEAD
+                            <h4>Componentes Electricos</h4>                            
+                            <a href="{{ route('extenciones') }}" class="dropdown-item ml-2">Extenciones</a>
+                            <a href="{{ route('contactos') }}" class="dropdown-item ml-2">Contactos</a>             
+                            <a href="{{ route('soquets') }}" class="dropdown-item ml-2">Soquets</a>                            
+                            <a href="{{ route('cables') }}" class="dropdown-item ml-2">Cable</a>
+                            <h4>Entretnimiento</h4>                            
+                            <a href="{{ route('consolas') }}" class="dropdown-item ml-2">Consolas</a>
+                           <!--<a href="#" class="dropdown-item ml-2">Juguetes</a>-->
+=======
                         
                             <h4>Componentes Electricos</h4>
                             <a href="" class="dropdown-item ml-2">Extenciones</a>
@@ -93,17 +103,18 @@
                             
                            <!--<a href="#" class="dropdown-item ml-2">Juguetes</a>-->
 
+>>>>>>> 0f3ffef03b3fb055b5ca7cda52396ee27b1a7c6b
                         </div>
                         <div class="col-sm-5 col-lg-auto">
                           <h4>Decoracion para el hogar</h4>
-                          <a href="{{ url('/decoracion_Hogar/herrajes') }}" class="dropdown-item ml-2">Herrajes</a>                         
-                          <a href="{{ url('/decoracion_Hogar/proyectores')}}" class="dropdown-item ml-2">Proyectores</a>
-                          <a href="{{ url('/decoracion_Hogar/espejos')}}" class="dropdown-item ml-2">Espejos</a>
-                          <a href="{{ url('/decoracion_Hogar/macetas')}}" class="dropdown-item ml-2">Macetas</a>
+                          <a href="{{ route('herrajes') }}" class="dropdown-item ml-2">Herrajes</a>                         
+                          <a href="{{ route('proyectores')}}" class="dropdown-item ml-2">Proyectores</a>
+                          <a href="{{ route('espejos')}}" class="dropdown-item ml-2">Espejos</a>
+                          <a href="{{ route('macetas')}}" class="dropdown-item ml-2">Macetas</a>
                           <h4>Difusores</h4>                          
-                          <a href="{{ url('/difusores/humificadores')}}" class="dropdown-item ml-2">Humificador</a>
+                          <a href="{{ route('humificadores')}}" class="dropdown-item ml-2">Humificador</a>
                           <h4>Cocina</h4>                         
-                          <a href="{{ url('/cocina/disoensadores')}}" class="dropdown-item ml-2">Dispensadores</a>
+                          <a href="{{ route('dispensadores')}}" class="dropdown-item ml-2">Dispensadores</a>
                         </div>
                         <div class="col-sm-5 col-lg-auto">
 
