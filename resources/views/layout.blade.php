@@ -69,7 +69,6 @@
                             <h4>Electronica</h4>
                             <a href="{{route('ventiladores')}}" class="dropdown-item ml-2">Ventiladores</a>
                             <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
-<<<<<<< HEAD
                             <a href="{{route('bocinas')}}" class="dropdown-item ml-2">Bocina</a>
                             <h4>Componentes Electricos</h4>
                             <a href="" class="dropdown-item ml-2">Extenciones</a>
@@ -79,7 +78,7 @@
                             <h4>Entretnimiento</h4>
                             <a href="#" class="dropdown-item ml-2">Consolas</a>
                             <a href="#" class="dropdown-item ml-2">Juguetes</a>
-=======
+
                             <a href="#" class="dropdown-item ml-2">Bocina</a>
                             <h4>Componentes Electricos</h4>                            
                             <a href="{{ url('/componentesElectricos/extenciones') }}" class="dropdown-item ml-2">Extenciones</a>
@@ -89,7 +88,7 @@
                             <h4>Entretnimiento</h4>                            
                             <a href="{{ url('/entretenimiento/consolas') }}" class="dropdown-item ml-2">Consolas</a>
                            <!--<a href="#" class="dropdown-item ml-2">Juguetes</a>-->
->>>>>>> 2f01888811b72a282f1f95b8bedd765cb94ee204
+
                         </div>
                         <div class="col-sm-5 col-lg-auto">
                           <h4>Decoracion para el hogar</h4>
@@ -165,103 +164,130 @@
                 </div>
 
              
-                  <div class="row text-white">
-                    <ul >
-                        <li >Contáctanos</li>
-                        <li >+52 1 55 5072 4953</li>
-                        <li>+52 55 6896 2105</li>
-                        <li >E-mail</li>
-                      </ul>
-                      
-                    </div>
                   
-                  
-              
- 
+        
 
             </div>
         </div>
-        <!--Inicio-->
-    <div class="container">
-      <div class="d-flex justify-content-around bg-success mb-3">
-         <!--ModalContacto-->
-         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Contact">
-          Contacto
-        </button>
-        <div class="modal fade" id="Contact" tabindex="-1" role="dialog" aria-labelledby="Contact" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="Contact">Contacto</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              </div>
+ <!--Inicio-->
+ <div class="container">
+    <div class="d-flex justify-content-around bg-success mb-3">
+      
+       <!--ModalContacto-->
+       <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Contact">
+        Contacto
+      </button>
+      <div class="modal fade" id="Contact" tabindex="-1" role="dialog" aria-labelledby="Contact" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title col-11 text-center" id="Contact">Contacto</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <ul >          
+              <li >+52 1 55 5072 4953</li>
+              <li>+52 55 6896 2105</li>
+              <li >E-mail:_________</li>
+            </ul> 
+            </div>
+            <div class="modal-footer">
             </div>
           </div>
-        </div> 
-        <!--Fin_ModalContacto-->
-        <!--Inicio_ModalAbout-->
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#About">
-        Sobre nosotros
-        </button>
-        <div class="modal fade" id="About" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="About">MoncadaMisitu</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus enim animi quis, odit quos illum praesentium aliquam deleniti voluptatum unde rem nihil rerum et consequuntur eius itaque ea. Eveniet, omnis.
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div> 
-         <!--Fin_ModalAbout-->
-        <!--Inicio_ModalFaqs-->
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Faq">
-          FAQ´s
-        </button>
+        </div>
+      </div> 
+      <!--Fin_ModalContacto-->
 
-        <!-- Modal -->
-        <div class="modal fade" id="Faq" tabindex="-1" role="dialog" aria-labelledby="Faq" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="Faq">FAQ´S</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                1.-Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                R=
-                2.-
-                R=
-                3.-
-                R=
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              </div>
+
+      <!--Inicio_ModalAbout-->
+      <!-- Button_modalAbout -->
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#About">
+        Acerca de Nosotros
+      </button>
+      <!--Fin btnModalAbout-->
+      <div class="modal fade" id="About" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title col-11 text-center" id="About">MoncadaMisitu</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <p>Somos una distribuida de artículos de Iluminación, Electrónica, Jardín, Ropa, Cocina, Componentes eléctricos y más…. </p>  
+           <p>Estamos para satisfacer las necesidades de nuestros clientes, nuestra intención es brindar mercancía de calidad, ofreciendo una agradable experiencia de compra. ¡Cada uno de nuestros clientes son importantes para nosotros!</p>
+           <p>Nuestra calidad es garantizada ya que todos nuestros productos pasan por un control de calidad para cerciorarnos de que nuestro cliente quede satisfecho con su compra.</p>
+            </div>
+            <div class="modal-footer">
             </div>
           </div>
+        </div>
+      </div> 
+       <!--Fin_ModalAbout-->
+     
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+      FAQ´S
+    </button>
+  <!--Fin btn modal-->
+    <!-- The Modal -->
+    <div class="modal" id="myModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title col-11 text-center">FAQ´S</h4>
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h5>Preguntas Frecuentres..</h5>
+            <p>P1: ¿Dónde puedo recoger los artículos que compre a través del sitio web Web MoMi? </p>
+             <p> R: Los artículos o articulo que ha comprado los puede recoger en  ___</p>
+            
+          <p>P2: ¿Cuánto tiempo tengo que esperar por los artículos después del pago?</p>
+          <p>R: El tiempo de espera es de _____</p>
+          
+          <p>P3: Si un artículo está en promoción en su tienda física, ¿Esta promoción se extiende a su sitio web? </p>
+          <p>R:</p>
+          
+          <p>P4: ¿Tiene una sección de comentarios en su sitio web?</p>
+          <p>R: Sí, Puede utilizar el icono de WhatsApp para poder resolverle cualquier duda que tenga de algún artículo o precio.</p>
+          
+          <p>P5: ¿Existe un número de línea directa?</p>
+          <p>R: El cliente puede llamar a _____ para sus preguntas y consultas.</p>
+
+          <p>P6: Si un producto no esta en stock ¿Qué es lo que puedo hacer?</p>
+          <p>R: Puedes preguntar haciendo click en el icono de WhatsApp si el producto esta disponible o cuando estará disponible</p>
+           
+          <h3>Sobre los pedidos...</h3>
+            <p>P1:¿Cómo puedo realizar un pedido?</p>
+            <p>R: Para realizar un pedido puede utilizar el icono de WhatssApp para realizar su pedido</p>
+            
+            <p>P2: ¿Qué método de pago se acepta para pedidos online?</p>
+            <p>R:</p>
+
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+          </div>
+          
         </div>
       </div>
     </div>
+    <!-- Fin_Modal_Scroll -->
+  </div>
+<!---->
+    </div>
+
+    <br>
+    
     </footer>
 
     <script src="{{ asset('js/efects.js') }}"></script>
