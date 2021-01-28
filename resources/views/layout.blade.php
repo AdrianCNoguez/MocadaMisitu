@@ -24,9 +24,12 @@
 
     <div class="container-fluid bg-black">
         <div class="row">
+
           <div class="col-12 p-0 m-0">
+          
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <img src="{{ asset('img/logo/fondo.png') }}" width="60px" alt="" class="d-none d-lg-block fondo my-2">
+            
+             <img src="{{ asset('img/logo/fondo.png') }}" width="60px" alt="" class="d-none d-lg-block fondo my-2">
                 <img src="{{ asset('img/logo/aro-verde.png') }}" width="70px" alt="" class="d-none d-lg-block aros my-2" id="aroG">
                 <img src="{{ asset('img/logo/aro-azul.png') }}" width="70px" alt="" class="d-none d-lg-block aros my2" id="aroB">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,8 +121,13 @@
                     <a class="nav-link" href="#">Contacto</a>
                   </li>
               </div>
+              <div class="col-sm text">
+             <a href="https://listado.mercadolibre.com.mx/_CustId_23848430"> <img src="{{ asset('img/logo/Mercado2.png') }}" class="rounded" alt="Cinque Terre" width="60" height="60" ></a>
+             </div>
+
             </nav>
           </div>
+          
         </div>
     </div>
 
