@@ -17,7 +17,7 @@
             <li class="breadcrumb-item text-white active" aria-current="page">Focos</li>
         @endsection
         @include('layouts.nav-pages')
-
+ 
             <div class="card mb-3">
              <!--Inserción-->
              <div class="row no-gutters align-items-center">
@@ -53,13 +53,11 @@
                           <li>Forma: {{ $product->forma }}</li>
                           <li>Unidades: {{ $product->unidades }}</li>
                       </ul>
-                      <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
-                      <button type="button" class="btn btn-outline-dark btnlg">Comprar</button>
+                     <a href="{{ url('iluminacionInterior/focos') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
             </div>
-
-            
         </div>
+    </div>
              <!--Fin-->
                     
                 </div>

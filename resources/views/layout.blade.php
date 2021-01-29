@@ -63,50 +63,25 @@
                             <a href="{{ url('exterior/lamparas') }}" class="dropdown-item ml-2">Lamparas</a>
                             <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Faroles</a>
                            <!-- <a href="{{ url('exterior/tirasLed') }}" class="dropdown-item ml-2">Tiras led</a> -->
-                            <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Jardin</a>
+                            <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Jardín</a>
                         </div>
 
                         <div class="col-sm-5 col-lg-auto bdr">
-                            <h4>Electronica</h4>
+                            <h4>Electrónica</h4>
                             <a href="{{route('ventiladores')}}" class="dropdown-item ml-2">Ventiladores</a>
                             <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
                             <a href="{{route('bocinas')}}" class="dropdown-item ml-2">Bocina</a>
-<<<<<<< HEAD
-                            <h4>Componentes Electricos</h4>                            
+                            <h4>Componentes Eléctricos</h4>                            
                             <a href="{{ route('extenciones') }}" class="dropdown-item ml-2">Extenciones</a>
                             <a href="{{ route('contactos') }}" class="dropdown-item ml-2">Contactos</a>             
                             <a href="{{ route('soquets') }}" class="dropdown-item ml-2">Soquets</a>                            
                             <a href="{{ route('cables') }}" class="dropdown-item ml-2">Cable</a>
-                            <h4>Entretnimiento</h4>                            
+                            <h4>Entretenimiento</h4>                            
                             <a href="{{ route('consolas') }}" class="dropdown-item ml-2">Consolas</a>
                            <!--<a href="#" class="dropdown-item ml-2">Juguetes</a>-->
-=======
-                        
-                            <h4>Componentes Electricos</h4>
-                            <a href="" class="dropdown-item ml-2">Extenciones</a>
-                            <a href="#" class="dropdown-item ml-2">Contactos</a>
-                            <a href="#" class="dropdown-item ml-2">Soquets</a>
-                            <a href="#" class="dropdown-item ml-2">Cable</a>
-                          
-                            <h4>Entretenimiento</h4> 
-                            <a href="{{ url('/entretenimiento/consolas') }}" class="dropdown-item ml-2">Consolas</a>
-                            <!--<a href="#" class="dropdown-item ml-2">Juguetes</a>-->
-                            /electronica/bocinas
-                            <a href="" class="dropdown-item ml-2">Bocina</a>
-
-                            <h4>Componentes Electricos</h4>                            
-                            <a href="{{ url('/componentesElectricos/extenciones') }}" class="dropdown-item ml-2">Extenciones</a>
-                            <a href="{{ url('/componentesElectricos/contactos') }}" class="dropdown-item ml-2">Contactos</a>             
-                            <a href="{{ url('/componentesElectricos/soquets') }}" class="dropdown-item ml-2">Soquets</a>                            
-                            <a href="{{ url('/componentesElectricos/cables') }}" class="dropdown-item ml-2">Cable</a>
-                                                       
-                            
-                           <!--<a href="#" class="dropdown-item ml-2">Juguetes</a>-->
-
->>>>>>> 0f3ffef03b3fb055b5ca7cda52396ee27b1a7c6b
                         </div>
                         <div class="col-sm-5 col-lg-auto">
-                          <h4>Decoracion para el hogar</h4>
+                          <h4>Decoración para el hogar</h4>
                           <a href="{{ route('herrajes') }}" class="dropdown-item ml-2">Herrajes</a>                         
                           <a href="{{ route('proyectores')}}" class="dropdown-item ml-2">Proyectores</a>
                           <a href="{{ route('espejos')}}" class="dropdown-item ml-2">Espejos</a>
@@ -115,7 +90,10 @@
                           <a href="{{ route('humificadores')}}" class="dropdown-item ml-2">Humificador</a>
                           <h4>Cocina</h4>                         
                           <a href="{{ route('dispensadores')}}" class="dropdown-item ml-2">Dispensadores</a>
+                          <h4>Otros</h4>                         
+                          <a href="{{ route('dispensadores')}}" class="dropdown-item ml-2">Aretes&Collares</a>
                         </div>
+                        
                         <div class="col-sm-5 col-lg-auto">
 
                           </div>
