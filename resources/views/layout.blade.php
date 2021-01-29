@@ -26,16 +26,16 @@
         <div class="row">
 
           <div class="col-12 p-0 m-0">
-          
+        
             <nav class="navbar navbar-expand-lg navbar-dark">
-            
+           
              <img src="{{ asset('img/logo/fondo.png') }}" width="60px" alt="" class="d-none d-lg-block fondo my-2">
                 <img src="{{ asset('img/logo/aro-verde.png') }}" width="70px" alt="" class="d-none d-lg-block aros my-2" id="aroG">
                 <img src="{{ asset('img/logo/aro-azul.png') }}" width="70px" alt="" class="d-none d-lg-block aros my2" id="aroB">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars" id="menu"></i>
               </button>
-
+            
               <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
