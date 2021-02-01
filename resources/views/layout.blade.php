@@ -74,11 +74,8 @@
                             <a href="{{route('ventiladores')}}" class="dropdown-item ml-2">Ventiladores</a>
                             <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
                             <a href="{{route('bocinas')}}" class="dropdown-item ml-2">Bocina</a>
-<<<<<<< HEAD
-                            <h4>Componentes Eléctricos</h4>                            
-=======
+
                             <h4>Componentes Electricos</h4>                            
->>>>>>> 70603033098e148f09d8f4c782f6dc3c145c82fc
                             <a href="{{ route('extenciones') }}" class="dropdown-item ml-2">Extenciones</a>
                             <a href="{{ route('contactos') }}" class="dropdown-item ml-2">Contactos</a>             
                             <a href="{{ route('soquets') }}" class="dropdown-item ml-2">Soquets</a>                            
