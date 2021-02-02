@@ -39,7 +39,7 @@
                       <p class="card-text text-justify">{{ $product->descripcion }}</p>
                       <h5 class="card-title">Características</h5>
                       <ul>
-                          <li>Marca: {{ $product->marca }}</li>
+                      <li>Marca: {{ $product->marca }}</li>
                           <li>Modelo: {{ $product->modelo }}</li>
                           <li>Recargable : {{ $product->recargable == 1 ? ('Si'): ('No') }} </li>                          <li>Forma: {{ $product->forma }}</li>
                           <li>Solar : {{ $product->solar == 1 ? ('Si'): ('No') }} </li>
