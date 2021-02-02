@@ -26,13 +26,14 @@
  }
 
  .ML-head{
-    background-image:url(img/logo/Btnmercado.png); 
+    background-image:url(img/logo/Mercado.png); 
     display:block;
-    margin: -12px 0 15px 100px;
+    background-repeat: no-repeat;
+    margin: 25px 0 15px 160px;
     background-size: 100% 100%;
     height:70px;
-    width:90px;
-    border-radius:25px;
+    width:100px;
+    
     background-position:center;
  }
     </style>
@@ -50,11 +51,11 @@
           <div class="col-12 p-0 m-0">
         
             <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="col text-center">
-                  <br>
-                <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="btn ML-head d-none d-lg-block "></a>
+            
+                <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="btn ML-head  "></a>
                 
-                </div>
+      
+                      
 
              <img src="{{ asset('img/logo/fondo.png') }}" width="60px" alt="" class="d-none d-lg-block fondo my-2">
                 <img src="{{ asset('img/logo/aro-verde.png') }}" width="70px" alt="" class="d-none d-lg-block aros my-2" id="aroG">
