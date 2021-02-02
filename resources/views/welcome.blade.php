@@ -16,20 +16,16 @@
             <div class="carousel-item active">
                 <img src="{{ asset('img/Slider/1.jpg') }}" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                    <h5>Web Develoment</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
-                        ullam in quo, recusandae deleniti</p>
-                    <p><a href="">More info</a></p>
+                    <h5>Web MoMi</h5>
+                    <p>Agregar Texto de Ofertas</p>
                 </div>
             </div>
 
             <div class="carousel-item">
                 <img src="{{ asset('img/Slider/2.jpg') }}" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption">
-                    <h5>Web Designe</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
-                        ullam in quo, recusandae deleniti</p>
-                    <p><a href="">More info</a></p>
+                    <h5>Web Momi</h5>
+                    <p>Agregar Texto de Ofertas</p>
                 </div>
             </div>
         </div>
@@ -65,12 +61,12 @@
 
     <!-- CATEGORIAS -->
     <div class="container-fluid mt-5 categorias">
-        <div class="row bg-blue justify-content-center justify-content-lg-around categories">
+        <div class="row bg-primary justify-content-center justify-content-lg-around categories">
             <div class="col-12 text-center text-white p-3">
                 <h3>Nuestras categorías</h3>
             </div>
 
-            <div class="col-12 col-sm-4 col-md-4 col-lg-3 text-white text-center">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-3 text-white text-left p-3">
                 <ul class="p-0">
                     <li class="mb-4">
                         <svg class="d-none d-md-block d-lg-inline" width="50px" viewBox="0 0 16 16" class="bi bi-sun"
@@ -79,7 +75,8 @@
                             <path fill-rule="evenodd"
                                 d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 0 0 0 0 .405l1.256.91a.25.25 0 0 1 .067.334L.79 10.768a.25.25 0 0 0 .154.374l1.51.36a.25.25 0 0 1 .188.282l-.244 1.532a.25.25 0 0 0 .286.286l1.532-.244a.25.25 0 0 1 .282.189l.36 1.508a.25.25 0 0 0 .374.155l1.322-.812a.25.25 0 0 1 .333.067l.91 1.256a.25.25 0 0 0 .405 0l.91-1.256a.25.25 0 0 1 .334-.067l1.322.812a.25.25 0 0 0 .374-.155l.36-1.508a.25.25 0 0 1 .282-.19l1.532.245a.25.25 0 0 0 .286-.286l-.244-1.532a.25.25 0 0 1 .189-.282l1.508-.36a.25.25 0 0 0 .155-.374l-.812-1.322a.25.25 0 0 1 .067-.333l1.256-.91a.25.25 0 0 0 0-.405l-1.256-.91a.25.25 0 0 1-.067-.334l.812-1.322a.25.25 0 0 0-.155-.374l-1.508-.36a.25.25 0 0 1-.19-.282l.245-1.532a.25.25 0 0 0-.286-.286l-1.532.244a.25.25 0 0 1-.282-.189l-.36-1.508a.25.25 0 0 0-.374-.155l-1.322.812a.25.25 0 0 1-.333-.067L8.203.28zM8 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" />
                         </svg>
-                        <h5 class="d-inline"><a href="">Lamparas solares</a></h5>
+                        <h5 class="d-inline"><a href="{{ url('/iluminacionInterior/focos') }}" >Focos</a></h5>
+                        
                     </li>
                     <li class="mb-4">
                         <svg width="50px" class="d-none d-md-block  d-lg-inline" viewBox="0 0 16 16" class="bi bi-moon"
@@ -87,7 +84,7 @@
                             <path fill-rule="evenodd"
                                 d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z" />
                         </svg>
-                        <h5 class="d-inline"><a href="">Lamparas solares</a></h5>
+                        <h5 class="d-inline"><a href="{{ url('/iluminacionInterior/regletas') }}">Regletas</a></h5>
                     </li>
                     <li class="mb-4">
                         <svg width="50px" class="d-none d-md-block  d-lg-inline" viewBox="0 0 16 16" class="bi bi-sun"
@@ -96,7 +93,7 @@
                             <path fill-rule="evenodd"
                                 d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 0 0 0 0 .405l1.256.91a.25.25 0 0 1 .067.334L.79 10.768a.25.25 0 0 0 .154.374l1.51.36a.25.25 0 0 1 .188.282l-.244 1.532a.25.25 0 0 0 .286.286l1.532-.244a.25.25 0 0 1 .282.189l.36 1.508a.25.25 0 0 0 .374.155l1.322-.812a.25.25 0 0 1 .333.067l.91 1.256a.25.25 0 0 0 .405 0l.91-1.256a.25.25 0 0 1 .334-.067l1.322.812a.25.25 0 0 0 .374-.155l.36-1.508a.25.25 0 0 1 .282-.19l1.532.245a.25.25 0 0 0 .286-.286l-.244-1.532a.25.25 0 0 1 .189-.282l1.508-.36a.25.25 0 0 0 .155-.374l-.812-1.322a.25.25 0 0 1 .067-.333l1.256-.91a.25.25 0 0 0 0-.405l-1.256-.91a.25.25 0 0 1-.067-.334l.812-1.322a.25.25 0 0 0-.155-.374l-1.508-.36a.25.25 0 0 1-.19-.282l.245-1.532a.25.25 0 0 0-.286-.286l-1.532.244a.25.25 0 0 1-.282-.189l-.36-1.508a.25.25 0 0 0-.374-.155l-1.322.812a.25.25 0 0 1-.333-.067L8.203.28zM8 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" />
                         </svg>
-                        <h5 class="d-inline"><a href="">Lamparas solares</a></h5>
+                        <h5 class="d-inline"><a href="{{ url('exterior/reflectores') }}">Reflectores</a></h5>
                     </li>
                     <li class="mb-4">
                         <svg width="50px" class="d-none d-md-block  d-lg-inline" viewBox="0 0 16 16" class="bi bi-moon"
@@ -104,12 +101,12 @@
                             <path fill-rule="evenodd"
                                 d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z" />
                         </svg>
-                        <h5 class="d-inline"><a href="">Lamparas solares</a></h5>
+                        <h5 class="d-inline"><a href="{{ url('exterior/tirasLed') }}">Tiras Led</a></h5>
                     </li>
                 </ul>
             </div>
 
-            <div class="col-12  col-sm-4 col-md-4 col-lg-3 text-white text-center">
+            <div class="col-12  col-sm-4 col-md-4 col-lg-3 text-white text-left">
                 <ul class="p-0">
                     <li class="mb-4">
                         <svg class="d-none d-md-block d-lg-inline" width="50px" viewBox="0 0 16 16" class="bi bi-sun"
@@ -118,7 +115,7 @@
                             <path fill-rule="evenodd"
                                 d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 0 0 0 0 .405l1.256.91a.25.25 0 0 1 .067.334L.79 10.768a.25.25 0 0 0 .154.374l1.51.36a.25.25 0 0 1 .188.282l-.244 1.532a.25.25 0 0 0 .286.286l1.532-.244a.25.25 0 0 1 .282.189l.36 1.508a.25.25 0 0 0 .374.155l1.322-.812a.25.25 0 0 1 .333.067l.91 1.256a.25.25 0 0 0 .405 0l.91-1.256a.25.25 0 0 1 .334-.067l1.322.812a.25.25 0 0 0 .374-.155l.36-1.508a.25.25 0 0 1 .282-.19l1.532.245a.25.25 0 0 0 .286-.286l-.244-1.532a.25.25 0 0 1 .189-.282l1.508-.36a.25.25 0 0 0 .155-.374l-.812-1.322a.25.25 0 0 1 .067-.333l1.256-.91a.25.25 0 0 0 0-.405l-1.256-.91a.25.25 0 0 1-.067-.334l.812-1.322a.25.25 0 0 0-.155-.374l-1.508-.36a.25.25 0 0 1-.19-.282l.245-1.532a.25.25 0 0 0-.286-.286l-1.532.244a.25.25 0 0 1-.282-.189l-.36-1.508a.25.25 0 0 0-.374-.155l-1.322.812a.25.25 0 0 1-.333-.067L8.203.28zM8 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" />
                         </svg>
-                        <h5 class="d-inline"><a href="">Lamparas solares</a></h5>
+                        <h5 class="d-inline"><a href="{{route('ventiladores')}}">Ventiladores</a></h5>
                     </li>
                     <li class="mb-4">
                         <svg width="50px" class="d-none d-md-block  d-lg-inline" viewBox="0 0 16 16" class="bi bi-moon"
@@ -126,7 +123,7 @@
                             <path fill-rule="evenodd"
                                 d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z" />
                         </svg>
-                        <h5 class="d-inline"><a href="">Lamparas solares</a></h5>
+                        <h5 class="d-inline"><a href="{{route('bocinas')}}">Bocinas</a></h5>
                     </li>
                     <li class="mb-4">
                         <svg width="50px" class="d-none d-md-block  d-lg-inline" viewBox="0 0 16 16" class="bi bi-sun"
@@ -135,7 +132,7 @@
                             <path fill-rule="evenodd"
                                 d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 0 0 0 0 .405l1.256.91a.25.25 0 0 1 .067.334L.79 10.768a.25.25 0 0 0 .154.374l1.51.36a.25.25 0 0 1 .188.282l-.244 1.532a.25.25 0 0 0 .286.286l1.532-.244a.25.25 0 0 1 .282.189l.36 1.508a.25.25 0 0 0 .374.155l1.322-.812a.25.25 0 0 1 .333.067l.91 1.256a.25.25 0 0 0 .405 0l.91-1.256a.25.25 0 0 1 .334-.067l1.322.812a.25.25 0 0 0 .374-.155l.36-1.508a.25.25 0 0 1 .282-.19l1.532.245a.25.25 0 0 0 .286-.286l-.244-1.532a.25.25 0 0 1 .189-.282l1.508-.36a.25.25 0 0 0 .155-.374l-.812-1.322a.25.25 0 0 1 .067-.333l1.256-.91a.25.25 0 0 0 0-.405l-1.256-.91a.25.25 0 0 1-.067-.334l.812-1.322a.25.25 0 0 0-.155-.374l-1.508-.36a.25.25 0 0 1-.19-.282l.245-1.532a.25.25 0 0 0-.286-.286l-1.532.244a.25.25 0 0 1-.282-.189l-.36-1.508a.25.25 0 0 0-.374-.155l-1.322.812a.25.25 0 0 1-.333-.067L8.203.28zM8 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" />
                         </svg>
-                        <h5 class="d-inline"><a href="">Lamparas solares</a></h5>
+                        <h5 class="d-inline"><a href="{{ route('contactos') }}">Contactos</a></h5>
                     </li>
                     <li class="mb-4">
                         <svg width="50px" class="d-none d-md-block  d-lg-inline" viewBox="0 0 16 16" class="bi bi-moon"
@@ -143,12 +140,12 @@
                             <path fill-rule="evenodd"
                                 d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z" />
                         </svg>
-                        <h5 class="d-inline"><a href="">Lamparas solares</a></h5>
+                        <h5 class="d-inline"><a href="{{ route('soquets') }}">Soquets</a></h5>
                     </li>
                 </ul>
             </div>
 
-            <div class="col-12  col-sm-4 col-md-4 col-lg-3 text-white text-center">
+            <div class="col-12  col-sm-4 col-md-4 col-lg-3 text-white text-left">
                 <ul class="p-0">
                     <li class="mb-4">
                         <svg class="d-none d-md-block d-lg-inline" width="50px" viewBox="0 0 16 16" class="bi bi-sun"
@@ -157,7 +154,7 @@
                             <path fill-rule="evenodd"
                                 d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 0 0 0 0 .405l1.256.91a.25.25 0 0 1 .067.334L.79 10.768a.25.25 0 0 0 .154.374l1.51.36a.25.25 0 0 1 .188.282l-.244 1.532a.25.25 0 0 0 .286.286l1.532-.244a.25.25 0 0 1 .282.189l.36 1.508a.25.25 0 0 0 .374.155l1.322-.812a.25.25 0 0 1 .333.067l.91 1.256a.25.25 0 0 0 .405 0l.91-1.256a.25.25 0 0 1 .334-.067l1.322.812a.25.25 0 0 0 .374-.155l.36-1.508a.25.25 0 0 1 .282-.19l1.532.245a.25.25 0 0 0 .286-.286l-.244-1.532a.25.25 0 0 1 .189-.282l1.508-.36a.25.25 0 0 0 .155-.374l-.812-1.322a.25.25 0 0 1 .067-.333l1.256-.91a.25.25 0 0 0 0-.405l-1.256-.91a.25.25 0 0 1-.067-.334l.812-1.322a.25.25 0 0 0-.155-.374l-1.508-.36a.25.25 0 0 1-.19-.282l.245-1.532a.25.25 0 0 0-.286-.286l-1.532.244a.25.25 0 0 1-.282-.189l-.36-1.508a.25.25 0 0 0-.374-.155l-1.322.812a.25.25 0 0 1-.333-.067L8.203.28zM8 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" />
                         </svg>
-                        <h5 class="d-inline"><a href="">Lamparas solares</a></h5>
+                        <h5 class="d-inline"><a href="{{ route('consolas') }}">Consolas</a></h5>
                     </li>
                     <li class="mb-4">
                         <svg width="50px" class="d-none d-md-block  d-lg-inline" viewBox="0 0 16 16" class="bi bi-moon"
@@ -165,7 +162,7 @@
                             <path fill-rule="evenodd"
                                 d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z" />
                         </svg>
-                        <h5 class="d-inline"><a href="">Lamparas solares</a></h5>
+                        <h5 class="d-inline"><a href="{{ route('herrajes') }}">Herrajes</a></h5>
                     </li>
                     <li class="mb-4">
                         <svg width="50px" class="d-none d-md-block  d-lg-inline" viewBox="0 0 16 16" class="bi bi-sun"
@@ -174,7 +171,7 @@
                             <path fill-rule="evenodd"
                                 d="M8.202.28a.25.25 0 0 0-.404 0l-.91 1.255a.25.25 0 0 1-.334.067L5.232.79a.25.25 0 0 0-.374.155l-.36 1.508a.25.25 0 0 1-.282.19l-1.532-.245a.25.25 0 0 0-.286.286l.244 1.532a.25.25 0 0 1-.189.282l-1.509.36a.25.25 0 0 0-.154.374l.812 1.322a.25.25 0 0 1-.067.333l-1.256.91a.25.25 0 0 0 0 .405l1.256.91a.25.25 0 0 1 .067.334L.79 10.768a.25.25 0 0 0 .154.374l1.51.36a.25.25 0 0 1 .188.282l-.244 1.532a.25.25 0 0 0 .286.286l1.532-.244a.25.25 0 0 1 .282.189l.36 1.508a.25.25 0 0 0 .374.155l1.322-.812a.25.25 0 0 1 .333.067l.91 1.256a.25.25 0 0 0 .405 0l.91-1.256a.25.25 0 0 1 .334-.067l1.322.812a.25.25 0 0 0 .374-.155l.36-1.508a.25.25 0 0 1 .282-.19l1.532.245a.25.25 0 0 0 .286-.286l-.244-1.532a.25.25 0 0 1 .189-.282l1.508-.36a.25.25 0 0 0 .155-.374l-.812-1.322a.25.25 0 0 1 .067-.333l1.256-.91a.25.25 0 0 0 0-.405l-1.256-.91a.25.25 0 0 1-.067-.334l.812-1.322a.25.25 0 0 0-.155-.374l-1.508-.36a.25.25 0 0 1-.19-.282l.245-1.532a.25.25 0 0 0-.286-.286l-1.532.244a.25.25 0 0 1-.282-.189l-.36-1.508a.25.25 0 0 0-.374-.155l-1.322.812a.25.25 0 0 1-.333-.067L8.203.28zM8 2.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" />
                         </svg>
-                        <h5 class="d-inline"><a href="">Lamparas solares</a></h5>
+                        <h5 class="d-inline"><a href="{{ route('proyectores')}}">Proyectores</a></h5>
                     </li>
                     <li class="mb-4">
                         <svg width="50px" class="d-none d-md-block  d-lg-inline" viewBox="0 0 16 16" class="bi bi-moon"
@@ -182,11 +179,12 @@
                             <path fill-rule="evenodd"
                                 d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z" />
                         </svg>
-                        <h5 class="d-inline"><a href="">Lamparas solares</a></h5>
+                        <h5 class="d-inline"><a href="{{ route('humificadores')}}">Humificadores</a></h5>
                     </li>
                 </ul>
             </div>
 
+            
         </div>
     </div>
     <!-- FIN -->
@@ -209,10 +207,10 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="{{ asset('img/images/A1.png') }}" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/Libro1.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
-                            <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
+                            <p class="card-title font-weight-bold">Mini Libros Collar</p>
                         </div>
                     </div>
                 </div>
@@ -220,10 +218,10 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="{{ asset('img/images/A2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/lupa20w1.png') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
-                            <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
+                            <p class="card-title font-weight-bold">Reflector 20w para interperie</p>
                         </div>
                     </div>
                 </div>
@@ -231,10 +229,10 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="{{ asset('img/images/A3.png') }}" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/3528rgb11.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
-                            <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
+                            <p class="card-title font-weight-bold">Tira RGB 5m 3528</p>
                         </div>
                     </div>
                 </div>
@@ -242,10 +240,10 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="{{ asset('img/images/A1.png') }}" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/aretes1.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
-                            <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
+                            <p class="card-title font-weight-bold">Mini Libros Aretes</p>
                         </div>
                     </div>
                 </div>
@@ -253,10 +251,10 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="{{ asset('img/images/A2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/buro2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
-                            <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
+                            <p class="card-title font-weight-bold">Lampara de Buro</p>
                         </div>
                     </div>
                 </div>
@@ -264,10 +262,10 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="{{ asset('img/images/A2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/proyectorEstrella1.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
-                            <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
+                            <p class="card-title font-weight-bold">Proyectora de Estrellas</p>
                         </div>
                     </div>
                 </div>
@@ -275,10 +273,10 @@
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
                         <a href="">
-                            <img src="{{ asset('img/images/A2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
+                            <img src="{{ asset('img/images/bala20.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
-                            <p class="card-title font-weight-bold">Adorable Lampara Hongo Led Multicolor</p>
+                            <p class="card-title font-weight-bold">Foco Bala 20w</p>
                         </div>
                     </div>
                 </div>

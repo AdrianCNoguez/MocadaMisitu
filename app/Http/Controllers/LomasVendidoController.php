@@ -16,4 +16,6 @@ class LomasVendidoController extends Controller
             ->get()->groupBy('idProducto');
             return view('welcome')->with('productos',$productos);
     }
+
+    
 }

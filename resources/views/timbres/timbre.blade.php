@@ -47,7 +47,7 @@
                           <li>Ambiente: {{ $product->ambiente }} </li>
                       </ul>
                       <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
-                      <button type="button" class="btn btn-outline-dark btnlg">Comprar</button>
+                      <a href="{{ url('electronica/timbres') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
             </div>
         </div>

@@ -17,21 +17,23 @@ class TiraLedController extends Controller
             ->join('producto','producto.idProducto','=','tiraled.idProdTira_fk')          
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
-            return view('iluminacionInterior/tirasLed')->with('productos',$productos);
+            return view('tirasLed.tirasLed')->with('productos',$productos);
     }
 
     public function viewProduct($id){
 
-        $position =  strpos($id, '-s');
-        $id = substr($id, $position + 2);
-    
+        $position =  strpos($id, '-xs');
+        $id = substr($id, $position + 3);
+
         $product = TiraLed::
-        join('producto','producto.idProducto','=','tira_leds.idProdTira_fk')
+        join('producto','producto.idProducto','=','tiraled.idProdTira_fk')
         ->where('producto.idProducto','=', $id)->first();
-    
+
         $imagenes = TiraLed::imagenes($id);
-    
-        return view('tiraled')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
-    
+
+
+        return view('tirasLed.tiraLed')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
+
+
     }
 }
