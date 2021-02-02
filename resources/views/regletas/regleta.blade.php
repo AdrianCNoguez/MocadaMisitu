@@ -41,10 +41,12 @@
                       <ul>
                           <li>Marca: {{ $product->marca }}</li>
                           <li>Modelo: {{ $product->modelo }}</li>
-                          <li>Numero de melodias: {{ $product->numMelodias }}</li>
-                          <li>Cobertura: {{ $product->Cobertura }}</li>
-                          <li>Alimentación: {{ $product->alimentacion }}</li>
-                          <li>Ambiente: {{ $product->ambiente }} </li>
+                          <li>Largo: {{ $product->Largo }}</li>
+                          <li>gradoProteccion: {{ $product->gradoProteccion }}</li>
+                          <li>tipoLed: {{ $product->tipoLed }}</li>
+                          <li>potencia: {{ $product->potencia }} </li>
+                          
+                          <li>Lumenes: {{ $product->lumenes }} </li>
                       </ul>
                       <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
                       <button type="button" class="btn btn-outline-dark btnlg">Comprar</button>
