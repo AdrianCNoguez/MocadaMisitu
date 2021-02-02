@@ -15,6 +15,28 @@
     <script src="{{ asset('OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js') }}"></script>
     <title>Distribuidora Moncada - Misitu</title>
 
+    <style>
+     .hero-section {
+     background-image:url(img/logo/Btnmercado.png); 
+     background-size: 100% 100%;
+     border: none;
+     cursor: pointer;
+     padding: 70px 70px;
+     border-radius:35px;
+ }
+
+ .ML-head{
+    background-image:url(img/logo/Btnmercado.png); 
+    display:block;
+    margin: -12px 0 15px 100px;
+    background-size: 100% 100%;
+    height:70px;
+    width:90px;
+    border-radius:25px;
+    background-position:center;
+ }
+    </style>
+
 </head>
 <body class="sc d-flex flex-column h-100" >
 
@@ -28,7 +50,12 @@
           <div class="col-12 p-0 m-0">
         
             <nav class="navbar navbar-expand-lg navbar-dark">
-           
+            <div class="col text-center">
+                  <br>
+                <a href="https://listado.mercadolibre.com.mx/_CustId_433371236" class="btn ML-head d-none d-lg-block "></a>
+                
+                </div>
+
              <img src="{{ asset('img/logo/fondo.png') }}" width="60px" alt="" class="d-none d-lg-block fondo my-2">
                 <img src="{{ asset('img/logo/aro-verde.png') }}" width="70px" alt="" class="d-none d-lg-block aros my-2" id="aroG">
                 <img src="{{ asset('img/logo/aro-azul.png') }}" width="70px" alt="" class="d-none d-lg-block aros my2" id="aroB">
@@ -113,9 +140,7 @@
                     <a class="nav-link" href="#">Contacto</a>
                   </li>
               </div>
-              <div class="col-sm text">
-             <a href="https://listado.mercadolibre.com.mx/_CustId_23848430"> <img src="{{ asset('img/logo/Btnmercado.png') }}" class="rounded-circle d-none d-lg-block" alt="Cinque Terre" width="60" height="60" ></a>
-             </div>
+             
            
             
             </nav>
@@ -157,9 +182,11 @@
                 <div class="col text-center">
                 <img src="{{ asset('img/logo/logoFooterRedon.png') }}" class="rounded" alt="Misitu" width="250" >
                 </div>
+                <!--Btnfooter--->
                 <div class="col text-center">
-                 
-                 <a href="https://listado.mercadolibre.com.mx/_CustId_433371236"> <img src="{{ asset('img/logo/Btnmercado.png') }}" class="rounded-circle" alt="Cinque Terre" width="200" height="200" ></a>
+                  <br>
+                <a href="https://listado.mercadolibre.com.mx/_CustId_433371236" class="btn hero-section"></a>
+                <!-- <a href="https://listado.mercadolibre.com.mx/_CustId_433371236"> <img src="{{ asset('img/logo/Btnmercado.png') }}" class="rounded-circle" alt="Cinque Terre" width="200" height="200" ></a>-->
                 </div>
                 <div class="col text-white">
                 <ul >
