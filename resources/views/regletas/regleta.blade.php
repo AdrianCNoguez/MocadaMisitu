@@ -42,9 +42,9 @@
                           <li>Marca: {{ $product->marca }}</li>
                           <li>Modelo: {{ $product->modelo }}</li>
                           <li>Largo: {{ $product->Largo }}</li>
-                          <li>gradoProteccion: {{ $product->gradoProteccion }}</li>
-                          <li>tipoLed: {{ $product->tipoLed }}</li>
-                          <li>potencia: {{ $product->potencia }} </li>
+                          <li>Grado Proteccion: {{ $product->gradoProteccion }}</li>
+                          <li>Tipo de Led: {{ $product->tipoLed }}</li>
+                          <li>Potencia: {{ $product->potencia }} </li>
                           
                           <li>Lumenes: {{ $product->lumenes }} </li>
                       </ul>
