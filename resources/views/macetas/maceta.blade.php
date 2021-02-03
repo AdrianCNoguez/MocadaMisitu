@@ -2,7 +2,7 @@
 @section('browser')
     <style>
         img{
-            max-width: 100%;
+            max-width: 100%; 
             height: auto;
         }
     </style>
@@ -42,11 +42,10 @@
                           <li>Marca: {{ $product->marca }}</li>
                           <li>Modelo: {{ $product->modelo }}</li>
                           <li>Medidas: {{ $product->medidas }}</li>
-                          <li>Capacidad: {{ $product->capacidad }}</li>
-                          <li>Material: {{ $product->material }}</li>
-                          <li>Forma: {{ $product->forma }} </li>
+                          <li>Capacidad: {{ $product->Capacidad }}</li>
+                          <li>Material: {{ $product->Material }}</li>
+                          <li>Forma: {{ $product->Forma }} </li>
                       </ul>
-                      <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
                       <a href="{{ url('decoracion/macetas') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
             </div>

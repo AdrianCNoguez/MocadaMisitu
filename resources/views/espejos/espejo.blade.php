@@ -45,7 +45,6 @@
                           <li>Aumento: {{ $product->aumento }}</li>
                           <li>Forma: {{ $product->forma }}</li>
                       </ul>
-                      <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
                       <a href="{{ url('decoracion/espejos') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
             </div>

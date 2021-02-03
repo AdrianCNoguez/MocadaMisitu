@@ -46,8 +46,7 @@
                           <li>Litros por carga: {{ $product->LitrosPorCarga }}</li>
                           <li>Largo manguera: {{ $product->largoManguera }} </li>
                       </ul>
-                      <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
-                      <button type="button" class="btn btn-outline-dark btnlg">Comprar</button>
+                      <a href="{{ url('cocina/dispensadores') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
             </div>
         </div>

@@ -44,7 +44,6 @@
                           <li>Color: {{ $product->color }}</li>
                           <li>Numero de juegos: {{ $product->numeroJuegos }}</li>
                       </ul>
-                      <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
                       <a href="{{ url('entretenimiento/consolas') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
             </div>
