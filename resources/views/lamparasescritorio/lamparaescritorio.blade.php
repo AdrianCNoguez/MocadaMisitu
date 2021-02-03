@@ -46,7 +46,7 @@
                             <li>Material: {{ $product->material }}</li>
                             <li>Bluetooth: {{ $product->bluetooth == 1 ? ('Si'): ('No') }} </li>
                             <li>Forma: {{ $product->forma }}</li>
-                            <li>Tipo de Conexion: {{ $product->tipoConexion }}</li>
+                            <li>Tipo de Alimentación: {{ $product->tipoConexion }}</li>
                         </ul>
                      <a href="{{ url('iluminacionInterior/lamparasescritorios') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>

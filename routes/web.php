@@ -83,5 +83,7 @@ Route::get('/iluminacionInterior/tiraLed/{id}','TiraLedController@viewProduct');
 Route::get('/iluminacionInterior/aros','AroController@getProducts')->name('aros');
 Route::get('/iluminacionInterior/aro/{id}','AroController@viewProduct');
 
+Route::get('/otros/joyeria','JoyeriaController@getProducts')->name('joyas');
+Route::get('/otros/joyeria/{id}','JoyeriaController@viewProduct');
 /*---------------Lamapras_pared-------------------*/
 //Route::get('/iluminacionInterior/lamparaspared','LamparasController@getProductsIntpared')->name('lamparaspared');
