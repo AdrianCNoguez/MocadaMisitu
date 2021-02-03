@@ -95,7 +95,7 @@
                             <a href="{{ url('exterior/lamparas') }}" class="dropdown-item ml-2">Lamparas</a>
                             <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Faroles</a>
                            <!-- <a href="{{ url('exterior/tirasLed') }}" class="dropdown-item ml-2">Tiras led</a> -->
-                            <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Jardín</a>
+                            <a href="{{ url('exterior/estacas') }}" class="dropdown-item ml-2">Jardín</a>
                         </div>
 
                         <div class="col-sm-5 col-lg-auto bdr">
