@@ -93,12 +93,7 @@
                             <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
                             <a href="{{route('bocinas')}}" class="dropdown-item ml-2">Bocina</a>
 
-<<<<<<< HEAD
                             <h4>Componentes Electricos</h4>                            
-=======
-                            <h4>Componentes Eléctricos</h4>                            
-
->>>>>>> Blon
                             <a href="{{ route('extenciones') }}" class="dropdown-item ml-2">Extenciones</a>
                             <a href="{{ route('contactos') }}" class="dropdown-item ml-2">Contactos</a>             
                             <a href="{{ route('soquets') }}" class="dropdown-item ml-2">Soquets</a>                            
@@ -118,7 +113,7 @@
                           <h4>Cocina</h4>                         
                           <a href="{{ route('dispensadores')}}" class="dropdown-item ml-2">Dispensadores</a>
                           <h4>Otros</h4>                         
-                          <a href="{{ route('dispensadores')}}" class="dropdown-item ml-2">Aretes&Collares</a>
+                          <a href="{{ route('joyas')}}" class="dropdown-item ml-2">Aretes&Collares</a>
                         </div>
                         
                         <div class="col-sm-5 col-lg-auto">
