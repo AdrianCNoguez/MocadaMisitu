@@ -15,6 +15,29 @@
     <script src="{{ asset('OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js') }}"></script>
     <title>Distribuidora Moncada - Misitu</title>
 
+    <style>
+     .hero-section {
+     background-image:url(img/logo/Btnmercado.png); 
+     background-size: 100% 100%;
+     border: none;
+     cursor: pointer;
+     padding: 70px 70px;
+     border-radius:35px;
+ }
+
+ .ML-head{
+    background-image:url(img/logo/Mercado.png); 
+    display:block;
+    background-repeat: no-repeat;
+    margin: 25px 0 15px 160px;
+    background-size: 100% 100%;
+    height:70px;
+    width:100px;
+    
+    background-position:center;
+ }
+    </style>
+
 </head>
 <body class="sc d-flex flex-column h-100" >
 
@@ -28,12 +51,16 @@
           <div class="col-12 p-0 m-0">
         
             <nav class="navbar navbar-expand-lg navbar-dark">
-           
+            
+            <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="btn ML-head  "></a>
+                       
+
              <img src="{{ asset('img/logo/fondo.png') }}" width="60px" alt="" class="d-none d-lg-block fondo my-2">
                 <img src="{{ asset('img/logo/aro-verde.png') }}" width="70px" alt="" class="d-none d-lg-block aros my-2" id="aroG">
                 <img src="{{ asset('img/logo/aro-azul.png') }}" width="70px" alt="" class="d-none d-lg-block aros my2" id="aroB">
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars" id="menu"></i>
+                
               </button>
             
               <div class="collapse navbar-collapse" id="navbar">
@@ -75,7 +102,12 @@
                             <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
                             <a href="{{route('bocinas')}}" class="dropdown-item ml-2">Bocina</a>
 
+<<<<<<< HEAD
                             <h4>Componentes Electricos</h4>                            
+=======
+                            <h4>Componentes Eléctricos</h4>                            
+
+>>>>>>> Blon
                             <a href="{{ route('extenciones') }}" class="dropdown-item ml-2">Extenciones</a>
                             <a href="{{ route('contactos') }}" class="dropdown-item ml-2">Contactos</a>             
                             <a href="{{ route('soquets') }}" class="dropdown-item ml-2">Soquets</a>                            
@@ -111,24 +143,26 @@
                     <a class="nav-link" href="#">Contacto</a>
                   </li>
               </div>
-              <div class="col-sm text">
-             <a href="https://listado.mercadolibre.com.mx/_CustId_23848430"> <img src="{{ asset('img/logo/Mercado2.png') }}" class="rounded" alt="Cinque Terre" width="60" height="60" ></a>
-             </div>
-
+             
+           
+            
             </nav>
           </div>
           
         </div>
     </div>
 
-
-
+   
     <div class="jumbotron mb-1 p-0 bg-jm d-block d-lg-none">
         <div class="container m-0 p-0">
           <img src="{{ asset('img/logo/fondo.png') }}" width="200px" class=" fondo" alt="">
           <img src="{{ asset('img/logo/aro-verde.png') }}" width="200px" class="img-fluid aros" alt="" id="arosmobilG">
           <img src="{{ asset('img/logo/aro-azul.png') }}" width="200px" class="img-fluid aros" alt="" id="arosmobilB">
+      
         </div>
+        
+        
+        
     </div>
 
     <div class="space d-block d-lg-none"></div>
@@ -151,8 +185,11 @@
                 <div class="col text-center">
                 <img src="{{ asset('img/logo/logoFooterRedon.png') }}" class="rounded" alt="Misitu" width="250" >
                 </div>
+                <!--Btnfooter--->
                 <div class="col text-center">
-                 <a href="https://listado.mercadolibre.com.mx/_CustId_433371236"> <img src="{{ asset('img/logo/Mercado2.png') }}" class="rounded" alt="Cinque Terre" width="200" height="200" ></a>
+                  <br>
+                <a href="https://listado.mercadolibre.com.mx/_CustId_433371236" class="btn hero-section"></a>
+                <!-- <a href="https://listado.mercadolibre.com.mx/_CustId_433371236"> <img src="{{ asset('img/logo/Btnmercado.png') }}" class="rounded-circle" alt="Cinque Terre" width="200" height="200" ></a>-->
                 </div>
                 <div class="col text-white">
                 <ul >
