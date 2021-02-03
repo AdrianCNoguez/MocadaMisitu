@@ -52,10 +52,8 @@
         
             <nav class="navbar navbar-expand-lg navbar-dark">
             
-                <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="btn ML-head  "></a>
-                
-      
-                      
+            <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="btn ML-head  "></a>
+                       
 
              <img src="{{ asset('img/logo/fondo.png') }}" width="60px" alt="" class="d-none d-lg-block fondo my-2">
                 <img src="{{ asset('img/logo/aro-verde.png') }}" width="70px" alt="" class="d-none d-lg-block aros my-2" id="aroG">
