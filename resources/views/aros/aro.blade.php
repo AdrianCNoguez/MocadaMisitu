@@ -46,9 +46,8 @@
                             <li>Cantidad Leds: {{ $product->cantidadLeds }}</li>
                             <li>Conectividad: {{ $product->Conectividad }}</li>
                         </ul>
-                        <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
-                        <button type="button" class="btn btn-outline-dark btnlg">Comprar</button>
-                    </div>
+                     <a href="{{ url('iluminacionInterior/aros') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
+                </div>
             </div>
             <!--Fin_descripciones-->
             

@@ -41,12 +41,13 @@
                       <ul>
                           <li>Marca: {{ $product->marca }}</li>
                           <li>Modelo: {{ $product->modelo }}</li>
-                          <li>Numero de melodias: {{ $product->numMelodias }}</li>
-                          <li>Cobertura: {{ $product->Cobertura }}</li>
-                          <li>Alimentación: {{ $product->alimentacion }}</li>
-                          <li>Ambiente: {{ $product->ambiente }} </li>
+                          <li>Color: {{ $product->color }}</li>
+                          <li>Consumo: {{ $product->consumo }}</li>
+                          <li>Material: {{ $product->material }}</li>
+                          <li>Tipo: {{ $product->tipo }} </li>
+                          <li>Medidas: {{ $product->medidas }} </li>
+                          
                       </ul>
-                      <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
                       <a href="{{ url('electronica/ventiladores') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
             </div>

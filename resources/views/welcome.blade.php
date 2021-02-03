@@ -194,7 +194,7 @@
     <div class="container-fluid mt-5">
         <div class="row mb-0">
             <div class="col-md-12 text-center text-white p-0">
-                <h5>Los más vendidos</h5>
+                <h5>Recomendados</h5>
             </div>
         </div>
     </div>

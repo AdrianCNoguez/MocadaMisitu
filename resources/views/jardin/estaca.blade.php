@@ -41,8 +41,7 @@
                       <ul>
                           <li>Marca: {{ $product->marca }}</li>
                           <li>Modelo: {{ $product->modelo }}</li>
-                          <li>Alimenctacion: {{ $product->Caracteristica }} </li>
-                          <li>Dimensiones: {{ $product->Dimensiones }}</li>
+                          <li>Alimenctacion: {{ $product->alimentacion }} </li>
                       </ul>
                      <a href="{{ url('exterior/estacas') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>

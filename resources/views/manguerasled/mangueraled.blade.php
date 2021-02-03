@@ -44,13 +44,12 @@
                             <li>Modelo: {{ $product->modelo }}</li>                                                      
                             <li>Tipo de Led: {{ $product->tipoLEd }}</li>
                             <li>Tipo de Manguera: {{ $product->tipoManguera }}</li>
-                            <li>Conectividad: {{ $product->Conectividad }}</li>
-                        </ul>
-                        <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
-                        <button type="button" class="btn btn-outline-dark btnlg">Comprar</button>
-                    </div>
+                            <li>Conectividad: {{ $product->conectividad }}</li>
+                       </ul>
+                     <a href="{{ url('iluminacionInterior/manguerasled') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
+                </div>
             </div>
-            <!--Fin_descripciones-->
+            <!--Fin_descripciones--> 
             
              </div>
                    

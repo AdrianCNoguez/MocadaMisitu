@@ -41,15 +41,13 @@
                       <ul>
                           <li>Marca: {{ $product->marca }}</li>
                           <li>Modelo: {{ $product->modelo }}</li>
-                          <li>Numero de melodias: {{ $product->numMelodias }}</li>
-                          <li>Cobertura: {{ $product->Cobertura }}</li>
-                          <li>Alimentación: {{ $product->alimentacion }}</li>
-                          <li>Ambiente: {{ $product->ambiente }} </li>
-                      </ul>
-                      <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
-                      <button type="button" class="btn btn-outline-dark btnlg">Comprar</button>
+                          <li>Longitud: {{ $product->Largo }}</li>
+                          <li>Tipo de Led: {{ $product->tipoLed }}</li>
+                          <li>Potencia: {{ $product->potencia }} </li>
+                     </ul>
+                     <a href="{{ url('iluminacionInterior/regletas') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
 

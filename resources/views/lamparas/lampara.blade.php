@@ -43,23 +43,15 @@
                         <li>Marca: {{ $product->marca }}</li>
                         <li>Modelo: {{ $product->modelo }}</li>
                         <li>Alimentación: {{ $product->alimentacion }}</li>
-                        <li>Protección: {{ $product->Proteccion }}</li>
-                        <li>Consumo: {{ $product->Consumo }}</li>
                         <li>Potencia: {{ $product->Potencia }}</li>
-                        <li>Lumenes: {{ $product->Lumenes }}</li>
                         <li>Dimensiones: {{ $product->Dimensiones }}</li>
                         <li>Forma: {{ $product->Forma }}</li>
                         <li>Unidades: {{ $product->Unidades }}</li>
-                        <li>Sensor: {{ $product->Sensor }}</li>
-                        <li>Material: {{ $product->material }}</li>
-                        <li>Tipo de Montaje: {{ $product->TipoMontaje }}</li>
-                        <li>Ambiente: {{ $product->Ambiente }}</li> 
+                        <li>Material: {{ $product->Material }}</li>
+                        <li>Lugar de Montaje: {{ $product->TipoMontaje }}</li>
                         <li>Color del Material: {{ $product->ColorMaterial }}</li>
                         <li>Movimiento: {{ $product->Movimiento }}</li>
-                        <li>Instalacion: {{ $product->Instalacion }}</li>
-                        <li>Solar: {{ $product->Solar == 1 ? ('Si'): ('No') }} </li>
-                        <li>Pilas: {{ $product->Pilas == 1 ? ('Si'): ('No') }} </li>                      
-                        <li>Electrico: {{ $product->Electrico == 1 ? ('Si'): ('No') }} </li>
+                        <li>Tipo de Montaje: {{ $product->Instalacion }}</li>
                         </ul>
                      <a href="{{ url('iluminacionInterior/lamparas') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
