@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style2.css') }}">
     <link rel="icon" type="image/png" href="{{ asset('logo/Logo MisituMocada2.png') }}" />
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
@@ -25,17 +26,22 @@
      border-radius:35px;
  }
 
- .ML-head{
-    background-image:url(img/logo/Mercado.png); 
-    display:block;
-    background-repeat: no-repeat;
-    margin: 25px 0 15px 160px;
-    background-size: 100% 100%;
-    height:70px;
-    width:100px;
+
+    .ML-head{
+        background-image:url(img/logo/Mercado.png); 
+        display:block;
+        background-repeat: no-repeat;
+      
+        background-size: 100% 100%;
+        top:-5px;
+        height:65px;
+        width:96px;
+        position:relative;
+        left:12px;
+        /*background-position:center;*/
+    }
     
-    background-position:center;
- }
+
     </style>
 
 </head>
@@ -52,7 +58,13 @@
         
             <nav class="navbar navbar-expand-lg navbar-dark">
             
-            <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="btn ML-head  "></a>
+           <!-- <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="btn ML-head  "></a> -->
+           
+           <!--PruebaBtnMercado-->
+           <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="boton-ML yellow short radius">
+           <div class="ML-head"></div>
+            </a>
+              <!----> 
                        
 
              <img src="{{ asset('img/logo/fondo.png') }}" width="60px" alt="" class="d-none d-lg-block fondo my-2">
@@ -181,12 +193,13 @@
                 <img src="{{ asset('img/logo/logoFooterRedon.png') }}" class="rounded" alt="Misitu" width="250" >
                 </div>
                 <!--Btnfooter--->
-                <div class="col text-center">
+                <div class="col-sm text-center">
                   <br>
                 <a href="https://listado.mercadolibre.com.mx/_CustId_433371236" class="btn hero-section"></a>
                 <!-- <a href="https://listado.mercadolibre.com.mx/_CustId_433371236"> <img src="{{ asset('img/logo/Btnmercado.png') }}" class="rounded-circle" alt="Cinque Terre" width="200" height="200" ></a>-->
                 </div>
                 <div class="col text-white">
+                  <br>
                 <ul >
                        <h1>Web MoMi</h1>
                         <li >DISTRIBUIDORA MONCADA & MISITU</li>
