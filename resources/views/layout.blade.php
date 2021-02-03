@@ -17,30 +17,9 @@
     <title>Distribuidora Moncada - Misitu</title>
 
     <style>
-     .hero-section {
-     background-image:url(img/logo/Btnmercado.png); 
-     background-size: 100% 100%;
-     border: none;
-     cursor: pointer;
-     padding: 70px 70px;
-     border-radius:35px;
- }
-
-
-    .ML-head{
-        background-image:url(img/logo/Mercado.png); 
-        display:block;
-        background-repeat: no-repeat;
-      
-        background-size: 100% 100%;
-        top:-5px;
-        height:65px;
-        width:96px;
-        position:relative;
-        left:12px;
-        /*background-position:center;*/
-    }
+  
     
+
 
     </style>
 
