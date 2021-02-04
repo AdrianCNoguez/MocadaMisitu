@@ -48,7 +48,6 @@
                           <li>Medidas: {{ $product->medidas }}</li>
                           <li>Color: {{ $product->colorHerraje }} </li>
                       </ul>
-                      <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
                       <a href="{{ url('decoracion/herrajes') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
             </div>

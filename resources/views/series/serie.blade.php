@@ -45,9 +45,8 @@
                           <li>Alimentacion: {{ $product->Alimentacion }}</li>
                           <li>Medida: {{ $product->medida }}</li>
                           <li>Tipo: {{ $product->Tipo }}</li>
-                      </ul>
-                      <p><h2 class="d-inline">${{ $product->precio }}</h2> IVA incluido</p>
-                      <button type="button" class="btn btn-outline-dark btnlg">Comprar</button>
+                       </ul>
+                     <a href="{{ url('iluminacionInterior/series') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
             </div>
         </div>

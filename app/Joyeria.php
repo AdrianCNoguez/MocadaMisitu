@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Estacas extends Model
+class Joyeria extends Model
 {
-    protected $table = 'estacas';
-    protected $primaryKey='idEstaca';
+    protected $table = 'joyeria';
+    protected $primaryKey='idJoyeria';
 
     public static function imagenes($id)
     {
@@ -15,4 +15,5 @@ class Estacas extends Model
 
         return $imagenes;
     }
+
 }

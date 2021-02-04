@@ -2,7 +2,7 @@
 @section('browser')
     <style>
         img{
-            max-width: 100%;
+            max-width: 100%; 
             height: auto;
         }
     </style>
@@ -13,8 +13,8 @@
 
     <div class="container">
         @section('breadcrumbs')
-            <li class="breadcrumb-item text-white ctive" aria-current="page">Electronica</li>
-            <li class="breadcrumb-item text-white active" aria-current="page">Bocinas</li>
+        <li class="breadcrumb-item text-white ctive" aria-current="page">Decoración para el hogar</li>
+        <li class="breadcrumb-item text-white active" aria-current="page">Macetas</li>
         @endsection
         @include('layouts.nav-pages')
 
@@ -23,11 +23,11 @@
     <div class="card mb-3">
         <div class="row no-gutters align-items-center">
             <div class="col-12 col-md-5">
-                <img id="imageBox" src="{{ asset('img/'.$imagenes->first()['ruta'] ) }}" alt="{{ $imagenes->first()['ruta'] }}" class="img-fluid first-img">
+                <img id="imageBox" src="{{ asset('img/'.$imagenes->first()['ruta'] ) }}" alt="{{ $imagenes->first() }}" class="img-fluid first-img mt-2">
                 <div class="row p-2 justify-content-center">
                     @foreach ($imagenes as $img)
                         <div class="col-auto" id="img-mini">
-                            <img src="{{ asset('img/'.$img->ruta) }}" alt="" class="img-fluid mini-img">
+                            <img src="{{ asset('img/'.$img->ruta) }}" alt="" class="mini-img">
                         </div>
                     @endforeach
                 </div>
@@ -39,15 +39,10 @@
                       <p class="card-text text-justify">{{ $product->descripcion }}</p>
                       <h5 class="card-title">Características</h5>
                       <ul>
-                          <li>Marca: {{ $product->marca }}</li>
-                          <li>Modelo: {{ $product->modelo }}</li>
+                          <li>Clase: {{ $product->clase }}</li>
                           <li>Forma: {{ $product->forma }}</li>
-                          <li>Bateria: {{ $product->capacidadBateria }}</li>
-                          <li>Alimentación: {{ $product->alimentacion }}</li>
-                          <li>Bluetooth : {{ $product->bluetooth == 1 ? ('Si'): ('No') }} </li>
-                          <li>Lector SD : {{ $product->lectorSD == 1 ? ('Si'): ('No') }} </li>
                       </ul>
-                      <a href="{{ url('electronica/bocinas') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
+                      <a href="{{ url('otros/joyeria') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
             </div>
         </div>
