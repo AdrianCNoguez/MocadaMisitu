@@ -18,8 +18,6 @@
 
     <style>
   
-    
-
 
     </style>
 
@@ -171,12 +169,22 @@
                 <div class="col text-center">
                 <img src="{{ asset('img/logo/logoFooterRedon.png') }}" class="rounded" alt="Misitu" width="250" >
                 </div>
+
+
+
+
                 <!--Btnfooter--->
-                <div class="col-sm text-center">
-                  <br>
-                <a href="https://listado.mercadolibre.com.mx/_CustId_433371236" class="btn hero-section"></a>
-                <!-- <a href="https://listado.mercadolibre.com.mx/_CustId_433371236"> <img src="{{ asset('img/logo/Btnmercado.png') }}" class="rounded-circle" alt="Cinque Terre" width="200" height="200" ></a>-->
-                </div>
+                <div class="col-sm text-center"> 
+                <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="botonML-FT yellow radius">
+                <div class="ML-footer"></div>
+            </a>
+              </div>
+              
+            
+
+
+
+
                 <div class="col text-white">
                   <br>
                 <ul >
