@@ -14,7 +14,7 @@ class TiraLedController extends Controller
     public function getProducts(){
         $productos = TiraLed::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','tiraled.idProdTira_fk')          
+            ->join('producto','producto.idProducto','=','tiraled.idProducto')          
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('tirasLed.tirasLed')->with('productos',$productos);
@@ -26,7 +26,7 @@ class TiraLedController extends Controller
         $id = substr($id, $position + 3);
 
         $product = TiraLed::
-        join('producto','producto.idProducto','=','tiraled.idProdTira_fk')
+        join('producto','producto.idProducto','=','tiraled.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = TiraLed::imagenes($id);

@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Aro extends Model
+class Aros extends Model
 {
-    protected $table ='aro';
+    protected $table ='aros';
     protected $primaryKey='idAro';
 
     public static function imagenes($id)

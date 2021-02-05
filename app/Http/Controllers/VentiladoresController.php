@@ -9,10 +9,10 @@ class VentiladoresController extends Controller
 {
     public function getProducts(){
         $productos = Ventiladores::select('producto.idProducto','producto.nombre','producto.descripcion','imagenes.ruta')
-        ->join('producto','producto.idProducto','=','ventiladores.idProductoVentilador_fk')
+        ->join('producto','producto.idProducto','=','ventiladores.idProducto')
         ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
         ->get()->groupBy('idProducto');
-        return view('ventiladores.ventiladores')->with('productos',$productos);;
+        return view('ventiladores.ventiladores')->with('productos',$productos);
     }
 
     public function viewProduct($id)
@@ -21,7 +21,7 @@ class VentiladoresController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Ventiladores::
-        join('producto','producto.idProducto','=','ventiladores.idProductoVentilador_fk')
+        join('producto','producto.idProducto','=','ventiladores.idProducto')
         ->where('producto.idProducto','=', $id)->first();
         
 

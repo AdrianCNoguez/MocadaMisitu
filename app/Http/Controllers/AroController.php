@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Aro;
+use App\Aros;
 class AroController extends Controller
 {
     //
     public function getProducts(){
-        $productos = Aro::
+        $productos = Aros::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','aro.idProductoAro_fk')
+            ->join('producto','producto.idProducto','=','aros.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('aros.aros')->with('productos',$productos);
@@ -19,14 +19,14 @@ class AroController extends Controller
 
     public function viewProduct($id){
 
-        $position =  strpos($id, '-s');
-        $id = substr($id, $position + 2);
+        $position =  strpos($id, '-xs');
+        $id = substr($id, $position + 3);
 
-        $product = Aro::
-        join('producto','producto.idProducto','=','aro.idProductoAro_fk')
+        $product = Aros::
+        join('producto','producto.idProducto','=','aros.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
-        $imagenes = Aro::imagenes($id);
+        $imagenes = Aros::imagenes($id);
 
         return view('aros.aro')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
 

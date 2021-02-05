@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Maceta;
-class MacetaController extends Controller
+use App\Macetas;
+class MacetasController extends Controller
 {
     //
     public function getProducts(){
-        $productos = Maceta::
+        $productos = Macetas::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','Maceta.idProductoMaceta_fk')
+            ->join('producto','producto.idProducto','=','Macetas.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('macetas.macetas')->with('productos',$productos);
@@ -21,11 +21,11 @@ class MacetaController extends Controller
         $position =  strpos($id, '-xs');
         $id = substr($id, $position + 3); 
 
-        $product = Maceta::
-        join('producto','producto.idProducto','=','Maceta.idProductoMaceta_fk')
+        $product = Macetas::
+        join('producto','producto.idProducto','=','Macetas.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
-        $imagenes = Maceta::imagenes($id);
+        $imagenes = Macetas::imagenes($id);
  
         return view('macetas.maceta')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
 

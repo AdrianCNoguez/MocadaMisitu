@@ -10,7 +10,7 @@ class TimbresController extends Controller
 {
     public function getProducts(){
         $productos = Timbres::select('producto.idProducto','producto.nombre','producto.descripcion','imagenes.ruta')
-        ->join('producto','producto.idProducto','=','timbres.idProdutoTimbre_fk')
+        ->join('producto','producto.idProducto','=','timbres.idProducto')
         ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
         ->get()->groupBy('idProducto');
 
@@ -23,7 +23,7 @@ class TimbresController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Timbres::
-        join('producto','producto.idProducto','=','timbres.idProdutoTimbre_fk')
+        join('producto','producto.idProducto','=','timbres.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Timbres::imagenes($id);

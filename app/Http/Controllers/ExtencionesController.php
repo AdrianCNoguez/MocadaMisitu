@@ -9,7 +9,7 @@ class ExtencionesController extends Controller
     public function getProducts(){
         $productos = Extenciones::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','Extenciones.idProductoExt')
+            ->join('producto','producto.idProducto','=','Extenciones.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('extenciones.extenciones')->with('productos',$productos);
@@ -21,7 +21,7 @@ class ExtencionesController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Extenciones::
-        join('producto','producto.idProducto','=','Extenciones.idProductoExt')
+        join('producto','producto.idProducto','=','Extenciones.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Extenciones::imagenes($id);

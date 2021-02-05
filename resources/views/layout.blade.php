@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="{{ asset('logo/Logo MisituMocada2.png') }}" />
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('js/jquery-ui/jquery-ui.min.css') }}">
     @yield('browser')
     <link rel="stylesheet" href="{{ asset('fontawesome-free-5.15.1-web/css/all.min.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,200&display=swap" rel="stylesheet">
@@ -17,7 +18,35 @@
     <title>Distribuidora Moncada - Misitu</title>
 
     <style>
+  .botonModal{
+    background-color: #E0ECFF;
+   /*color: #424242;*/
+   color: #020202;
+   display:inline-block;
+   
+   margin:20px; 
+   padding:10px 0px; 
+   width:100px;
+   height:70px;
+  }
+
+  .botonModal.gray{
+    background-color: transparent;
+   position:relative;
+   left:5px;
   
+  }
+
+  .botonModal span{
+    font-size:.75em;
+   text-align:center; 
+  
+  }
+
+  .botonModal.radius{
+      border-radius:20px;
+     }
+
 
     </style>
 
@@ -90,7 +119,6 @@
                             <a href="{{route('ventiladores')}}" class="dropdown-item ml-2">Ventiladores</a>
                             <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
                             <a href="{{route('bocinas')}}" class="dropdown-item ml-2">Bocina</a>
-
                             <h4>Componentes Electricos</h4>                            
                             <a href="{{ route('extenciones') }}" class="dropdown-item ml-2">Extenciones</a>
                             <a href="{{ route('contactos') }}" class="dropdown-item ml-2">Contactos</a>             
@@ -121,11 +149,66 @@
                       </div>
                     </div>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre nosotros</a>
+                  <li class="nav-item col-3 sm">
+                     <!--Inicio_ModalAbout-->
+              <!-- Button_modalAbout -->
+              <a  class="" data-toggle="modal" data-target="#About">
+            <span>Acerca de Nosotros</span> 
+            </a>
+              
+              <!--Fin btnModalAbout-->
+              <div class="modal fade" id="About" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title col-11 text-center" id="About">MoncadaMisitu</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                    <p>Somos una distribuida de artículos de Iluminación, Electrónica, Jardín, Ropa, Cocina, Componentes eléctricos y más…. </p>  
+                  <p>Estamos para satisfacer las necesidades de nuestros clientes, nuestra intención es brindar mercancía de calidad, ofreciendo una agradable experiencia de compra. ¡Cada uno de nuestros clientes son importantes para nosotros!</p>
+                  <p>Nuestra calidad es garantizada ya que todos nuestros productos pasan por un control de calidad para cerciorarnos de que nuestro cliente quede satisfecho con su compra.</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <!--Fin_ModalAbout-->
+                  
+
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                  <li class="nav-item col-3 sm">
+                    
+                      <!--ModalContacto-->
+                      <a  class="" data-toggle="modal" data-target="#Contact">
+                               <span>  Contacto </span>
+                      </a>
+            
+                    <div class="modal fade" id="Contact" tabindex="-1" role="dialog" aria-labelledby="Contact" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h4 class="modal-title col-11 text-center" id="Contact">Contacto</h4>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                          <div class="modal-body">
+                                            <ul >          
+                                              <li >+52 1 55 5072 4953</li>
+                                              <li>+52 55 6896 2105</li>
+                                              <li >E-mail:_________</li>
+                                            </ul> 
+                                          </div>
+                                          <div class="modal-footer">
+                                          </div>
+                                    </div>
+                            </div>
+                    </div> 
+                    
                   </li>
               </div>
              
@@ -325,8 +408,24 @@
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="{{ asset('js/jquery-rotate.js') }}"></script>
-
-
+    <script src="{{ asset('js/jquery-ui/jquery-ui.min.js') }}"></script>
+    <script>
+      var productos = ['foco', 'lampara'];
+      $('#search').autocomplete({
+        source: function (request, response) { 
+          $.ajax({
+            url: "{{ route('search.productos') }}",
+            dataType: 'json',
+            data:{
+              term: request.term
+            },
+            success: function(data){
+              response(data)
+            }
+          })
+         }
+      });
+    </script>
 
 
 </body>

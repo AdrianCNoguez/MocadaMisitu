@@ -11,7 +11,7 @@ class MangueraLedsController extends Controller
     public function getProducts(){
         $productos = Mangueraleds::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','mangueraled.idProductoMangue_fk')
+            ->join('producto','producto.idProducto','=','mangueraleds.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('manguerasled.manguerasled')->with('productos',$productos);
@@ -23,7 +23,7 @@ class MangueraLedsController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Mangueraleds::
-        join('producto','producto.idProducto','=','mangueraled.idProductoMangue_fk')
+        join('producto','producto.idProducto','=','mangueraleds.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Mangueraleds::imagenes($id);

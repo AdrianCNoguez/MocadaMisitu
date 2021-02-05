@@ -30,7 +30,7 @@
 
                     <div class="card-body pl-2 pr-2 pb-0 text-center">
                         <p class="card-title font-weight-bold">{{ $item->first()['nombre'] }}</p>
-                        <a href="{{url('/iluminacionInterior/aro',Str::slug($item->first()['nombre'].'-s'.$item->first()['idProducto'])) }}" class="btn btn-success mb-3"><i class="fas fa-eye"></i>Ver detalles</a>
+                        <a href="{{url('/iluminacionInterior/aros/'.Str::slug($item->first()['nombre'].'-xs'.$item->first()['idProducto'])) }}" class="btn btn-success mb-3"><i class="fas fa-eye"></i>Ver detalles</a>
                     </div>
                 </div>
             </div>

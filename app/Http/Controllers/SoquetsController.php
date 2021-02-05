@@ -9,7 +9,7 @@ class SoquetsController extends Controller
     public function getProducts(){
         $productos = Soquets::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','Soquets.idProductoSoquet_fk')
+            ->join('producto','producto.idProducto','=','Soquets.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('soquets.soquets')->with('productos',$productos);
@@ -21,7 +21,7 @@ class SoquetsController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Soquets::
-        join('producto','producto.idProducto','=','Soquets.idProductoSoquet_fk')
+        join('producto','producto.idProducto','=','Soquets.idProducto')
         ->join('tiporosca','tiporosca.idRosca','=','Soquets.tipoRoscaSoquet_fk')
         ->where('producto.idProducto','=', $id)->first();
 
