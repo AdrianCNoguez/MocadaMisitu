@@ -21,7 +21,6 @@ Route::get('/lomasvendido/{id}', 'LomasVendidoController@viewProduct');
 Route::get('search/productos','SearchController@productos')->name('search.productos');
 Route::get('search','SearchController@searchProduct')->name('search.success');
 
-
 /*--Electronica---*/
 Route::get('/electronica/ventiladores','VentiladoresController@getProducts')->name('ventiladores');
 Route::get('/electronica/ventiladores/{id}','VentiladoresController@viewProduct');
