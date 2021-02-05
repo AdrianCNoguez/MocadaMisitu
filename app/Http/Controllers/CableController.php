@@ -11,7 +11,7 @@ class CableController extends Controller
     public function getProducts(){
         $productos = Cables::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','Cable.idProducto')
+            ->join('producto','producto.idProducto','=','Cables.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('cable.cables')->with('productos',$productos);
@@ -23,7 +23,7 @@ class CableController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Cables::
-        join('producto','producto.idProducto','=','Cable.idProducto')
+        join('producto','producto.idProducto','=','Cables.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Cables::imagenes($id);

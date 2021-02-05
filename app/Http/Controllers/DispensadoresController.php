@@ -12,7 +12,7 @@ class DispensadoresController extends Controller
     public function getProducts(){
         $productos = Dispensadores::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','disoensadores.idProducto')
+            ->join('producto','producto.idProducto','=','dispensadores.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('dispensadores.dispensadores')->with('productos',$productos);
@@ -25,7 +25,7 @@ class DispensadoresController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Dispensadores::
-        join('producto','producto.idProducto','=','disoensadores.idProducto')
+        join('producto','producto.idProducto','=','dispensadores.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Dispensadores::imagenes($id);

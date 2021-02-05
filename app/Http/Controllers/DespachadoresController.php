@@ -11,7 +11,7 @@ class DespachadoresController extends Controller
     public function getProducts(){
         $productos = Despachadores::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','despachador.idProductoDespachador_fk')
+            ->join('producto','producto.idProducto','=','despachador.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('despachadores.despachadores')->with('productos',$productos);
@@ -23,7 +23,7 @@ class DespachadoresController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Despachadores::
-        join('producto','producto.idProducto','=','despachador.idProductoDespachador_fk')
+        join('producto','producto.idProducto','=','despachador.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Despachadores::imagenes($id);
