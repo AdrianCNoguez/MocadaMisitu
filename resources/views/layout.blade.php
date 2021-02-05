@@ -24,7 +24,7 @@
 </head>
 <body class="sc d-flex flex-column h-100" >
 
-    <a href="https://api.whatsapp.com/send?phone=+525526506601&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+525564706104&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
     </a>
 
@@ -75,7 +75,7 @@
                             <a href="{{ url('/iluminacionInterior/series') }}" class="dropdown-item ml-2">Series</a>
                             <a href="{{ url('/iluminacionInterior/aros') }}" class="dropdown-item ml-2">Selfie light</a>
                             <a href="{{ url('/iluminacionInterior/tirasLed') }}" class="dropdown-item ml-2">Tiras Led</a>
-                            <a href="#" class="dropdown-item ml-2">Vintage</a>
+                            <a href="{{ url('/iluminacionInterior/paneles') }}" class="dropdown-item ml-2">Paneles</a>
 
                             <h5>Iluminación exterior</h5>
                             <a href="{{ url('exterior/reflectores') }}" class="dropdown-item ml-2">Reflectores</a>
@@ -112,6 +112,7 @@
                           <a href="{{ route('dispensadores')}}" class="dropdown-item ml-2">Dispensadores</a>
                           <h4>Otros</h4>                         
                           <a href="{{ route('joyas')}}" class="dropdown-item ml-2">Aretes&Collares</a>
+                          <a href="{{ route('despachadores')}}" class="dropdown-item ml-2">Despachadores</a>
                         </div>
                         
                         <div class="col-sm-5 col-lg-auto">

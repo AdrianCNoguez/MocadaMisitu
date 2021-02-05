@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/','LomasVendidoController@getProducts');
+Route::get('/lomasvendido', 'LomasVendidoController@getSale')->name('lomasvendido');
+Route::get('/lomasvendido/{id}', 'LomasVendidoController@viewProduct');
 
 /*--Electronica---*/
 Route::get('/electronica/ventiladores','VentiladoresController@getProducts')->name('ventiladores');
@@ -46,6 +48,8 @@ Route::get('/decoracion/espejos','EspejoController@getProducts')->name('espejos'
 Route::get('/decoracion/espejos/{id}','EspejoController@viewProduct');
 Route::get('/decoracion/macetas','MacetaController@getProducts')->name('macetas');
 Route::get('/decoracion/macetas/{id}','MacetaController@viewProduct');
+Route::get('/iluminacionInterior/paneles','PanelesController@getProducts')->name('paneles');
+Route::get('/iluminacionInterior/paneles/{id}','PanelesController@viewProduct');
 /*----Exteriores-----------*/
 Route::get('/exterior/reflectores','ReflectoresController@getProducts')->name('reflectores');
 Route::get('/exterior/reflectores/{id}', 'ReflectoresController@viewProduct');
@@ -85,5 +89,9 @@ Route::get('/iluminacionInterior/aro/{id}','AroController@viewProduct');
 
 Route::get('/otros/joyeria','JoyeriaController@getProducts')->name('joyas');
 Route::get('/otros/joyeria/{id}','JoyeriaController@viewProduct');
+
+Route::get('/otros/despachadores','DespachadoresController@getProducts')->name('despachadores');
+Route::get('/otros/despachadores/{id}','DespachadoresController@viewProduct');
+
 /*---------------Lamapras_pared-------------------*/
 //Route::get('/iluminacionInterior/lamparaspared','LamparasController@getProductsIntpared')->name('lamparaspared');
