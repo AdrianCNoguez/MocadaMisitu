@@ -66,7 +66,7 @@
                 <h3>Nuestras categorías</h3>
             </div>
 
-            <div class="col-12 col-sm-4 col-md-4 col-lg-3 text-white text-left p-3">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-3 text-white text-left">
                 <ul class="p-0">
                     <li class="mb-4">
                         <svg class="d-none d-md-block d-lg-inline" width="50px" viewBox="0 0 16 16" class="bi bi-sun"
