@@ -8,7 +8,6 @@ use App\Dispensadores;
 
 class DispensadoresController extends Controller
 {
-    //
     public function getProducts(){
         $productos = Dispensadores::
             select('producto.idProducto','producto.nombre','imagenes.ruta')

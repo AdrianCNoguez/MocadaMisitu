@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Macetas;
 class MacetasController extends Controller
 {
-    //
     public function getProducts(){
         $productos = Macetas::
             select('producto.idProducto','producto.nombre','imagenes.ruta')

@@ -17,6 +17,7 @@ class BocinasController extends Controller
         return view('bocinas.bocinas')->with('productos',$productos);
     }
 
+    
     public function viewProduct($id){
 
         $position =  strpos($id, '-xs');

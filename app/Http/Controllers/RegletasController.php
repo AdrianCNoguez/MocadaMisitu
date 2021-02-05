@@ -16,6 +16,7 @@ class RegletasController extends Controller
             return view('regletas.regletas')->with('productos',$productos);
     }
 
+    
     public function viewProduct($id){
 
         $position =  strpos($id, '-xs');

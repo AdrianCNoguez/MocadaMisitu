@@ -8,7 +8,6 @@ use App\Joyeria;
 
 class JoyeriaController extends Controller
 {
-
     public function getProducts(){
         $productos = Joyeria::
             select('producto.idProducto','producto.nombre','imagenes.ruta')

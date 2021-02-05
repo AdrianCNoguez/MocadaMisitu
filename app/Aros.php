@@ -12,7 +12,6 @@ class Aros extends Model
     public static function imagenes($id)
     {
         $imagenes = Imagenes::select('ruta')->where('idProductoImagen_fk', '=', $id)->get();
-
         return $imagenes;
     }
 }

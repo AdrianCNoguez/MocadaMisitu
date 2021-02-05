@@ -5,7 +5,6 @@ use Illuminate\Http\Request;
 use App\Soquets;
 class SoquetsController extends Controller
 {
-    //
     public function getProducts(){
         $productos = Soquets::
             select('producto.idProducto','producto.nombre','imagenes.ruta')

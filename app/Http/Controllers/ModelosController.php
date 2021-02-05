@@ -46,7 +46,6 @@ class ModelosController extends Controller
 
         $explode = explode(" ", $clean);
         
-
         foreach ($explode as $value) {
             foreach ($caracteres as $caracter) {
                 if($value === $caracter){
