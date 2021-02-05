@@ -18,14 +18,42 @@
     <title>Distribuidora Moncada - Misitu</title>
 
     <style>
+  .botonModal{
+    background-color: #E0ECFF;
+   /*color: #424242;*/
+   color: #020202;
+   display:inline-block;
+   
+   margin:20px; 
+   padding:10px 0px; 
+   width:100px;
+   height:70px;
+  }
+
+  .botonModal.gray{
+    background-color: transparent;
+   position:relative;
+   left:5px;
   
+  }
+
+  .botonModal span{
+    font-size:.75em;
+   text-align:center; 
+  
+  }
+
+  .botonModal.radius{
+      border-radius:20px;
+     }
+
 
     </style>
 
 </head>
 <body class="sc d-flex flex-column h-100" >
 
-    <a href="https://api.whatsapp.com/send?phone=+525526506601&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=+525564706104&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
     </a>
 
@@ -39,7 +67,7 @@
            <!-- <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="btn ML-head  "></a> -->
            
            <!--PruebaBtnMercado-->
-           <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="boton-ML yellow short radius">
+           <a href="https://listado.mercadolibre.com.mx/_CustId_433371236" class="boton-ML yellow short radius">
            <div class="ML-head"></div>
             </a>
               <!----> 
@@ -76,7 +104,7 @@
                             <a href="{{ url('/iluminacionInterior/series') }}" class="dropdown-item ml-2">Series</a>
                             <a href="{{ url('/iluminacionInterior/aros') }}" class="dropdown-item ml-2">Selfie light</a>
                             <a href="{{ url('/iluminacionInterior/tirasLed') }}" class="dropdown-item ml-2">Tiras Led</a>
-                            <a href="#" class="dropdown-item ml-2">Vintage</a>
+                            <a href="{{ url('/iluminacionInterior/paneles') }}" class="dropdown-item ml-2">Paneles</a>
 
                             <h5>Iluminación exterior</h5>
                             <a href="{{ url('exterior/reflectores') }}" class="dropdown-item ml-2">Reflectores</a>
@@ -112,6 +140,7 @@
                           <a href="{{ route('dispensadores')}}" class="dropdown-item ml-2">Dispensadores</a>
                           <h4>Otros</h4>                         
                           <a href="{{ route('joyas')}}" class="dropdown-item ml-2">Aretes&Collares</a>
+                          <a href="{{ route('despachadores')}}" class="dropdown-item ml-2">Despachadores</a>
                         </div>
                         
                         <div class="col-sm-5 col-lg-auto">
@@ -120,11 +149,66 @@
                       </div>
                     </div>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre nosotros</a>
+                  <li class="nav-item col-3 sm">
+                     <!--Inicio_ModalAbout-->
+              <!-- Button_modalAbout -->
+              <a  class="" data-toggle="modal" data-target="#About">
+            <span>Acerca de Nosotros</span> 
+            </a>
+              
+              <!--Fin btnModalAbout-->
+              <div class="modal fade" id="About" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title col-11 text-center" id="About">MoncadaMisitu</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                    <p>Somos una distribuida de artículos de Iluminación, Electrónica, Jardín, Ropa, Cocina, Componentes eléctricos y más…. </p>  
+                  <p>Estamos para satisfacer las necesidades de nuestros clientes, nuestra intención es brindar mercancía de calidad, ofreciendo una agradable experiencia de compra. ¡Cada uno de nuestros clientes son importantes para nosotros!</p>
+                  <p>Nuestra calidad es garantizada ya que todos nuestros productos pasan por un control de calidad para cerciorarnos de que nuestro cliente quede satisfecho con su compra.</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <!--Fin_ModalAbout-->
+                  
+
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                  <li class="nav-item col-3 sm">
+                    
+                      <!--ModalContacto-->
+                      <a  class="" data-toggle="modal" data-target="#Contact">
+                               <span>  Contacto </span>
+                      </a>
+            
+                    <div class="modal fade" id="Contact" tabindex="-1" role="dialog" aria-labelledby="Contact" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h4 class="modal-title col-11 text-center" id="Contact">Contacto</h4>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                          <div class="modal-body">
+                                            <ul >          
+                                              <li >+52 1 55 5072 4953</li>
+                                              <li>+52 55 6896 2105</li>
+                                              <li >E-mail:_________</li>
+                                            </ul> 
+                                          </div>
+                                          <div class="modal-footer">
+                                          </div>
+                                    </div>
+                            </div>
+                    </div> 
+                    
                   </li>
               </div>
              

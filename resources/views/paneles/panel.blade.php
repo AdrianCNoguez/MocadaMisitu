@@ -2,7 +2,7 @@
 @section('browser')
     <style>
         img{
-            max-width: 100%;
+            max-width: 100%; 
             height: auto;
         }
     </style>
@@ -13,8 +13,8 @@
 
     <div class="container">
         @section('breadcrumbs')
-            <li class="breadcrumb-item text-white ctive" aria-current="page">Iluminacion Interior</li>
-            <li class="breadcrumb-item text-white active" aria-current="page">Regletas</li>
+        <li class="breadcrumb-item text-white ctive" aria-current="page">Iluminación Interior</li>
+        <li class="breadcrumb-item text-white active" aria-current="page">Paneles</li>
         @endsection
         @include('layouts.nav-pages')
 
@@ -23,11 +23,11 @@
     <div class="card mb-3">
         <div class="row no-gutters align-items-center">
             <div class="col-12 col-md-5">
-                <img id="imageBox" src="{{ asset('img/'.$imagenes->first()['ruta'] ) }}" alt="{{ $imagenes->first() }}" class="img-fluid first-img">
+                <img id="imageBox" src="{{ asset('img/'.$imagenes->first()['ruta'] ) }}" alt="{{ $imagenes->first() }}" class="img-fluid first-img mt-2">
                 <div class="row p-2 justify-content-center">
                     @foreach ($imagenes as $img)
-                        <div class="col-3" id="img-mini">
-                            <img src="{{ asset('img/'.$img->ruta) }}" alt="" class="img-fluid mini-img">
+                        <div class="col-auto" id="img-mini">
+                            <img src="{{ asset('img/'.$img->ruta) }}" alt="" class="mini-img">
                         </div>
                     @endforeach
                 </div>
@@ -41,13 +41,13 @@
                       <ul>
                           <li>Marca: {{ $product->marca }}</li>
                           <li>Modelo: {{ $product->modelo }}</li>
-                          <li>Longitud: {{ $product->Largo }}</li>
-                          <li>Tipo de Led: {{ $product->tipoLed }}</li>
-                          <li>Potencia: {{ $product->potencia }} </li>
-                     </ul>
-                     <a href="{{ url('iluminacionInterior/regletas') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
+                          <li>Medidas: {{ $product->medidas }}</li>
+                          <li>Capacidad: {{ $product->potencia }}</li>
+                          <li>Tipo: {{ $product->tipo }}</li>
+                      </ul>
+                      <a href="{{ url('iluminacionInterior/paneles') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
 

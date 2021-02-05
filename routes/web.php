@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/','LomasVendidoController@getProducts');
+Route::get('/lomasvendido', 'LomasVendidoController@getSale')->name('lomasvendido');
+Route::get('/lomasvendido/{id}', 'LomasVendidoController@viewProduct');
 
 Route::get('search/productos','SearchController@productos')->name('search.productos');
 Route::get('search','SearchController@searchProduct')->name('search.success');
@@ -103,3 +105,11 @@ Route::get('/iluminacionInterior/aros/{id}','AroController@viewProduct');
 Route::get('/otros/joyeria','JoyeriaController@getProducts')->name('joyas');
 Route::get('/otros/joyeria/{id}','JoyeriaController@viewProduct');
 
+<<<<<<< HEAD
+=======
+Route::get('/otros/despachadores','DespachadoresController@getProducts')->name('despachadores');
+Route::get('/otros/despachadores/{id}','DespachadoresController@viewProduct');
+
+/*---------------Lamapras_pared-------------------*/
+//Route::get('/iluminacionInterior/lamparaspared','LamparasController@getProductsIntpared')->name('lamparaspared');
+>>>>>>> ab1f659360584882ebe979342ae34423669d2e80
