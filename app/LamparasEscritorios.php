@@ -4,9 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Proyector extends Model
+class LamparasEscritorios extends Model
 {
-    protected $table = 'proyector';
+    //
+    protected $table = 'lamparasescritorios';
+    protected $primaryKey='idLamparaEscritorio';
 
     public static function imagenes($id)
     {
@@ -14,5 +16,4 @@ class Proyector extends Model
 
         return $imagenes;
     }
-
 }

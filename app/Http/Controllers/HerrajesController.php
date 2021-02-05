@@ -10,7 +10,7 @@ class HerrajesController extends Controller
     public function getProducts(){
         $productos = Herrajes::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','Herrajes.idProductoHerra_fk')
+            ->join('producto','producto.idProducto','=','herrajes.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('herrajes.herrajes')->with('productos',$productos);
@@ -22,7 +22,7 @@ class HerrajesController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Herrajes::
-        join('producto','producto.idProducto','=','Herrajes.idProductoHerra_fk')
+        join('producto','producto.idProducto','=','Herrajes.idProducto')
         ->join('tiporosca','tiporosca.idRosca','=','Herrajes.tipoRoscaHerra_fk')
         ->where('producto.idProducto','=', $id)->first();
 

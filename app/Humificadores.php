@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Humificadores extends Model
 {
     //
-    protected $table ='humidificadores';
+    protected $table ='humificadores';
     protected $primaryKey='idHumidificador';
 
     public static function imagenes($id)

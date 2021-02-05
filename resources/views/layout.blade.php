@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="{{ asset('logo/Logo MisituMocada2.png') }}" />
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('js/jquery-ui/jquery-ui.min.css') }}">
     @yield('browser')
     <link rel="stylesheet" href="{{ asset('fontawesome-free-5.15.1-web/css/all.min.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,200&display=swap" rel="stylesheet">
@@ -118,7 +119,6 @@
                             <a href="{{route('ventiladores')}}" class="dropdown-item ml-2">Ventiladores</a>
                             <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
                             <a href="{{route('bocinas')}}" class="dropdown-item ml-2">Bocina</a>
-
                             <h4>Componentes Electricos</h4>                            
                             <a href="{{ route('extenciones') }}" class="dropdown-item ml-2">Extenciones</a>
                             <a href="{{ route('contactos') }}" class="dropdown-item ml-2">Contactos</a>             
@@ -408,8 +408,24 @@
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="{{ asset('js/jquery-rotate.js') }}"></script>
-
-
+    <script src="{{ asset('js/jquery-ui/jquery-ui.min.js') }}"></script>
+    <script>
+      var productos = ['foco', 'lampara'];
+      $('#search').autocomplete({
+        source: function (request, response) { 
+          $.ajax({
+            url: "{{ route('search.productos') }}",
+            dataType: 'json',
+            data:{
+              term: request.term
+            },
+            success: function(data){
+              response(data)
+            }
+          })
+         }
+      });
+    </script>
 
 
 </body>

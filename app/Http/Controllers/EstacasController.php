@@ -14,7 +14,7 @@ class EstacasController extends Controller
     public function getProducts(){
         $productos = Estacas::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','estacas.idProductoEstaca_fk')          
+            ->join('producto','producto.idProducto','=','estacas.idProducto')          
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('jardin.estacas')->with('productos',$productos);
@@ -26,7 +26,7 @@ class EstacasController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Estacas::
-        join('producto','producto.idProducto','=','estacas.idProductoEstaca_fk')
+        join('producto','producto.idProducto','=','estacas.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Estacas::imagenes($id);

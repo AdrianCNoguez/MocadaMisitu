@@ -10,8 +10,8 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-auto nav-browser order-1 order-md-2">
-                    <form class="d-inline-flex justify-content-end pr-3 py-2">
-                      <input class="form-control  text-center" type="search" placeholder="         Buscar" aria-label="Search">
+                    <form class="d-inline-flex justify-content-end pr-3 py-2" method="get" action="{{ route('search.success') }}">
+                      <input class="form-control  text-center" type="search" placeholder="         Buscar" aria-label="Search" id="search" name="product">
                       <button class="btn btn-light" type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>

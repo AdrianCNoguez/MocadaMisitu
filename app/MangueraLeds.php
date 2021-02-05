@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class MangueraLeds extends Model
 {
     //
-    protected $table = 'mangueraled';
+    protected $table = 'mangueraleds';
     protected $primaryKey='idManguera';
 
     public static function imagenes($id)

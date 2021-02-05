@@ -13,8 +13,8 @@
 
     <div class="container">
         @section('breadcrumbs')
-            <li class="breadcrumb-item text-white ctive" aria-current="page">Electronica</li>
-            <li class="breadcrumb-item text-white active" aria-current="page">Ventiladores</li>
+        <li class="breadcrumb-item text-white active" aria-current="page">Componentes Eléctricos</li>
+        <li class="breadcrumb-item text-white active" aria-current="page">Extensiones</li>
         @endsection
         @include('layouts.nav-pages')
 

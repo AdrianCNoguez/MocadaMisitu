@@ -4,11 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class LamparaEscritorios extends Model
+class Macetas extends Model
 {
     //
-    protected $table = 'lamparasescritorio';
-    protected $primaryKey='idLamparaEscritorio';
+    protected $table = 'macetas';
+    protected $primaryKey='idMaceta';
 
     public static function imagenes($id)
     {

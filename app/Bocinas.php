@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Bocinas extends Model
 {
-    protected $table = 'bocina';
+    protected $table = 'bocinas';
 
     public static function imagenes($id)
     {

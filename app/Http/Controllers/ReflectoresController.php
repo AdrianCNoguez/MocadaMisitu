@@ -16,7 +16,7 @@ class ReflectoresController extends Controller
     public function getProducts(){
         $productos = reflectores::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','reflectores.idProductoRef_fk')          
+            ->join('producto','producto.idProducto','=','reflectores.idProducto')          
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('reflectores.reflectores')->with('productos',$productos);
@@ -28,7 +28,7 @@ class ReflectoresController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Reflectores::
-        join('producto','producto.idProducto','=','reflectores.idProductoRef_fk')
+        join('producto','producto.idProducto','=','reflectores.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Reflectores::imagenes($id);
