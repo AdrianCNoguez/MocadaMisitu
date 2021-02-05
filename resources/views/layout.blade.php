@@ -18,34 +18,15 @@
     <title>Distribuidora Moncada - Misitu</title>
 
     <style>
-  .botonModal{
-    background-color: #E0ECFF;
-   /*color: #424242;*/
-   color: #020202;
-   display:inline-block;
-   
-   margin:20px; 
-   padding:10px 0px; 
-   width:100px;
-   height:70px;
-  }
-
-  .botonModal.gray{
-    background-color: transparent;
+  
+  .h6 {
+   font-style:arial;
+   font-size:5em;
+   color: #6c6765;
    position:relative;
-   left:5px;
-  
-  }
-
-  .botonModal span{
-    font-size:.75em;
-   text-align:center; 
-  
-  }
-
-  .botonModal.radius{
-      border-radius:20px;
-     }
+    top:10px;
+ }
+   
 
 
     </style>
@@ -119,7 +100,7 @@
                             <a href="{{route('ventiladores')}}" class="dropdown-item ml-2">Ventiladores</a>
                             <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
                             <a href="{{route('bocinas')}}" class="dropdown-item ml-2">Bocina</a>
-                            <h4>Componentes Electricos</h4>                            
+                            <h4>Componentes Electricosss</h4>                            
                             <a href="{{ route('extenciones') }}" class="dropdown-item ml-2">Extenciones</a>
                             <a href="{{ route('contactos') }}" class="dropdown-item ml-2">Contactos</a>             
                             <a href="{{ route('soquets') }}" class="dropdown-item ml-2">Soquets</a>                            
@@ -152,8 +133,8 @@
                   <li class="nav-item col-3 sm">
                      <!--Inicio_ModalAbout-->
               <!-- Button_modalAbout -->
-              <a  class="" data-toggle="modal" data-target="#About">
-            <span>Acerca de Nosotros</span> 
+              <a  class="h6" data-toggle="modal" data-target="#About">
+         Nosotros
             </a>
               
               <!--Fin btnModalAbout-->
@@ -183,8 +164,8 @@
                   <li class="nav-item col-3 sm">
                     
                       <!--ModalContacto-->
-                      <a  class="" data-toggle="modal" data-target="#Contact">
-                               <span>  Contacto </span>
+                      <a  class="h6" data-toggle="modal" data-target="#Contact">
+                                Contacto 
                       </a>
             
                     <div class="modal fade" id="Contact" tabindex="-1" role="dialog" aria-labelledby="Contact" aria-hidden="true">
