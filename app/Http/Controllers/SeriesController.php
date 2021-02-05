@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Series;
 class SeriesController extends Controller
 {
-    //
     public function getProducts(){
         $productos = Series::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
@@ -15,6 +14,7 @@ class SeriesController extends Controller
             ->get()->groupBy('idProducto');
             return view('series.series')->with('productos',$productos);
     }
+
 
     public function viewProduct($id){
 

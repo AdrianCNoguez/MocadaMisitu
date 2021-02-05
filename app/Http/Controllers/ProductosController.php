@@ -19,6 +19,7 @@ class ProductosController extends Controller
             select('producto.idProducto','producto.nombre','imagenes.ruta')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
+            
             return view('welcome')->with('prod',$products);
     }
 }

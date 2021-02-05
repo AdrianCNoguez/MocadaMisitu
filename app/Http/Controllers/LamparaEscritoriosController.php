@@ -7,7 +7,6 @@ use App\LamparasEscritorios;
 
 class LamparaEscritoriosController extends Controller
 {
-    //
     public function getProducts(){
         $productos = LamparasEscritorios::
             select('producto.idProducto','producto.nombre','imagenes.ruta')

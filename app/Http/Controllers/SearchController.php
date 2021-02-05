@@ -28,6 +28,7 @@ class SearchController extends Controller
         return $data;
     }
 
+    
     public function searchProduct(Request $request){
         $modelos = ModelosController::obtenerModelos();
         $collection = collect();

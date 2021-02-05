@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Contactos;
 class ContactosController extends Controller
 {
-    //
     public function getProducts(){
         $productos = Contactos::
             select('producto.idProducto','producto.nombre','imagenes.ruta')

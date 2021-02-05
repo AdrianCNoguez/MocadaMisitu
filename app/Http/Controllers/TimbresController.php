@@ -17,6 +17,7 @@ class TimbresController extends Controller
         return view('timbres.timbres')->with('productos',$productos);
     }
 
+    
     public function viewProduct($id){
 
         $position =  strpos($id, '-xs');

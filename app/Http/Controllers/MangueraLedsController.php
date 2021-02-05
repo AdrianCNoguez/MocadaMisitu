@@ -7,7 +7,6 @@ use App\Mangueraleds;
 
 class MangueraLedsController extends Controller
 {
-    //
     public function getProducts(){
         $productos = Mangueraleds::
             select('producto.idProducto','producto.nombre','imagenes.ruta')

@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Aros;
 class AroController extends Controller
 {
-    //
     public function getProducts(){
         $productos = Aros::
             select('producto.idProducto','producto.nombre','imagenes.ruta')

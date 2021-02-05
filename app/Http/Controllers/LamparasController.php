@@ -8,8 +8,6 @@ use DB;
 
 class LamparasController extends Controller
 {
-
-    
     public function getProducts(){
         $productos = lamparas::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
