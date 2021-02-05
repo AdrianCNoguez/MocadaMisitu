@@ -33,10 +33,14 @@ footer {
     padding: 0;
 }
 
+.buscador label {
+    color: #0abf53;
+}
 
-/* ul {
+footer ul,
+.categorias ul {
     list-style: none;
-} */
+}
 
 .fas {
     font-size: 40px;
@@ -304,25 +308,6 @@ footer {
     background: #25d366;
     border-radius: 5px;
 }
-
-
-/* SLIDER PRODUCTS */
-
-
-/* .card{
-    position: relative;
-   -webkit-box-shadow: 5px 5px 21px 5px rgba(0,0,0,0.93);
-   box-shadow: 5px 5px 21px 5px rgba(0,0,0,0.93);
-    transition: margin 1s;
-
-} */
-
-
-/* .card:hover{
-   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.81);
-   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.81);
-   margin: 8px;
-} */
 
 .card>h5 {
     font-size: 12px;

@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Espejo;
+use App\Espejos;
 class EspejoController extends Controller
 {
     public function getProducts(){
-        $productos = Espejo::
+        $productos = Espejos::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','Espejo.idProductoEspejo_fk')
+            ->join('producto','producto.idProducto','=','Espejos.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('espejos.espejos')->with('productos',$productos);
@@ -21,11 +21,11 @@ class EspejoController extends Controller
         $position =  strpos($id, '-xs');
         $id = substr($id, $position + 3);
 
-        $product = Espejo::
-        join('producto','producto.idProducto','=','Espejo.idProductoEspejo_fk')
+        $product = Espejos::
+        join('producto','producto.idProducto','=','Espejos.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
-        $imagenes = Espejo::imagenes($id);
+        $imagenes = Espejos::imagenes($id);
 
         return view('espejos.espejo')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
 

@@ -14,8 +14,4 @@ class Productos extends Model
         return $this->hasOne('App\Timbres', 'idProdutoTimbre_fk');
     }
 
-    public function imagenes()
-    {
-        return $this->hasMany('App\Imagenes','idProductoImagen_fk');
-    }
 }

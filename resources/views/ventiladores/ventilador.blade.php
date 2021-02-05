@@ -48,7 +48,7 @@
                           <li>Medidas: {{ $product->medidas }} </li>
                           
                       </ul>
-                      <a href="{{ url('electronica/ventiladores') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
+                      <a href="{{ url('/electronica/ventiladores') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>
             </div>
         </div>

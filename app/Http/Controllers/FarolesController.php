@@ -15,7 +15,7 @@ class FarolesController extends Controller
     public function getProducts(){
         $productos = faroles::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','faroles.idProductoFarol_fk')          
+            ->join('producto','producto.idProducto','=','faroles.idProducto')          
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('faroles.faroles')->with('productos',$productos);
@@ -27,7 +27,7 @@ class FarolesController extends Controller
         $id = substr($id, $position + 3);
 
         $product = faroles::
-        join('producto','producto.idProducto','=','faroles.idProductoFarol_fk')
+        join('producto','producto.idProducto','=','faroles.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = faroles::imagenes($id);

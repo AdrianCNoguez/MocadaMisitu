@@ -10,7 +10,7 @@ class SeriesController extends Controller
     public function getProducts(){
         $productos = Series::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','series.idProductoSerie_fk')
+            ->join('producto','producto.idProducto','=','series.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('series.series')->with('productos',$productos);
@@ -22,7 +22,7 @@ class SeriesController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Series::
-        join('producto','producto.idProducto','=','series.idProductoSerie_fk')
+        join('producto','producto.idProducto','=','series.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Series::imagenes($id);

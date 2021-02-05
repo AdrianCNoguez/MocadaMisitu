@@ -11,7 +11,7 @@ class ConsolasController extends Controller
     public function getProducts(){
         $productos = Consolas::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','Consolas.idProductoConsola_fk')
+            ->join('producto','producto.idProducto','=','Consolas.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('consolas.consolas')->with('productos',$productos);
@@ -23,7 +23,7 @@ class ConsolasController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Consolas::
-        join('producto','producto.idProducto','=','Consolas.idProductoConsola_fk')
+        join('producto','producto.idProducto','=','Consolas.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         

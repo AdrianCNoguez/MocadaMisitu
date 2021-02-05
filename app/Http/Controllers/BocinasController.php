@@ -10,7 +10,7 @@ class BocinasController extends Controller
 {
     public function getProducts(){
         $productos = Bocinas::select('producto.idProducto','producto.nombre','producto.descripcion','imagenes.ruta')
-        ->join('producto','producto.idProducto','=','bocina.idProductoBocina_fk')
+        ->join('producto','producto.idProducto','=','bocinas.idProducto')
         ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
         ->get()->groupBy('idProducto');
 
@@ -23,7 +23,7 @@ class BocinasController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Bocinas::
-        join('producto','producto.idProducto','=','bocina.idProductoBocina_fk')
+        join('producto','producto.idProducto','=','bocinas.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Bocinas::imagenes($id);

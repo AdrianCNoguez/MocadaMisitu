@@ -10,7 +10,7 @@ class FocosController extends Controller
     public function getProducts(){
         $productos = Focos::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','Focos.idProducto_fk')
+            ->join('producto','producto.idProducto','=','Focos.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('focos.focos')->with('productos',$productos);
@@ -22,7 +22,7 @@ class FocosController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Focos::
-        join('producto','producto.idProducto','=','Focos.idProducto_fk')
+        join('producto','producto.idProducto','=','Focos.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Focos::imagenes($id);

@@ -10,7 +10,7 @@ class RegletasController extends Controller
     public function getProducts(){
         $productos = Regletas::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','regletas.idProductoRegleta_fk')
+            ->join('producto','producto.idProducto','=','regletas.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('regletas.regletas')->with('productos',$productos);
@@ -22,7 +22,7 @@ class RegletasController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Regletas::
-        join('producto','producto.idProducto','=','regletas.idProductoRegleta_fk')
+        join('producto','producto.idProducto','=','regletas.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Regletas::imagenes($id);

@@ -4,15 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Proyector;
+use App\Proyectores;
 
 class ProyectorController extends Controller
 {
     //
     public function getProducts(){
-        $productos = Proyector::
+        $productos = Proyectores::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','Proyector.idProductoProyector_fk')
+            ->join('producto','producto.idProducto','=','Proyectores.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('proyectores.proyectores')->with('productos',$productos);
@@ -23,11 +23,11 @@ class ProyectorController extends Controller
         $position =  strpos($id, '-xs');
         $id = substr($id, $position + 3);
 
-        $product = Proyector::
-        join('producto','producto.idProducto','=','Proyector.idProductoProyector_fk')
+        $product = Proyectores::
+        join('producto','producto.idProducto','=','Proyectores.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
-        $imagenes = Proyector::imagenes($id);
+        $imagenes = Proyectores::imagenes($id);
 
         return view('proyectores.proyector')->with(compact('product', $product))->with(compact('imagenes',$imagenes));
 
