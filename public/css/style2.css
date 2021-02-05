@@ -80,7 +80,7 @@
    
   }
 
-  /*Boton footer*/
+  /*INICIO------------------------------------Boton footer*/
 
 /*Esta es la imagen*/
   .ML-footer{
@@ -89,16 +89,16 @@
    background-repeat: no-repeat;
  
    background-size: 100% 100%;
-   top:5px;
-   height:150px;
-   width:250px;
+   top:-3px;
+   height:130px;
+   width:220px;
    position:relative;
-   left:-5px;
+   left:-17px;
    /*background-position:center;*/
 }
 
 
-    /*Boton del footer*/
+    /*Boton del footer(este se modifcia XD)*/
     .botonML-FT{
       background:#b41717;
       /*color: #fff159;*/
@@ -108,8 +108,8 @@
       font-size:1.25em;
       margin:20px; 
       padding:10px 0px; 
-      width:250px;
-      height:170px;
+      width:190px;
+      height:130px;
      }
     
       /*colores */
@@ -136,26 +136,6 @@
      }
 /*Boton para Modal  */
 
-.botonModal{
-   background:#b41717;
-   /*color: #424242;*/
-   color: #020202;
-   font-weight: bold;
-   display:inline-block;
-   font-size:.50em;
-   margin:20px; 
-   padding:10px 0px; 
-   width:150px;
-   height:100px;
-  }
 
-  .botonModal.gray{
-   background:#424242;
-   box-shadow:0px 3px 0px #020202;
-   /*color:#2d3277;*/ /*color Azul */
-   position:relative;
-   left:5px;
-  
-  }
 
   

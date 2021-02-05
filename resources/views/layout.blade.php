@@ -18,7 +18,7 @@
 
     <style>
   .botonModal{
-   background:#b41717;
+    background-color: #E0ECFF;
    /*color: #424242;*/
    color: #020202;
    display:inline-block;
@@ -30,8 +30,7 @@
   }
 
   .botonModal.gray{
-   background:#424242;
-   box-shadow:0px 3px 0px #020202;
+    background-color: transparent;
    position:relative;
    left:5px;
   
@@ -150,11 +149,11 @@
                       </div>
                     </div>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item col-3 sm">
                      <!--Inicio_ModalAbout-->
               <!-- Button_modalAbout -->
-              <a  class="botonModal gray radius" data-toggle="modal" data-target="#About">
-           <span >  Acerca de Nosotros </span>
+              <a  class="" data-toggle="modal" data-target="#About">
+            <span>Acerca de Nosotros</span> 
             </a>
               
               <!--Fin btnModalAbout-->
@@ -181,10 +180,10 @@
                   
 
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item col-3 sm">
                     
                       <!--ModalContacto-->
-                      <a  class="botonModal" data-toggle="modal" data-target="#Contact">
+                      <a  class="" data-toggle="modal" data-target="#Contact">
                                <span>  Contacto </span>
                       </a>
             
