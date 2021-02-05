@@ -105,11 +105,3 @@ Route::get('/iluminacionInterior/aros/{id}','AroController@viewProduct');
 Route::get('/otros/joyeria','JoyeriaController@getProducts')->name('joyas');
 Route::get('/otros/joyeria/{id}','JoyeriaController@viewProduct');
 
-<<<<<<< HEAD
-=======
-Route::get('/otros/despachadores','DespachadoresController@getProducts')->name('despachadores');
-Route::get('/otros/despachadores/{id}','DespachadoresController@viewProduct');
-
-/*---------------Lamapras_pared-------------------*/
-//Route::get('/iluminacionInterior/lamparaspared','LamparasController@getProductsIntpared')->name('lamparaspared');
->>>>>>> ab1f659360584882ebe979342ae34423669d2e80
