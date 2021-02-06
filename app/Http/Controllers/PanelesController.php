@@ -14,7 +14,7 @@ class PanelesController extends Controller
     public function getProducts(){
         $productos = Paneles::
             select('producto.idProducto','producto.nombre','imagenes.ruta')
-            ->join('producto','producto.idProducto','=','paneles.idProductoPanel_fk')
+            ->join('producto','producto.idProducto','=','paneles.idProducto')
             ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
             ->get()->groupBy('idProducto');
             return view('paneles.paneles')->with('productos',$productos);
@@ -26,7 +26,7 @@ class PanelesController extends Controller
         $id = substr($id, $position + 3);
 
         $product = Paneles::
-        join('producto','producto.idProducto','=','paneles.idProductoPanel_fk')
+        join('producto','producto.idProducto','=','paneles.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
         $imagenes = Paneles::imagenes($id);

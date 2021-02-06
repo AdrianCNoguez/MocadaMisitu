@@ -3,32 +3,31 @@
 Route::get('/', function () {
     return view('welcome');
 });
+/*Lo más vendido*/
 Route::get('/','LomasVendidoController@getProducts');
 Route::get('/lomasvendido', 'LomasVendidoController@getSale')->name('lomasvendido');
 Route::get('/lomasvendido/{id}', 'LomasVendidoController@viewProduct');
-
+/*Search*/
 Route::get('search/productos','SearchController@productos')->name('search.productos');
 Route::get('search','SearchController@searchProduct')->name('search.success');
+<<<<<<< HEAD
 
+=======
+>>>>>>> SweetPain
 /*--Electronica---*/
 Route::get('/electronica/ventiladores','VentiladoresController@getProducts')->name('ventiladores');
 Route::get('/electronica/ventiladores/{id}','VentiladoresController@viewProduct');
-
 Route::get('/electronica/timbres','TimbresController@getProducts')->name('timbres');
 Route::get('/electronica/timbres/{id}', 'TimbresController@viewProduct');
-
 Route::get('/electronica/bocinas','BocinasController@getProducts')->name('bocinas');
 Route::get('/electronica/bocinas/{id}','BocinasController@viewProduct');
 /*---Componentes-----------*/
 Route::get('/componentes/extenciones','ExtencionesController@getProducts')->name('extenciones');
 Route::get('/componentes/extenciones/{id}','ExtencionesController@viewProduct');
-
 Route::get('/componentes/contactos','ContactosController@getProducts')->name('contactos');
 Route::get('/componentes/contactos/{id}','ContactosController@viewProduct');
-
 Route::get('/componentes/soquets','SoquetsController@getProducts')->name('soquets');
 Route::get('/componentes/soquets/{id}','SoquetsController@viewProduct');
-
 Route::get('/componentes/cables','CableController@getProducts')->name('cables');
 Route::get('/componentes/cables/{id}','CableController@viewProduct');
 /*----Entretenimiento-------*/
@@ -37,19 +36,24 @@ Route::get('/entretenimiento/consolas/{id}','ConsolasController@viewProduct');
 /*----DecoracionHogar------*/
 Route::get('/decoracion/herrajes','HerrajesController@getProducts')->name('herrajes');
 Route::get('/decoracion/herrajes/{id}','HerrajesController@viewProduct');
-
 Route::get('/decoracion/proyectores','ProyectorController@getProducts')->name('proyectores');
 Route::get('/decoracion/proyectores/{id}','ProyectorController@viewProduct');
-
 Route::get('/decoracion/espejos','EspejoController@getProducts')->name('espejos');
 Route::get('/decoracion/espejos/{id}','EspejoController@viewProduct');
+<<<<<<< HEAD
 
 
 Route::get('/decoracion/macetas','MacetasController@getProducts')->name('macetas');
 Route::get('/decoracion/macetas/{id}','MacetasController@viewProduct');
+=======
+Route::get('/decoracion/macetas','MacetasController@getProducts')->name('macetas');
+Route::get('/decoracion/macetas/{id}','MacetasController@viewProduct');
+Route::get('/iluminacionInterior/paneles','PanelesController@getProducts')->name('paneles');
+Route::get('/iluminacionInterior/paneles/{id}','PanelesController@viewProduct');
+>>>>>>> SweetPain
 /*----Exteriores-----------*/
-Route::get('/exterior/reflectores','ReflectoresController@getProducts');
-Route::get('/exterior/reflectores/{id}', 'ReflectoresController@viewProduct');
+Route::get('/exterior/reflectores','ReflectoresController@getProducts')->name('reflectores');
+//Route::get('/exterior/reflectores/{id}', 'ReflectoresController@viewProduct');
 
 Route::get('/exterior/lamparas','LamparasController@getProducts');
 Route::get('/exterior/lamparas/{id}', 'LamparasController@viewProducts');
@@ -97,5 +101,3 @@ Route::get('/otros/joyeria/{id}','JoyeriaController@viewProduct');
 Route::get('/otros/despachadores','DespachadoresController@getProducts')->name('despachadores');
 Route::get('/otros/despachadores/{id}','DespachadoresController@viewProduct');
 
-/*---------------Lamapras_pared-------------------*/
-//Route::get('/iluminacionInterior/lamparaspared','LamparasController@getProductsIntpared')->name('lamparaspared');
