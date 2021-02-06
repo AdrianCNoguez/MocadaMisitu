@@ -21,7 +21,6 @@ Route::get('/lomasvendido/{id}', 'LomasVendidoController@viewProduct');
 /*Search*/
 Route::get('search/productos','SearchController@productos')->name('search.productos');
 Route::get('search','SearchController@searchProduct')->name('search.success');
-
 /*--Electronica---*/
 Route::get('/electronica/ventiladores','VentiladoresController@getProducts')->name('ventiladores');
 Route::get('/electronica/ventiladores/{id}','VentiladoresController@viewProduct');
@@ -53,8 +52,8 @@ Route::get('/decoracion/macetas/{id}','MacetasController@viewProduct');
 Route::get('/iluminacionInterior/paneles','PanelesController@getProducts')->name('paneles');
 Route::get('/iluminacionInterior/paneles/{id}','PanelesController@viewProduct');
 /*----Exteriores-----------*/
-Route::get('/exterior/reflectores','ReflectoresController@getProducts');
-Route::get('/exterior/reflectores/{id}', 'ReflectoresController@viewProduct');
+Route::get('/exterior/reflectores','ReflectoresController@getProducts')->name('reflectores');
+//Route::get('/exterior/reflectores/{id}', 'ReflectoresController@viewProduct');
 
 Route::get('/exterior/lamparas','LamparasController@getProducts');
 Route::get('/exterior/lamparas/{id}', 'LamparasController@viewProducts');
