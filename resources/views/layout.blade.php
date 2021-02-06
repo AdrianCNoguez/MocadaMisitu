@@ -100,7 +100,7 @@
                             <a href="{{route('ventiladores')}}" class="dropdown-item ml-2">Ventiladores</a>
                             <a href="{{route('timbres')}}" class="dropdown-item ml-2">Timbres</a>
                             <a href="{{route('bocinas')}}" class="dropdown-item ml-2">Bocina</a>
-                            <h4>Componentes Electricosss</h4>                            
+                            <h4>Componentes Electricos</h4>                            
                             <a href="{{ route('extenciones') }}" class="dropdown-item ml-2">Extenciones</a>
                             <a href="{{ route('contactos') }}" class="dropdown-item ml-2">Contactos</a>             
                             <a href="{{ route('soquets') }}" class="dropdown-item ml-2">Soquets</a>                            

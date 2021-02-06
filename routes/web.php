@@ -10,10 +10,6 @@ Route::get('/lomasvendido/{id}', 'LomasVendidoController@viewProduct');
 /*Search*/
 Route::get('search/productos','SearchController@productos')->name('search.productos');
 Route::get('search','SearchController@searchProduct')->name('search.success');
-<<<<<<< HEAD
-
-=======
->>>>>>> SweetPain
 /*--Electronica---*/
 Route::get('/electronica/ventiladores','VentiladoresController@getProducts')->name('ventiladores');
 Route::get('/electronica/ventiladores/{id}','VentiladoresController@viewProduct');
@@ -40,17 +36,10 @@ Route::get('/decoracion/proyectores','ProyectorController@getProducts')->name('p
 Route::get('/decoracion/proyectores/{id}','ProyectorController@viewProduct');
 Route::get('/decoracion/espejos','EspejoController@getProducts')->name('espejos');
 Route::get('/decoracion/espejos/{id}','EspejoController@viewProduct');
-<<<<<<< HEAD
-
-
-Route::get('/decoracion/macetas','MacetasController@getProducts')->name('macetas');
-Route::get('/decoracion/macetas/{id}','MacetasController@viewProduct');
-=======
 Route::get('/decoracion/macetas','MacetasController@getProducts')->name('macetas');
 Route::get('/decoracion/macetas/{id}','MacetasController@viewProduct');
 Route::get('/iluminacionInterior/paneles','PanelesController@getProducts')->name('paneles');
 Route::get('/iluminacionInterior/paneles/{id}','PanelesController@viewProduct');
->>>>>>> SweetPain
 /*----Exteriores-----------*/
 Route::get('/exterior/reflectores','ReflectoresController@getProducts')->name('reflectores');
 //Route::get('/exterior/reflectores/{id}', 'ReflectoresController@viewProduct');
