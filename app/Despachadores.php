@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Despachadores extends Model
 {
     //
-    protected $table ='despachador';
+    protected $table ='despachadores';
     protected $primaryKey='idDespachador';
 
     public static function imagenes($id)
