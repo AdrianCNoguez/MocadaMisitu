@@ -54,6 +54,7 @@ Route::get('/decoracion/proyectores/{id}','ProyectorController@viewProduct');
 Route::get('/decoracion/espejos','EspejoController@getProducts')->name('espejos');
 Route::get('/decoracion/espejos/{id}','EspejoController@viewProduct');
 
+
 Route::get('/decoracion/macetas','MacetasController@getProducts')->name('macetas');
 Route::get('/decoracion/macetas/{id}','MacetasController@viewProduct');
 /*----Exteriores-----------*/
