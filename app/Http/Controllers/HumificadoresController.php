@@ -16,6 +16,7 @@ class HumificadoresController extends Controller
             return view('humificadores.humificadores')->with('productos',$productos);
     }
 
+    
     public function viewProduct($id){
 
         $position =  strpos($id, '-xs');

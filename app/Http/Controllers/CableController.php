@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Cables;
 class CableController extends Controller
 {
-    //
     public function getProducts(){
         $productos = Cables::
             select('producto.idProducto','producto.nombre','imagenes.ruta')

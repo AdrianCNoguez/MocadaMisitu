@@ -15,6 +15,7 @@ class VentiladoresController extends Controller
         return view('ventiladores.ventiladores')->with('productos',$productos);
     }
 
+    
     public function viewProduct($id)
     {
         $position =  strpos($id, '-xs');

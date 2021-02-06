@@ -16,6 +16,7 @@ class EspejoController extends Controller
             return view('espejos.espejos')->with('productos',$productos);
     }
 
+    
     public function viewProduct($id){
 
         $position =  strpos($id, '-xs');

@@ -16,6 +16,7 @@ class HerrajesController extends Controller
             return view('herrajes.herrajes')->with('productos',$productos);
     }
 
+    
     public function viewProduct($id){
 
         $position =  strpos($id, '-xs');

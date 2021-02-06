@@ -31,4 +31,32 @@ class ModelosController extends Controller
 
         return $modelos;
     }
+
+
+    public static function limpiarPeticion($articulo){
+        $caracteres = ['|','or','select','update','delete','xor','&&','*','?','and','not','some','truncate',];
+        $clean = filter_var($articulo, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+        $flag = 'success';
+
+        $clean = trim($clean);
+        if ($clean === '') {
+            $flag = 'error';
+            return $flag;
+        }
+
+        $explode = explode(" ", $clean);
+        
+        foreach ($explode as $value) {
+            foreach ($caracteres as $caracter) {
+                if($value === $caracter){
+                    $flag = 'error';
+                    break 2;
+                }
+            }
+        }
+
+        return $clean;
+    }
+
+    
 }

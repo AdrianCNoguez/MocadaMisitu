@@ -28,29 +28,34 @@ class SearchController extends Controller
         return $data;
     }
 
+    
     public function searchProduct(Request $request){
         $modelos = ModelosController::obtenerModelos();
         $collection = collect();
-
         $articulo = $request->get('product');
 
+        $articulo = ModelosController::limpiarPeticion($articulo);
 
-     for( $i = 0; $i < count($modelos) ; $i++ ) { 
-
-        $productos = DB::table($modelos[$i])
-        ->join('producto','producto.idProducto','=', $modelos[$i].'.idProducto')
-        ->where('producto.nombre','LIKE','%'. $articulo .'%')->get();
+        if ($articulo == 'error') {
+            return redirect()->back();
+        }else{
             
-            if (!$productos->isEmpty()) {
-                foreach ($productos as $producto) {
-                    $imagenes = Imagenes::where('idProductoImagen_fk',$producto->idProducto)->first();
-                    $producto->imagen = !is_null($imagenes) ? $imagenes->ruta: null;
-                    $collection->push($producto);
-                }
-            }
-        } 
+            for( $i = 0; $i < count($modelos) ; $i++ ) { 
 
-
-        return view('search')->with(compact('collection', $collection));
-    }
+                $productos = DB::table($modelos[$i])
+                ->join('producto','producto.idProducto','=', $modelos[$i].'.idProducto')
+                ->where('producto.nombre','LIKE','%'. $articulo .'%')->get();
+                    
+                    if (!$productos->isEmpty()) {
+                        foreach ($productos as $producto) {
+                            $imagenes = Imagenes::where('idProductoImagen_fk',$producto->idProducto)->first();
+                            $producto->imagen = !is_null($imagenes) ? $imagenes->ruta: null;
+                            $collection->push($producto);
+                        }
+                    }
+                } 
+        }
+        
+        return view('search')->with(compact('collection', $collection)); 
+    } 
 }

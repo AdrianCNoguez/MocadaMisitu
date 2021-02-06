@@ -21,6 +21,7 @@ class FarolesController extends Controller
             return view('faroles.faroles')->with('productos',$productos);
     }
 
+    
     public function viewProducts($id){
 
         $position =  strpos($id, '-xs');

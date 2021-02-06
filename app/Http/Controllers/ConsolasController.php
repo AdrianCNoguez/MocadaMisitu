@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Consolas;
 class ConsolasController extends Controller
 {
-    //entretenimiento
     public function getProducts(){
         $productos = Consolas::
             select('producto.idProducto','producto.nombre','imagenes.ruta')

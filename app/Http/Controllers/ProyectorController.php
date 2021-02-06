@@ -8,7 +8,6 @@ use App\Proyectores;
 
 class ProyectorController extends Controller
 {
-    //
     public function getProducts(){
         $productos = Proyectores::
             select('producto.idProducto','producto.nombre','imagenes.ruta')

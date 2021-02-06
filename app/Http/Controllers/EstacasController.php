@@ -20,6 +20,7 @@ class EstacasController extends Controller
             return view('jardin.estacas')->with('productos',$productos);
     }
 
+    
     public function viewProducts($id){
 
         $position =  strpos($id, '-xs');
