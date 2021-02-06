@@ -53,7 +53,7 @@ Route::get('/iluminacionInterior/paneles','PanelesController@getProducts')->name
 Route::get('/iluminacionInterior/paneles/{id}','PanelesController@viewProduct');
 /*----Exteriores-----------*/
 Route::get('/exterior/reflectores','ReflectoresController@getProducts')->name('reflectores');
-//Route::get('/exterior/reflectores/{id}', 'ReflectoresController@viewProduct');
+Route::get('/exterior/reflectores/{id}', 'ReflectoresController@viewProduct');
 
 Route::get('/exterior/lamparas','LamparasController@getProducts');
 Route::get('/exterior/lamparas/{id}', 'LamparasController@viewProducts');
