@@ -41,6 +41,7 @@ class SearchController extends Controller
         ->join('producto','producto.idProducto','=', $modelos[$i].'.idProducto')
         ->where('producto.nombre','LIKE','%'. $articulo .'%')->get();
             
+<<<<<<< HEAD
             if (!$productos->isEmpty()) {
                 foreach ($productos as $producto) {
                     $imagenes = Imagenes::where('idProductoImagen_fk',$producto->idProducto)->first();
@@ -53,4 +54,25 @@ class SearchController extends Controller
 
         return view('search')->with(compact('collection', $collection));
     }
+=======
+            for( $i = 0; $i < count($modelos) ; $i++ ) { 
+
+                $productos = DB::table($modelos[$i])
+                ->join('producto','producto.idProducto','=', $modelos[$i].'.idProducto')
+                ->where('producto.nombre','LIKE','%'. $articulo .'%')->get();
+                
+                    if (!$productos->isEmpty()) {
+                        foreach ($productos as $producto) {
+                            $imagenes = Imagenes::where('idProductoImagen_fk',$producto->idProducto)->get();
+                            $producto->imagen = !is_null($imagenes) ? $imagenes->first()['ruta']: null;
+                            $collection->push($producto);
+                        } 
+                    }
+                } 
+
+        }
+        
+        return view('search')->with(compact('collection', $collection)); 
+    } 
+>>>>>>> 65e3c42c6cb1eb35785728e9692ff8431799b934
 }

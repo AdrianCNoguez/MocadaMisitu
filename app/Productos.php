@@ -16,6 +16,9 @@ class Productos extends Model
 
     public function imagenes()
     {
+        
         return $this->hasMany('App\Imagenes','idProductoImagen_fk');
     }
+
+
 }
