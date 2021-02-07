@@ -62,10 +62,5 @@ class ProductosController extends Controller
     } 
     
 
-<<<<<<< HEAD
-=======
-    }
-
->>>>>>> SweetPain
     
 }
