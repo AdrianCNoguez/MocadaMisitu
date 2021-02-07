@@ -8,7 +8,7 @@ use App\Productos;
 use App\Ventiladores;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Collection;
+use Illuminate\Support\Collection; 
 
 class SearchController extends Controller
 {
@@ -28,18 +28,33 @@ class SearchController extends Controller
         return $data;
     }
 
-    
     public function searchProduct(Request $request){
         $modelos = ModelosController::obtenerModelos();
         $collection = collect();
+
         $articulo = $request->get('product');
 
-        $articulo = ModelosController::limpiarPeticion($articulo);
 
-        if ($articulo == 'error') {
-            return redirect()->back();
-        }else{
+     for( $i = 0; $i < count($modelos) ; $i++ ) { 
+
+        $productos = DB::table($modelos[$i])
+        ->join('producto','producto.idProducto','=', $modelos[$i].'.idProducto')
+        ->where('producto.nombre','LIKE','%'. $articulo .'%')->get();
             
+<<<<<<< HEAD
+            if (!$productos->isEmpty()) {
+                foreach ($productos as $producto) {
+                    $imagenes = Imagenes::where('idProductoImagen_fk',$producto->idProducto)->first();
+                    $producto->imagen = !is_null($imagenes) ? $imagenes->ruta: null;
+                    $collection->push($producto);
+                }
+            }
+        } 
+
+
+        return view('search')->with(compact('collection', $collection));
+    }
+=======
             for( $i = 0; $i < count($modelos) ; $i++ ) { 
 
                 $productos = DB::table($modelos[$i])
@@ -64,4 +79,5 @@ class SearchController extends Controller
         }
         
     } 
+>>>>>>> 65e3c42c6cb1eb35785728e9692ff8431799b934
 }
