@@ -53,10 +53,15 @@ class SearchController extends Controller
                             $collection->push($producto);
                         } 
                     }
-                } 
+            } 
+
+            if ($collection->isEmpty()) {
+                return redirect()->back();
+            }else{
+                return view('search')->with(compact('collection', $collection)); 
+            }
 
         }
         
-        return view('search')->with(compact('collection', $collection)); 
     } 
 }
