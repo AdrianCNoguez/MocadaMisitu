@@ -208,7 +208,8 @@
 
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
-                        <a href="">
+
+                        <a href="{{ route('productos')}}">
                             <img src="{{ asset('img/images/Libro1.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
@@ -219,7 +220,7 @@
 
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
-                        <a href="">
+                    <a href="{{ route('productos')}}">
                             <img src="{{ asset('img/images/lupa20w1.png') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
@@ -230,7 +231,7 @@
 
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
-                        <a href="">
+                    <a href="{{ route('productos')}}">
                             <img src="{{ asset('img/images/3528rgb11.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
@@ -241,7 +242,7 @@
 
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
-                        <a href="">
+                    <a href="{{ route('productos')}}">
                             <img src="{{ asset('img/images/aretes1.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
@@ -252,7 +253,7 @@
 
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
-                        <a href="">
+                    <a href="{{ route('productos')}}">
                             <img src="{{ asset('img/images/buro2.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
@@ -263,7 +264,7 @@
 
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
-                        <a href="">
+                    <a href="{{ route('productos')}}">
                             <img src="{{ asset('img/images/proyectorEstrella1.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">
@@ -274,7 +275,7 @@
 
                 <div class="item ">
                     <div class="card border-0 rounded-lg ">
-                        <a href="">
+                    <a href="{{ route('productos')}}">
                             <img src="{{ asset('img/images/bala20.jpg') }}" alt="img" width="50%" class="card-img-top flip">
                         </a>
                         <div class="card-body pl-2 pr-2 text-center">

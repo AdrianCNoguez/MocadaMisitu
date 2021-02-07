@@ -18,6 +18,8 @@ Route::get('/', function () {
 Route::get('/','LomasVendidoController@getProducts');
 Route::get('/lomasvendido', 'LomasVendidoController@getSale')->name('lomasvendido');
 Route::get('/lomasvendido/{id}', 'LomasVendidoController@viewProduct');
+Route::get('/productos', 'ProductosController@getViewProducts')->name('productos');
+Route::get('/producto/{id}', 'ProductosController@viewProduct');
 /*Search*/
 Route::get('search/productos','SearchController@productos')->name('search.productos');
 Route::get('search','SearchController@searchProduct')->name('search.success');
