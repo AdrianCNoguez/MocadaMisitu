@@ -31,13 +31,11 @@
         
             <nav class="navbar navbar-expand-lg navbar-dark">
            
-           <!--PruebaBtnMercado-->
+        
            <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="boton-ML yellow short radius">
            <div class="ML-head"></div>
             </a>
-              <!----> 
-                       
-
+             
              <img src="{{ asset('img/logo/fondo.png') }}" width="60px" alt="" class="d-none d-lg-block fondo my-2">
                 <img src="{{ asset('img/logo/aro-verde.png') }}" width="70px" alt="" class="d-none d-lg-block aros my-2" id="aroG">
                 <img src="{{ asset('img/logo/aro-azul.png') }}" width="70px" alt="" class="d-none d-lg-block aros my2" id="aroB">
@@ -63,7 +61,6 @@
                             <a href="{{ url('/iluminacionInterior/focos') }}" class="dropdown-item ml-2">Focos</a>
                             <a href="{{ url('/iluminacionInterior/lamparasescritorios') }}" class="dropdown-item ml-2">Lamparas de escritorio</a>
                             <a href="{{ url('/iluminacionInterior/lamparas') }}" class="dropdown-item ml-2">Lamparas de techo</a>
-                            <!--<a href="{{ url('/iluminacionInterior/lamparaspared') }}" class="dropdown-item ml-2">Lamparas de pared</a>-->
                             <a href="{{ url('/iluminacionInterior/manguerasled') }}" class="dropdown-item ml-2">Mangueras</a>
                             <a href="{{ url('/iluminacionInterior/regletas') }}" class="dropdown-item ml-2">Regletas</a>
                             <a href="{{ url('/iluminacionInterior/series') }}" class="dropdown-item ml-2">Series</a>
@@ -74,8 +71,7 @@
                             <h5>Iluminación exterior</h5>
                             <a href="{{ url('exterior/reflectores') }}" class="dropdown-item ml-2">Reflectores</a>
                             <a href="{{ url('exterior/lamparas') }}" class="dropdown-item ml-2">Lamparas</a>
-                            <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Faroles</a>
-                           <!-- <a href="{{ url('exterior/tirasLed') }}" class="dropdown-item ml-2">Tiras led</a> -->
+                            <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Faroles</a>                 
                             <a href="{{ url('exterior/estacas') }}" class="dropdown-item ml-2">Jardín</a>
                         </div>
 
@@ -90,8 +86,7 @@
                             <a href="{{ route('soquets') }}" class="dropdown-item ml-2">Soquets</a>                            
                             <a href="{{ route('cables') }}" class="dropdown-item ml-2">Cable</a>
                             <h4>Entretenimiento</h4>                            
-                            <a href="{{ route('consolas') }}" class="dropdown-item ml-2">Consolas</a>
-                           <!--<a href="#" class="dropdown-item ml-2">Juguetes</a>-->
+                            <a href="{{ route('consolas') }}" class="dropdown-item ml-2">Consolas</a>                        
                         </div>
                         <div class="col-sm-5 col-lg-auto">
                           <h4>Decoración para el hogar</h4>
@@ -116,13 +111,12 @@
                     </div>
                   </li>
                   <li class="nav-item col-3 sm">
-                     <!--Inicio_ModalAbout-->
-              <!-- Button_modalAbout -->
+              
               <a  class="h6" data-toggle="modal" data-target="#About">
          Nosotros
             </a>
               
-              <!--Fin btnModalAbout-->
+             
               <div class="modal fade" id="About" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
@@ -142,13 +136,13 @@
                   </div>
                 </div>
               </div> 
-              <!--Fin_ModalAbout-->
+              
                   
 
                   </li>
                   <li class="nav-item col-3 sm">
                     
-                      <!--ModalContacto-->
+                     
                       <a  class="h6" data-toggle="modal" data-target="#Contact">
                                 Contacto 
                       </a>
@@ -205,7 +199,7 @@
     @yield('content')
 
 
-    <!--Footer-->
+    
     <footer class="footer mt-5 py-3 green ">
         <div class="container">
         <div class="row justify-content-between">
@@ -224,7 +218,7 @@
 
 
 
-                <!--Btnfooter--->
+                
                 <div class="col-sm text-center"> 
                 <a href="https://listado.mercadolibre.com.mx/_CustId_433371236" class="botonML-FT yellow radius">
                 <div class="ML-footer"></div>
@@ -249,11 +243,11 @@
             </div>
         </div>
         <br> 
-        <!--Inicio-->
+        
         <div class="container-fluid">
             <div class="d-flex justify-content-around bg-success mb-3">
               
-              <!--ModalContacto-->
+              
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Contact">
                 Contacto
               </button>
@@ -278,15 +272,11 @@
                   </div>
                 </div>
               </div> 
-              <!--Fin_ModalContacto-->
-
-
-              <!--Inicio_ModalAbout-->
-              <!-- Button_modalAbout -->
+          
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#About">
                 Acerca de Nosotros
               </button>
-              <!--Fin btnModalAbout-->
+              
               <div class="modal fade" id="About" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
@@ -306,25 +296,22 @@
                   </div>
                 </div>
               </div> 
-              <!--Fin_ModalAbout-->
-            
-            <!-- Button to Open the Modal -->
+              
             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
               FAQ´S
             </button>
-          <!--Fin btn modal-->
-            <!-- The Modal -->
+          
             <div class="modal" id="myModal" tabindex="-1">
               <div class="modal-dialog">
                 <div class="modal-content">
                 
-                  <!-- Modal Header -->
+                  
                   <div class="modal-header">
                     <h4 class="modal-title col-11 text-center">FAQ´S</h4>
                     <button type="button" class="close" data-dismiss="modal">×</button>
                   </div>
                   
-                  <!-- Modal body -->
+                 
                   <div class="modal-body">
                     <h5>Preguntas Frecuentres..</h5>
                     <p>P1: ¿Dónde puedo recoger los artículos que compre a través del sitio web MoMi? </p>
@@ -351,16 +338,16 @@
 
                   </div>
                   
-                  <!-- Modal footer -->
+                  
                   <div class="modal-footer">
                   </div>
                   
                 </div>
               </div>
             </div>
-            <!-- Fin_Modal_Scroll -->
+            
           </div>
-        <!---->
+       
             </div>
 
  
