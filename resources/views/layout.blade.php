@@ -146,7 +146,7 @@
                       <a  class="h6" data-toggle="modal" data-target="#Contact">
                                 Contacto 
                       </a>
-            
+            <br>
                     <div class="modal fade" id="Contact" tabindex="-1" role="dialog" aria-labelledby="Contact" aria-hidden="true">
                               <div class="modal-dialog modal-dialog-centered" role="document">
                                   <div class="modal-content">
