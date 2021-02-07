@@ -34,7 +34,7 @@
 </head>
 <body class="sc d-flex flex-column h-100" >
 
-    <a href="https://api.whatsapp.com/send?phone=+525564706104&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+    <a id="phone" href="https://api.whatsapp.com/send?phone=525526506601&text=Hola quisiera." class="float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
     </a>
 
