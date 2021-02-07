@@ -50,3 +50,15 @@ $('#img-mini img').click(function() {
     $('#imageBox').attr('src', changeSrc);
 });
 
+$('#phone').click(function() {
+    let number1 = 'https://api.whatsapp.com/send?phone=525526506601';
+    let number2 = 'https://api.whatsapp.com/send?phone=5215617616061';
+    let mensaje = '&text=Hola quisiera.'
+
+    if ($('#phone').attr('href') == (number1 + mensaje)) {
+        $('#phone').attr('href', number2 + mensaje)
+    } else if ($('#phone').attr('href') == (number2 + mensaje)) {
+        $('#phone').attr('href', number1 + mensaje)
+    }
+
+});

@@ -34,7 +34,7 @@
 </head>
 <body class="sc d-flex flex-column h-100" >
 
-    <a href="https://api.whatsapp.com/send?phone=+525564706104&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+    <a id="phone" href="https://api.whatsapp.com/send?phone=525526506601&text=Hola quisiera." class="float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
     </a>
 
@@ -44,16 +44,12 @@
           <div class="col-12 p-0 m-0">
         
             <nav class="navbar navbar-expand-lg navbar-dark">
-            
-           <!-- <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="btn ML-head  "></a> -->
            
-           <!--PruebaBtnMercado-->
-           <a href="https://listado.mercadolibre.com.mx/_CustId_433371236" class="boton-ML yellow short radius">
+        
+           <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="boton-ML yellow short radius">
            <div class="ML-head"></div>
             </a>
-              <!----> 
-                       
-
+             
              <img src="{{ asset('img/logo/fondo.png') }}" width="60px" alt="" class="d-none d-lg-block fondo my-2">
                 <img src="{{ asset('img/logo/aro-verde.png') }}" width="70px" alt="" class="d-none d-lg-block aros my-2" id="aroG">
                 <img src="{{ asset('img/logo/aro-azul.png') }}" width="70px" alt="" class="d-none d-lg-block aros my2" id="aroB">
@@ -79,7 +75,6 @@
                             <a href="{{ url('/iluminacionInterior/focos') }}" class="dropdown-item ml-2">Focos</a>
                             <a href="{{ url('/iluminacionInterior/lamparasescritorios') }}" class="dropdown-item ml-2">Lamparas de escritorio</a>
                             <a href="{{ url('/iluminacionInterior/lamparas') }}" class="dropdown-item ml-2">Lamparas de techo</a>
-                            <!--<a href="{{ url('/iluminacionInterior/lamparaspared') }}" class="dropdown-item ml-2">Lamparas de pared</a>-->
                             <a href="{{ url('/iluminacionInterior/manguerasled') }}" class="dropdown-item ml-2">Mangueras</a>
                             <a href="{{ url('/iluminacionInterior/regletas') }}" class="dropdown-item ml-2">Regletas</a>
                             <a href="{{ url('/iluminacionInterior/series') }}" class="dropdown-item ml-2">Series</a>
@@ -90,8 +85,7 @@
                             <h5>Iluminación exterior</h5>
                             <a href="{{ url('exterior/reflectores') }}" class="dropdown-item ml-2">Reflectores</a>
                             <a href="{{ url('exterior/lamparas') }}" class="dropdown-item ml-2">Lamparas</a>
-                            <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Faroles</a>
-                           <!-- <a href="{{ url('exterior/tirasLed') }}" class="dropdown-item ml-2">Tiras led</a> -->
+                            <a href="{{ url('exterior/faroles') }}" class="dropdown-item ml-2">Faroles</a>                 
                             <a href="{{ url('exterior/estacas') }}" class="dropdown-item ml-2">Jardín</a>
                         </div>
 
@@ -106,8 +100,7 @@
                             <a href="{{ route('soquets') }}" class="dropdown-item ml-2">Soquets</a>                            
                             <a href="{{ route('cables') }}" class="dropdown-item ml-2">Cable</a>
                             <h4>Entretenimiento</h4>                            
-                            <a href="{{ route('consolas') }}" class="dropdown-item ml-2">Consolas</a>
-                           <!--<a href="#" class="dropdown-item ml-2">Juguetes</a>-->
+                            <a href="{{ route('consolas') }}" class="dropdown-item ml-2">Consolas</a>                        
                         </div>
                         <div class="col-sm-5 col-lg-auto">
                           <h4>Decoración para el hogar</h4>
@@ -120,6 +113,7 @@
                           <h4>Cocina</h4>                         
                           <a href="{{ route('dispensadores')}}" class="dropdown-item ml-2">Dispensadores</a>
                           <h4>Otros</h4>                         
+                          <a href="{{ route('accesorios')}}" class="dropdown-item ml-2">Accesorios</a>
                           <a href="{{ route('joyas')}}" class="dropdown-item ml-2">Aretes&Collares</a>
                           <a href="{{ route('despachadores')}}" class="dropdown-item ml-2">Despachadores</a>
                         </div>
@@ -131,13 +125,12 @@
                     </div>
                   </li>
                   <li class="nav-item col-3 sm">
-                     <!--Inicio_ModalAbout-->
-              <!-- Button_modalAbout -->
+              
               <a  class="h6" data-toggle="modal" data-target="#About">
          Nosotros
             </a>
               
-              <!--Fin btnModalAbout-->
+             
               <div class="modal fade" id="About" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
@@ -157,13 +150,13 @@
                   </div>
                 </div>
               </div> 
-              <!--Fin_ModalAbout-->
+              
                   
 
                   </li>
                   <li class="nav-item col-3 sm">
                     
-                      <!--ModalContacto-->
+                     
                       <a  class="h6" data-toggle="modal" data-target="#Contact">
                                 Contacto 
                       </a>
@@ -179,9 +172,10 @@
                                         </div>
                                           <div class="modal-body">
                                             <ul >          
-                                              <li >+52 1 55 5072 4953</li>
-                                              <li>+52 55 6896 2105</li>
-                                              <li >E-mail:_________</li>
+                                              <li >+52 1 55 2708 5668 - Luis Manuel</li>
+                                              <li>+52 1 55 6896 2105 - Aldar Israel </li>
+                                              <li >E-mail:</li>
+                                              <li >distribuidoramoncada.comercial@outlook.com</li>
                                             </ul> 
                                           </div>
                                           <div class="modal-footer">
@@ -219,7 +213,7 @@
     @yield('content')
 
 
-    <!--Footer-->
+    
     <footer class="footer mt-5 py-3 green ">
         <div class="container">
         <div class="row justify-content-between">
@@ -238,9 +232,9 @@
 
 
 
-                <!--Btnfooter--->
+                
                 <div class="col-sm text-center"> 
-                <a href="https://listado.mercadolibre.com.mx/_CustId_23848430" class="botonML-FT yellow radius">
+                <a href="https://listado.mercadolibre.com.mx/_CustId_433371236" class="botonML-FT yellow radius">
                 <div class="ML-footer"></div>
             </a>
               </div>
@@ -263,11 +257,11 @@
             </div>
         </div>
         <br> 
-        <!--Inicio-->
+        
         <div class="container-fluid">
             <div class="d-flex justify-content-around bg-success mb-3">
               
-              <!--ModalContacto-->
+              
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Contact">
                 Contacto
               </button>
@@ -282,7 +276,7 @@
                     </div>
                     <div class="modal-body">
                     <ul >          
-                      <li >+52 1 55 5072 4953</li>
+                      <li >++52 1 55 2708 5668</li>
                       <li>+52 55 6896 2105</li>
                       <li >E-mail:_________</li>
                     </ul> 
@@ -292,15 +286,11 @@
                   </div>
                 </div>
               </div> 
-              <!--Fin_ModalContacto-->
-
-
-              <!--Inicio_ModalAbout-->
-              <!-- Button_modalAbout -->
+          
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#About">
                 Acerca de Nosotros
               </button>
-              <!--Fin btnModalAbout-->
+              
               <div class="modal fade" id="About" tabindex="-1" role="dialog" aria-labelledby="About" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
@@ -320,41 +310,38 @@
                   </div>
                 </div>
               </div> 
-              <!--Fin_ModalAbout-->
-            
-            <!-- Button to Open the Modal -->
+              
             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
               FAQ´S
             </button>
-          <!--Fin btn modal-->
-            <!-- The Modal -->
+          
             <div class="modal" id="myModal" tabindex="-1">
               <div class="modal-dialog">
                 <div class="modal-content">
                 
-                  <!-- Modal Header -->
+                  
                   <div class="modal-header">
                     <h4 class="modal-title col-11 text-center">FAQ´S</h4>
                     <button type="button" class="close" data-dismiss="modal">×</button>
                   </div>
                   
-                  <!-- Modal body -->
+                 
                   <div class="modal-body">
                     <h5>Preguntas Frecuentres..</h5>
-                    <p>P1: ¿Dónde puedo recoger los artículos que compre a través del sitio web Web MoMi? </p>
-                    <p> R: Los artículos o articulo que ha comprado los puede recoger en  ___</p>
+                    <p>P1: ¿Dónde puedo recoger los artículos que compre a través del sitio web MoMi? </p>
+                    <p> R: Los artículos se envían por medio de paquetería</p>
                     
                   <p>P2: ¿Cuánto tiempo tengo que esperar por los artículos después del pago?</p>
-                  <p>R: El tiempo de espera es de _____</p>
-                  
+                  <p>R: El tiempo de espera es de 3 días hábiles</p>
+            
                   <p>P3: Si un artículo está en promoción en su tienda física, ¿Esta promoción se extiende a su sitio web? </p>
-                  <p>R:</p>
+                  <p>R:Depende de existencias</p>
                   
                   <p>P4: ¿Tiene una sección de comentarios en su sitio web?</p>
                   <p>R: Sí, Puede utilizar el icono de WhatsApp para poder resolverle cualquier duda que tenga de algún artículo o precio.</p>
                   
                   <p>P5: ¿Existe un número de línea directa?</p>
-                  <p>R: El cliente puede llamar a _____ para sus preguntas y consultas.</p>
+                  <p>R: El cliente puede ponerse en contacto a los numeros disponibles para sus preguntas y consultas.</p>
 
                   <p>P6: Si un producto no esta en stock ¿Qué es lo que puedo hacer?</p>
                   <p>R: Puedes preguntar haciendo click en el icono de WhatsApp si el producto esta disponible o cuando estará disponible</p>
@@ -362,22 +349,19 @@
                   <h3>Sobre los pedidos...</h3>
                     <p>P1:¿Cómo puedo realizar un pedido?</p>
                     <p>R: Para realizar un pedido puede utilizar el icono de WhatssApp para realizar su pedido</p>
-                    
-                    <p>P2: ¿Qué método de pago se acepta para pedidos online?</p>
-                    <p>R:</p>
 
                   </div>
                   
-                  <!-- Modal footer -->
+                  
                   <div class="modal-footer">
                   </div>
                   
                 </div>
               </div>
             </div>
-            <!-- Fin_Modal_Scroll -->
+            
           </div>
-        <!---->
+       
             </div>
 
  
