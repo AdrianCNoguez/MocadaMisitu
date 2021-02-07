@@ -21,34 +21,44 @@ class ProductosController extends Controller
 
 
     public function getViewProducts(){
-        
+        $modelos = ModelosController::obtenerModelos();
         $produc = Productos:: 
         select('producto.idProducto','producto.nombre','imagenes.ruta')
         ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
-        ->orderBy('idProducto', 'asc')
         ->get()->groupBy('idProducto');
-        
-       
         return view('productos.productos')->with('produc',$produc);
     }
 
-    public function viewProduct($id){
+    public function searchProduct(Request $request){
+        $modelos = ModelosController::obtenerModelos();
+        $collection = collect();
+        $articulo = $request->get('product');
 
-        $position =  strpos($id, '-xs');
-        $id = substr($id, $position + 3); 
+        $articulo = ModelosController::limpiarPeticion($articulo);
 
-        $produc = Productos::
-        select('producto.idProducto','producto.nombre','imagenes.ruta')
-        ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
-        ->where('producto.idProducto','=', $id)->first();
+        if ($articulo == 'error') {
+            return redirect()->back();
+        }else{
+            
+            for( $i = 0; $i < count($modelos) ; $i++ ) { 
 
-        $imagenes = Productos::imagenesP($id);
- 
-        return view('productos.producto')->with(compact('product', $produc))->with(compact('imagenes',$imagenes));
-
-    }
-
-
+                $productos = DB::table($modelos[$i])
+                ->join('producto','producto.idProducto','=', $modelos[$i].'.idProducto')
+                ->where('producto.nombre','LIKE','%'. $articulo .'%')->get();
+                    
+                    if (!$productos->isEmpty()) {
+                        foreach ($productos as $producto) {
+                            $imagenes = Imagenes::where('idProductoImagen_fk',$producto->idProducto)->first();
+                            $producto->imagen = !is_null($imagenes) ? $imagenes->ruta: null;
+                            $collection->push($producto);
+                        }
+                    }
+                } 
+        }
+        
+        return view('search')->with(compact('collection', $collection)); 
+    } 
+    
 
     
 }
