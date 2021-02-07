@@ -18,7 +18,6 @@
                 <img src="{{ asset('img/Slider/1.jpg') }}" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
                     <h5>Bienvenido a </h5>
-                    <p>Distribuidora MoMi</p>
                 </div>
             </div>
 
