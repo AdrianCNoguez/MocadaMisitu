@@ -20,5 +20,9 @@ class Productos extends Model
         return $this->hasMany('App\Imagenes','idProductoImagen_fk');
     }
 
-
+    public static function imagenesP($id)
+    {
+        $imagenes = Imagenes::select('ruta')->where('idProductoImagen_fk', '=', $id)->get();
+        return $imagenes;
+    }
 }

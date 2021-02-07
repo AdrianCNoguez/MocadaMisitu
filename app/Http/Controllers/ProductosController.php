@@ -27,9 +27,7 @@ class ProductosController extends Controller
         ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
         ->orderBy('idProducto', 'asc')
         ->get()->groupBy('idProducto');
-        //DB::select( $produc)->paginate(25);
-        //$produc = Productos::paginate(10);
-      
+        
        
         return view('productos.productos')->with('produc',$produc);
     }
@@ -40,10 +38,11 @@ class ProductosController extends Controller
         $id = substr($id, $position + 3); 
 
         $produc = Productos::
-        join('producto','producto.idProducto','=','producto.idProducto')
+        select('producto.idProducto','producto.nombre','imagenes.ruta')
+        ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
         ->where('producto.idProducto','=', $id)->first();
 
-        $imagenes = Productos::imagenes($id);
+        $imagenes = Productos::imagenesP($id);
  
         return view('productos.producto')->with(compact('product', $produc))->with(compact('imagenes',$imagenes));
 
