@@ -101,3 +101,5 @@ Route::get('/otros/joyeria/{id}','JoyeriaController@viewProduct');
 Route::get('/otros/despachadores','DespachadoresController@getProducts')->name('despachadores');
 Route::get('/otros/despachadores/{id}','DespachadoresController@viewProduct');
 
+Route::get('/otros/accesorios','AccesoriosController@getProducts')->name('accesorios');
+Route::get('/otros/accesorios/{id}','AccesoriosController@viewProduct');

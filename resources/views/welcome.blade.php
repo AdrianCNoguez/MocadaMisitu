@@ -10,22 +10,31 @@
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
 
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="{{ asset('img/Slider/1.jpg') }}" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                    <h5>Web MoMi</h5>
-                    <p>Agregar Texto de Ofertas</p>
+                    <h5>Bienvenido a </h5>
+                    <p>Distribuidora MoMi</p>
                 </div>
             </div>
 
             <div class="carousel-item">
                 <img src="{{ asset('img/Slider/2.jpg') }}" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption">
-                    <h5>Web Momi</h5>
-                    <p>Agregar Texto de Ofertas</p>
+                    <h5>Aquí encontrarás todo lo necesario para</h5>
+                    <p>iluminación de interiores y exteriores</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="{{ asset('img/Slider/2.jpg') }}" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption">
+                    <h5>Ponte en contacto con nosotros</h5>
+                    <p>vía WhatsApp o Mail</p>
                 </div>
             </div>
         </div>
