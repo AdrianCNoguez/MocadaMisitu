@@ -27,11 +27,10 @@ class ProductosController extends Controller
         ->join('imagenes','imagenes.idProductoImagen_fk','=','producto.idProducto')
         ->get()->groupBy('idProducto');
         //$produc = Productos::paginate(5);
-       
         return view('productos.productos')->with('produc',$produc);
     }
 
-    /*
+    
     public function viewProduct($id){
 
         $position =  strpos($id, '-xs');
@@ -46,6 +45,6 @@ class ProductosController extends Controller
         return view('productos.producto')->with(compact('product', $produc))->with(compact('imagenes',$imagenes));
 
     }
-*/
+
     
 }
