@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style2.css') }}">
-    <link rel="icon" type="image/png" href="{{ asset('logo/Logo MisituMocada2.png') }}" />
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('js/jquery-ui/jquery-ui.min.css') }}">
@@ -15,30 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,200&display=swap" rel="stylesheet">
     <script src="{{ asset('OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js') }}"></script>
     <script src="{{ asset('OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js') }}"></script>
+    <link rel="shortcut icon" href="{{ asset('img/logo/logo.ico') }}"">
     <title>Distribuidora Moncada - Misitu</title>
-
-    <style>
-  
-  .h6 {
-   font-style:arial;
-   font-size:5em;
-   color: #6c6765;
-   position:relative;
-    top:10px;
- }
-   
-
-
-    </style>
 
 </head>
 <body class="sc d-flex flex-column h-100" >
 
-<<<<<<< HEAD
-    <a href="https://api.whatsapp.com/send?phone=+5215527085668&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20un%20proudcto." class="float" target="_blank">
-=======
     <a id="phone" href="https://api.whatsapp.com/send?phone=525526506601&text=Hola quisiera." class="float" target="_blank">
->>>>>>> 65e3c42c6cb1eb35785728e9692ff8431799b934
         <i class="fab fa-whatsapp my-float"></i>
     </a>
 

@@ -9,6 +9,14 @@ footer {
     width: 100%;
 }
 
+.h6 {
+    font-style: arial;
+    font-size: 5em;
+    color: #6c6765;
+    position: relative;
+    top: 10px;
+}
+
 .bg-blue {
     background: #2E9AFE;
 }
@@ -388,4 +396,3 @@ footer ul,
     font-family: poppins;
     font-weight: bold;
 }
-
