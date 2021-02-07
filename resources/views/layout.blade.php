@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style2.css') }}">
-    <link rel="icon" type="image/png" href="{{ asset('logo/Logo MisituMocada2.png') }}" />
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('js/jquery-ui/jquery-ui.min.css') }}">
@@ -15,21 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,200&display=swap" rel="stylesheet">
     <script src="{{ asset('OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js') }}"></script>
     <script src="{{ asset('OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js') }}"></script>
+    <link rel="shortcut icon" href="{{ asset('img/logo/logo.ico') }}"">
     <title>Distribuidora Moncada - Misitu</title>
-
-    <style>
-  
-  .h6 {
-   font-style:arial;
-   font-size:5em;
-   color: #6c6765;
-   position:relative;
-    top:10px;
- }
-   
-
-
-    </style>
 
 </head>
 <body class="sc d-flex flex-column h-100" >

@@ -34,6 +34,12 @@ class SearchController extends Controller
 
         $articulo = $request->get('product');
 
+        $articulo = ModelosController::limpiarPeticion($articulo);
+
+        if ($articulo == 'error') {
+            return redirect()->back();
+        }
+
 
      for( $i = 0; $i < count($modelos) ; $i++ ) { 
 
@@ -41,28 +47,21 @@ class SearchController extends Controller
         ->join('producto','producto.idProducto','=', $modelos[$i].'.idProducto')
         ->where('producto.nombre','LIKE','%'. $articulo .'%')->get();
             
-            for( $i = 0; $i < count($modelos) ; $i++ ) { 
-
-                $productos = DB::table($modelos[$i])
-                ->join('producto','producto.idProducto','=', $modelos[$i].'.idProducto')
-                ->where('producto.nombre','LIKE','%'. $articulo .'%')->get();
-                
-                    if (!$productos->isEmpty()) {
-                        foreach ($productos as $producto) {
-                            $imagenes = Imagenes::where('idProductoImagen_fk',$producto->idProducto)->get();
-                            $producto->imagen = !is_null($imagenes) ? $imagenes->first()['ruta']: null;
-                            $collection->push($producto);
-                        } 
-                    }
-            } 
-
-            if ($collection->isEmpty()) {
-                return redirect()->back();
-            }else{
-                return view('search')->with(compact('collection', $collection)); 
+            if (!$productos->isEmpty()) {
+                foreach ($productos as $producto) {
+                    $imagenes = Imagenes::where('idProductoImagen_fk',$producto->idProducto)->first();
+                    $producto->imagen = !is_null($imagenes) ? $imagenes->ruta: null;
+                    $collection->push($producto);
+                }
             }
+        } 
 
-        }
+     if ($collection->isEmpty()) {
+        return redirect()->back();
+     }else{
+        return view('search')->with(compact('collection', $collection));
+     }
+
         
-    } 
+    }
 }
