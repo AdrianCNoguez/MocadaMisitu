@@ -17,7 +17,7 @@
             <div class="carousel-item active">
                 <img src="{{ asset('img/Slider/1.jpg') }}" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                    <h5>Bienvenido a </h5>
+                    <h5>Bienvenido</h5>
                 </div>
             </div>
 

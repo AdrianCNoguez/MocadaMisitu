@@ -30,7 +30,7 @@
                             <img src="{{ asset('img/'.$img->ruta) }}" alt="" class="img-fluid mini-img">
                         </div>
                     @endforeach
-                </div>
+                </div> 
             </div>
 
             <div class="col-md-7">
@@ -41,11 +41,8 @@
                       <ul>
                           <li>Marca: {{ $product->marca }}</li>
                           <li>Modelo: {{ $product->modelo }}</li>
-                          <li>Medidas: {{ $product->medidas }}</li>
-                          <li>Bluetooth: {{ $product->bluetooth == 1 ? ('Si'): ('No') }} </li>
-                          <li>Material: {{ $product->material }}</li>
-                          <li>Forma: {{ $product->forma }}</li>
-                          <li>Tipo de Conexión: {{ $product->tipoConexion }} </li>
+                          <li>Medidas: {{ $product->largo }}</li>
+                          <li>tipo de Led: {{ $product->tipoLEd }}</li>
                       </ul>
                      <a href="{{ url('iluminacionInterior/tirasLed') }}" class="btn btn-dark mb-3"><i class="fa fa-lightbulb"></i> Volver</a>
                 </div>

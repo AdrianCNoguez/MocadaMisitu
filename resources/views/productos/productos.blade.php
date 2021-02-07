@@ -13,7 +13,7 @@
 
     <div class="container">
         @section('breadcrumbs')
-            <li class="breadcrumb-item text-white mr-3 pl-3" aria-current="page">Resultados de búsqueda</li>
+            <li class="breadcrumb-item text-white mr-3 pl-3" aria-current="page">Más productos</li>
         @endsection
         @include('layouts.nav-pages')
 

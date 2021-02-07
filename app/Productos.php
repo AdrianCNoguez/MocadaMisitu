@@ -9,15 +9,10 @@ class Productos extends Model
     protected $table = 'producto';
     protected $primaryKey='idProducto';
    
-    public function timbres()
+    public static function imagenes($id)
     {
-        return $this->hasOne('App\Timbres', 'idProdutoTimbre_fk');
-    }
-
-    public function imagenes()
-    {
-        
-        return $this->hasMany('App\Imagenes','idProductoImagen_fk');
+        $imagenes = Imagenes::select('ruta')->where('idProductoImagen_fk', '=', $id)->get();
+        return $imagenes;
     }
 
     
